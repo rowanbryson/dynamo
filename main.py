@@ -1,4 +1,4 @@
-from lasso.dyna import D3plot, ArrayType
+from lasso.dyna import D3plot, ArrayType, Binout
 import dyna_tools
 from loguru import logger
 
@@ -54,20 +54,22 @@ def try_find_specimen_displacement():
 def try_find_specimen_load():
     run_id = '0001_basic_run1'
     # grab data from the d3plot (LS-DYNA output file)
-    d3plot = D3plot(f'run_sets/{run_id}/d3plot')
+    # d3plot = D3plot(f'run_sets/{run_id}/d3plot')
+    binout = Binout(f'run_sets/{run_id}/binout*')
+    print(dyna_tools.find_specimen_load(binout))
 
-    print(d3plot.arrays.keys())
+    # print(d3plot.arrays.keys())
 
-    node_ids = d3plot.arrays[ArrayType.node_ids]
-    node_coordinates = d3plot.arrays[ArrayType.node_coordinates]
-    node_residual_forces = d3plot.arrays[ArrayType.node_residual_forces]
+    # node_ids = d3plot.arrays[ArrayType.node_ids]
+    # node_coordinates = d3plot.arrays[ArrayType.node_coordinates]
+    # node_residual_forces = d3plot.arrays[ArrayType.node_residual_forces]
 
-    face_nodemask = dyna_tools.find_nodes(node_ids, node_coordinates, 0.0254, 0.0254)
+    # face_nodemask = dyna_tools.find_nodes(node_ids, node_coordinates, 0.0254, 0.0254)
 
-    specimen_load = dyna_tools.find_specimen_load(face_nodemask, node_residual_forces)
+    # specimen_load = dyna_tools.find_specimen_load(face_nodemask, node_residual_forces)
     
-    print(specimen_load.shape)
-    print(specimen_load)
+    # print(specimen_load.shape)
+    # print(specimen_load)
 
 
 def try_stuff():
@@ -75,9 +77,22 @@ def try_stuff():
     # grab data from the d3plot (LS-DYNA output file)
     d3plot = D3plot(f'run_sets/{run_id}/d3plot')
 
+
     print(d3plot.arrays.keys())
+
+
+def try_binout():
+    from lasso.dyna import Binout, ArrayType
+    run_id = '0001_basic_run1'
+    # grab data from the binout (LS-DYNA output file)
+    binout = Binout(f'run_sets/{run_id}/binout*')
+    print(binout.read())
+
 
 if __name__ == '__main__':
     # try_find_nodes()
     # try_find_specimen_load()
-    try_stuff()
+    # try_stuff()
+    # try_binout()
+    try_find_specimen_load()
+    # try_find_specimen_displacement()

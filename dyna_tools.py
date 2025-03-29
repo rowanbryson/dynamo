@@ -150,10 +150,8 @@ def find_specimen_load(face_nodemask, node_residual_forces):
 
     return specimen_load
 
-def find_specimen_load():
-    """
-    """
-    pass
+def find_specimen_load(binout):
+    return binout.read('bndout', 'velocity', 'nodes', 'z_total')
 
 
 def compute_triaxiality(stress: np.ndarray):
