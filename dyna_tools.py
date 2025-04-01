@@ -5,7 +5,6 @@ import shutil
 from loguru import logger
 import numpy as np
 
-
 SOLVER = "C:\Program Files\LS-DYNA Suite R14 Student\lsdyna\ls-dyna_smp_d_R14.1.1s_1-gef50e1efb1_winx64_ifort190.exe"
 MEMORY = '20m'
 NCPU = '4'
@@ -107,7 +106,7 @@ def plot_element(run_id, element_id):
     plt.ylabel('Stress Triaxiality')
     plt.tight_layout()
 
-def find_nodes(node_ids, node_coordinates, z_min, z_max):
+def _find_nodes(node_ids, node_coordinates, z_min, z_max):
     '''
     Find the node ids of nodes in a specific area
 
@@ -116,7 +115,18 @@ def find_nodes(node_ids, node_coordinates, z_min, z_max):
     '''
     return (node_coordinates[:, 2] >= z_min) * (node_coordinates[:, 2] <= z_max)
 
-def find_face_position_z(face_nodemask, node_displacement):
+def _find_nodes_binout(binout, z_min, z_max):
+    '''
+    Find the node ids of nodes in a specific area
+
+    Returns:
+    a boolean array of shape (n_nodes,), where true denotes nodes in the box
+    '''
+    node_coordinates = binout.read('bndout', 'velocity', 'nodes', 'z_coordinate')
+    node_ids = binout.read('nodout', 'ids')
+    return node_ids[(node_coordinates[:, 2] >= z_min) * (node_coordinates[:, 2] <= z_max)]
+
+def _find_face_position_z(face_nodemask, node_displacement):
     """
     """
     displacement = node_displacement[:, face_nodemask, 2]
@@ -128,7 +138,7 @@ def find_face_position_z(face_nodemask, node_displacement):
     # return the displacement at each timestep for the nodes in the box
     return displacement[:, 0]
 
-def find_specimen_displacement(face_position, scale_factor=2):
+def _compute_specimen_displacement_d3(face_position, scale_factor=2):
     """
     Find the displacement of the specimen in the z direction
     with the convention according to the force vd
@@ -139,22 +149,41 @@ def find_specimen_displacement(face_position, scale_factor=2):
     # multiply by a scale factor to account for symmetry simplification
     return specimen_displacement * scale_factor
 
-def find_specimen_load(face_nodemask, node_residual_forces):
+
+# def find_specimen_load(face_nodemask, node_residual_forces):
+#     """
+#     Find the load on the specimen in the z direction
+#     with the convention according to the force vd
+#     """
+#     # find the residual forces at each timestep for the nodes in the box
+#     spc_forces = node_residual_forces[:, face_nodemask, 2]
+#     specimen_load = np.sum(spc_forces, axis=1)
+
+#     return specimen_load
+
+def _find_gauge_edge_node_ids(d3plot):
     """
-    Find the load on the specimen in the z direction
-    with the convention according to the force vd
+    Find the nodes at the edge of the gauge section
     """
-    # find the residual forces at each timestep for the nodes in the box
-    spc_forces = node_residual_forces[:, face_nodemask, 2]
-    specimen_load = np.sum(spc_forces, axis=1)
+    # get the node ids and coordinates
+    node_ids = d3plot.arrays[ArrayType.node_ids]
+    node_coordinates = d3plot.arrays[ArrayType.node_coordinates]
 
-    return specimen_load
+    # find the nodes in the gauge section
+    gauge_z = 0
+    gauge_nodemask = (node_coordinates[:, 2] == gauge_z)
 
-def find_specimen_load(binout):
-    return binout.read('bndout', 'velocity', 'nodes', 'z_total')
+    gauge_ids = node_ids[gauge_nodemask]
+    gauge_node_coordinates = node_coordinates[gauge_nodemask]
+
+    gauge_radii = np.sqrt(gauge_node_coordinates[0]**2 + gauge_node_coordinates[1]**2)
+    gauge_edge_radius = np.max(gauge_radii)
+
+    gauge_edge_node_ids = gauge_ids[np.isclose(gauge_radii, gauge_edge_radius, atol=gauge_edge_radius*0.1)]
+    return gauge_edge_node_ids
 
 
-def compute_triaxiality(stress: np.ndarray):
+def _compute_triaxiality(stress: np.ndarray):
     """
     Calculate the triaxiality of the stress tensor
     """
@@ -162,6 +191,72 @@ def compute_triaxiality(stress: np.ndarray):
     J2 = 0.5 * ((stress[..., 0] - stress[..., 1])**2 + (stress[..., 1] - stress[..., 2])**2 + (stress[..., 2] - stress[..., 0])**2 + 6 * (stress[..., 3]**2 + stress[..., 4]**2 + stress[..., 5]**2))
     triaxiality = I1 / (3 * np.sqrt(2) * np.sqrt(J2))
     return triaxiality
+
+
+def find_specimen_displacement(binout):
+    pass
+
+def find_specimen_load(binout):
+    return binout.read('bndout', 'velocity', 'nodes', 'z_total')
+
+def find_bin_time(binout):
+    return binout.read('bndout','velocity', 'nodes', 'time')
+
+def find_d3_time(d3plot):
+    return d3plot.arrays[ArrayType.global_timesteps]
+
+def find_interest_effective_plastic_strain(d3plot, interest_element_ids=None):
+    """
+    Find the effective plastic strain of the element
+    """
+    # set default edge element ids to use during development
+    if interest_element_ids is None:
+        interest_element_ids = np.array([81, 82, 83])
+
+    element_ids = d3plot.arrays[ArrayType.element_solid_ids]
+    eps = d3plot.arrays[ArrayType.element_solid_effective_plastic_strain]
+
+    eps_of_interest = eps[:, np.isin(element_ids, interest_element_ids), 0]
+    return eps_of_interest
+
+def decide_interest_element_ids(d3plot):
+    # for now, return preselected ids
+    # TODO automate this
+    return np.array([81, 82, 83])
+
+def find_triaxiality(d3plot):
+    """
+    Find the triaxiality of the stress tensor
+    """
+    stress = d3plot.arrays[ArrayType.element_solid_stress]
+    return _compute_triaxiality(stress)
+
+
+def find_summary(binout, d3plot):
+    interest_element_ids = np.array([81, 82, 83])
+    element_ids = d3plot.arrays[ArrayType.element_solid_ids]
+
+    bin_time = find_bin_time(binout)
+    specimen_load = find_specimen_load(binout)
+    specimen_displacement = find_specimen_displacement(binout)
+
+    d3_time = find_d3_time(d3plot)
+    effective_plastic_strain = d3plot.arrays[ArrayType.element_solid_effective_plastic_strain]
+    triaxiality = find_triaxiality(d3plot)
+
+    interest_mask = np.isin(element_ids, interest_element_ids)
+    interest_eps = effective_plastic_strain[:, interest_mask, 0]
+    interest_triaxiality = triaxiality[:, interest_mask]
+
+    return {
+        'bin_time': bin_time,
+        'specimen_load': specimen_load,
+        'specimen_displacement': specimen_displacement,
+        'd3_time': d3_time,
+        'effective_plastic_strain': interest_eps,
+        'triaxiality': interest_triaxiality,
+        'interest_element_ids': interest_element_ids,
+    }
 
 if __name__ == "__main__":
     input_id = '0001_basic' # corresponds to a folder containing a set of input files 
@@ -171,7 +266,7 @@ if __name__ == "__main__":
     # picking an unused run_id will create a new folder in the run_sets directory to store the results of the simulation
 
     # run the simulation
-    run_lsdyna(input_id, run_id)
+    # run_lsdyna(input_id, run_id)
 
     # plot the data for element 81
     element_id = 81
