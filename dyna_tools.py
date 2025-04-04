@@ -4,6 +4,7 @@ import subprocess
 import shutil
 from loguru import logger
 import numpy as np
+import extract
 
 SOLVER = "C:\Program Files\LS-DYNA Suite R14 Student\lsdyna\ls-dyna_smp_d_R14.1.1s_1-gef50e1efb1_winx64_ifort190.exe"
 MEMORY = '20m'
@@ -122,9 +123,9 @@ def _find_nodes_binout(binout, z_min, z_max):
     Returns:
     a boolean array of shape (n_nodes,), where true denotes nodes in the box
     '''
-    node_coordinates = binout.read('bndout', 'velocity', 'nodes', 'z_coordinate')
+    node_z_coordinates = binout.read('bndout', 'velocity', 'nodes', 'z_coordinate')
     node_ids = binout.read('nodout', 'ids')
-    return node_ids[(node_coordinates[:, 2] >= z_min) * (node_coordinates[:, 2] <= z_max)]
+    return node_ids[(node_z_coordinates >= z_min) * (node_z_coordinates <= z_max)]
 
 def _find_face_position_z(face_nodemask, node_displacement):
     """
@@ -194,10 +195,14 @@ def _compute_triaxiality(stress: np.ndarray):
 
 
 def find_specimen_displacement(binout):
-    pass
+    face_nodes = _find_nodes_binout(binout, 0.25, 0.26)
+    # face_node = face_nodes[0]
+    displacements = binout.read('nodout', 'displacement')
+    print(face_nodes)
+
 
 def find_specimen_load(binout):
-    return binout.read('bndout', 'velocity', 'nodes', 'z_total')
+    return -binout.read('bndout', 'velocity', 'nodes', 'z_total')
 
 def find_bin_time(binout):
     return binout.read('bndout','velocity', 'nodes', 'time')
@@ -222,7 +227,7 @@ def find_interest_effective_plastic_strain(d3plot, interest_element_ids=None):
 def decide_interest_element_ids(d3plot):
     # for now, return preselected ids
     # TODO automate this
-    return np.array([81, 82, 83])
+    return np.array([81, 82, 83, 84, 85, 86, 87, 88, 89, 90])  # for now, return preselected ids
 
 def find_triaxiality(d3plot):
     """
@@ -232,31 +237,6 @@ def find_triaxiality(d3plot):
     return _compute_triaxiality(stress)
 
 
-def find_summary(binout, d3plot):
-    interest_element_ids = np.array([81, 82, 83])
-    element_ids = d3plot.arrays[ArrayType.element_solid_ids]
-
-    bin_time = find_bin_time(binout)
-    specimen_load = find_specimen_load(binout)
-    specimen_displacement = find_specimen_displacement(binout)
-
-    d3_time = find_d3_time(d3plot)
-    effective_plastic_strain = d3plot.arrays[ArrayType.element_solid_effective_plastic_strain]
-    triaxiality = find_triaxiality(d3plot)
-
-    interest_mask = np.isin(element_ids, interest_element_ids)
-    interest_eps = effective_plastic_strain[:, interest_mask, 0]
-    interest_triaxiality = triaxiality[:, interest_mask]
-
-    return {
-        'bin_time': bin_time,
-        'specimen_load': specimen_load,
-        'specimen_displacement': specimen_displacement,
-        'd3_time': d3_time,
-        'effective_plastic_strain': interest_eps,
-        'triaxiality': interest_triaxiality,
-        'interest_element_ids': interest_element_ids,
-    }
 
 if __name__ == "__main__":
     input_id = '0001_basic' # corresponds to a folder containing a set of input files 

@@ -1,0 +1,13 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-3-2025 (20:54:36)
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0002_basic_run1\d3plot"
+ac
+ident select 1
+genselect target node
+genselect target element
+genselect element add solid 61/F1/0 
+genselect element add solid 45/F1/0 
+genselect element add solid 53/F1/0 
+genselect element add solid 47/F1/0 
+genselect element add solid 67/F1/0 
+genselect element add solid 81/F1/0 
