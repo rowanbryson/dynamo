@@ -11,3 +11,16 @@ genselect element add solid 53/F1/0
 genselect element add solid 47/F1/0 
 genselect element add solid 67/F1/0 
 genselect element add solid 81/F1/0 
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+genselect element add solid 61/F0/0 
+ident select 0
