@@ -32,11 +32,11 @@ def summary_to_df(summary):
         'displacement': summary['displacement'],
         'd3_time': summary['d3_time'],
     }
-    print(headers)
+    # print(headers)
     for i, eid in enumerate(summary['interest_element_ids']):
         data[f'eps_element_{eid}'] = summary['effective_plastic_strain'][:, i]
         data[f'triaxiality_{eid}'] = summary['triaxiality'][:, i]
-    print(data)
+    # print(data)
     df = pd.DataFrame()
     for key in headers:
         new_col = pd.Series(data[key])
@@ -64,12 +64,18 @@ def plot_eps_triaxiality(summary):
 def process_run(run_id):
     # make the directories if they don't exist
     import os
+    import json
     os.makedirs(f'summaries/{run_id}', exist_ok=True)
 
 
     binout = Binout(f'run_sets/{run_id}/binout*')
     d3plot = D3plot(f'run_sets/{run_id}/d3plot')
     summary = find_summary(binout, d3plot)
+    # save the summary to a json file
+    with open(f'summaries/{run_id}/summary.json', 'w') as f:
+        json_compact = lambda x: x.tolist() if isinstance(x, np.ndarray) else x
+        jsonable_summary = {k: json_compact(v) for k, v in summary.items()}
+        json.dump(jsonable_summary, f, indent=4)
     df = summary_to_df(summary)
     df.to_csv(f'summaries/{run_id}/summary.csv')
     print(f'Summary saved to summaries/{run_id}/summary.csv')

@@ -11,6 +11,8 @@ MEMORY = '20m'
 NCPU = '4'
 
 PATH = os.path.dirname(os.path.abspath(__file__))
+# go up a level for the path
+PATH = os.path.dirname(PATH)
 INPUT_SETS_DIR = 'input_sets'
 OUTPUT_SETS_DIR = 'run_sets'
 MAIN_FILE_NAME = "MAIN_Bar_6061-T651_Compression.key"
@@ -194,11 +196,11 @@ def _compute_triaxiality(stress: np.ndarray):
     return triaxiality
 
 
-def find_specimen_displacement(binout):
-    face_nodes = _find_nodes_binout(binout, 0.25, 0.26)
-    # face_node = face_nodes[0]
-    displacements = binout.read('nodout', 'displacement')
-    print(face_nodes)
+# def find_specimen_displacement(binout):
+#     face_nodes = _find_nodes_binout(binout, 0.25, 0.26)
+#     # face_node = face_nodes[0]
+#     displacements = binout.read('nodout', 'displacement')
+    
 
 
 def find_specimen_load(binout):
