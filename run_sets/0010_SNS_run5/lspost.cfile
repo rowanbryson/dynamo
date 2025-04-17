@@ -1,0 +1,52 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-15-2025 (15:14:01)
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\input_sets\0010_SNS\SNS.key"
+Message 1
+Message 0
+genselect target node
+dupnode open 1
+dupnode showdup 0.000003
+dupnode showdup 0.000300
+dupnode clear
+dupnode showdup 0.000030
+dupnode showdup 0.000100
+dupnode showdup 0.001000
+dupnode clear
+dupnode showdup 0.000500
+dupnode open 0
+setnode
+genselect clear
+setnode off
+setnode readlist 2
+setnode show  2
+genselect clear
+setnode off
+setnode readlist 1
+setnode show  1
+genselect target node
+dupnode open 1
+save keywordabsolute 0
+save keywordbylongfmt 0
+save keywordbyi10fmt 0
+save outversion 2
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\input_sets\0010_SNS\SNS.key"
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\input_sets\0010_SNS\SNS.key" 
+dupnode open 0
+setnode
+setnode write "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\input_sets\0010_SNS\y_face" 1 
+genselect clear
+setnode off
+setnode readlist 3
+setnode show  3
+setnode write "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\input_sets\0010_SNS\plus_z_face" 3 
+genselect clear
+setnode off
+setnode readlist 5
+setnode show  5
+genselect clear
+setnode off
+setnode readlist 4
+setnode show  4
+genselect target node
+genselect clear
+genselect clear

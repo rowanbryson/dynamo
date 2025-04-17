@@ -1,0 +1,208 @@
+
+
+ ***************************************************************
+ *            ANSYS LEGAL NOTICES                              *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2023 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+      Date: 04/16/2025      Time: 17:37:09  
+      ___________________________________________________ 
+     |                                                   |
+     |  LS-DYNA, A Program for Nonlinear Dynamic         |
+     |  Analysis of Structures in Three Dimensions       |
+     |  Date    : 06/16/2024    Time: 19:10:47           |
+     |  Version : smp d R14                              |
+     |  Revision: R14.1.1s-1-gef50e1efb1                 |
+     |  AnLicVer: 2024 R2 (20240501+dl-66-g8093a89)      |
+     |                                                   |
+     |  Features enabled in this version:                |
+     |    Shared Memory Parallel                         |
+     |    CESE CHEMISTRY EM ICFD STOCHASTIC_PARTICLES    |
+     |    FFTW (multi-dimensional FFTW Library)          |
+     |    ARPACK (nonsymmetric eigensolver library)      |
+     |    ANSYSLIC enabled                               |
+     |  Issued by  : ANSYS                               |
+     |                                                   |
+     |  Platform   : WINDOWS X64 SSE2                    |
+     |  OS Level   : Windows 8/10 & Srv 2016/2019/2022   |
+     |  Compiler   : Intel Fortran XE 2019 MSVC++ 2019   |
+     |  Hostname   : LAPTOP-RD2A5VAG                     |
+     |  Precision  : Double precision (I8R8)             |
+     |                                                   |
+     |  Unauthorized use infringes Ansys Inc. copyrights |
+     |___________________________________________________|
+
+
+ Command line options: i=MAIN_Bar_6061-T651_Compression.key 
+                       memory=20m 
+                       ncpu=4
+
+ Input file: MAIN_Bar_6061-T651_Compression.key                                              
+
+ The native file format       : 64-bit small endian
+ Memory size from command line:    20000000
+ allocating  memory to    20000000 d     1977354 Initial allocation
+
+ ********  notice  ********  notice  ********  notice  ********
+ *                                                            *
+ * This is the LS-DYNA Finite Element code.                   *
+ *                                                            *
+ * Neither LST nor the authors assume any responsibility for  *
+ * the validity, accuracy, or applicability of any results    *
+ * obtained from this system. Users must verify their own     *
+ * results.                                                   *
+ *                                                            *
+ * LST endeavors to make the LS-DYNA code as complete,        *
+ * accurate and easy to use as possible.                      *
+ * Suggestions and comments are welcomed.  Please report any  *
+ * errors encountered in either the documentation or results  *
+ * immediately to LST through your site focus.                *
+ *                                                            *
+ * Copyright (C) 1990-2021                                    *
+ * by Livermore Software Technology, LLC                      *
+ * All rights reserved                                        *
+ *                                                            *
+ ********  notice  ********  notice  ********  notice  ********
+
+ Beginning of keyword reader                                   04/16/25 17:37:09
+ expanding   memory to       23240 d     2048263  
+ expanding   memory to       53240 d     2048263  
+ expanding   memory to       74644 d     2108263  
+ expanding   memory to      103272 d     2122183  
+ expanding   memory to      125292 d     2122183  
+ expanding   memory to      180292 d     2122183  
+
+                                                               04/16/25 17:37:09
+ Open include file: SNS5.key
+
+                                                               04/16/25 17:37:09
+ Open include file: CONTrol_cards.key
+
+                                                               04/16/25 17:37:09
+ Open include file: DATAbase_cards.key
+ 
+ *** Error 10246 (KEY+246)
+     line contains improperly formatted data
+      reading *DATABASE_NODFOR card.
+          At line# 38 of file
+ c:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0014_SNS5_run1\DATAbase_cards.key
+ --------------------------------------------------------------------------
+          1.         3
+ --------------------------------------------------------------------------
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for node time history # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for node time history # 2 is not found.
+     This is #4 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for imposed boundary # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 2
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 1
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 4
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL SPC [*BOUNDARY]
+     check node set for imposed boundary against spc # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL OUTPUT BLOCKS [*DATABASE]
+     node set for node time history # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL OUTPUT BLOCKS [*DATABASE]
+     node set for node time history # 2 is not found.
+     This is #4 in the input order)
+ 
+ *** Error 10133 (KEY+133)
+     input data failed with: 14 errors
+
+ E r r o r   t e r m i n a t i o n                             04/16/25 17:37:09
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to complete solution   :     181K
+ Additional dynamically allocated memory:    2154K
+                                   Total:    2334K
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Keyword Processing ... 0.0000E+00    0.00     1.1500E-01    3.44
+    KW Reading ......... 0.0000E+00    0.00     3.4000E-02    1.02
+    KW Writing ......... 0.0000E+00    0.00     2.9000E-02    0.87
+  Initialization ....... 3.0000E+00  100.00     3.2310E+00   96.56
+  ----------------------------------------------------------------
+  T o t a l s            3.0000E+00  100.00     3.3460E+00  100.00
+
+ Problem time       =    0.0000E+00
+ Problem cycle      =         0
+ Total CPU time     =         3 seconds (   0 hours  0 minutes  3 seconds)
+ CPU time per zone cycle  =          0.000 picoseconds
+ Clock time per zone cycle=          0.000 picoseconds
+
+ Number of CPU's    4
+ NLQ used/max     136/  136
+ Start time   04/16/2025 17:37:09  
+ End time     04/16/2025 17:37:09  
+ Elapsed time       0 second  for       0 cycles using  4 SMP threads
+             (      0 hour   0 minute   0 second )
+
+ E r r o r   t e r m i n a t i o n                             04/16/25 17:37:09

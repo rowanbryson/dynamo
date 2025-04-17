@@ -65,11 +65,8 @@ def copy_files(input_id, run_id):
     logger.debug(f"Copying files from {input_dirpath} to {run_dirpath}")
     # copy files within the input file directory to the results directory, if they are not already there
     for file in os.listdir(input_dirpath):
-        if not os.path.exists(os.path.join(run_dirpath, file)):
-            logger.info(f"Copying {file} to {run_dirpath}")
-            shutil.copy(os.path.join(input_dirpath, file), run_dirpath)
-        else:
-            logger.info(f"{file} already exists in {run_dirpath}")
+        logger.info(f"Copying {file} to {run_dirpath}")
+        shutil.copy(os.path.join(input_dirpath, file), run_dirpath)
 
 from lasso.dyna import D3plot, ArrayType, FilterType
 from matplotlib import pyplot as plt

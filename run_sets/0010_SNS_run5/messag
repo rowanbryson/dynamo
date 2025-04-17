@@ -1,0 +1,1218 @@
+
+
+ ***************************************************************
+ *            ANSYS LEGAL NOTICES                              *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2023 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+      Date: 04/15/2025      Time: 15:24:14  
+      ___________________________________________________ 
+     |                                                   |
+     |  LS-DYNA, A Program for Nonlinear Dynamic         |
+     |  Analysis of Structures in Three Dimensions       |
+     |  Date    : 06/16/2024    Time: 19:10:47           |
+     |  Version : smp d R14                              |
+     |  Revision: R14.1.1s-1-gef50e1efb1                 |
+     |  AnLicVer: 2024 R2 (20240501+dl-66-g8093a89)      |
+     |                                                   |
+     |  Features enabled in this version:                |
+     |    Shared Memory Parallel                         |
+     |    CESE CHEMISTRY EM ICFD STOCHASTIC_PARTICLES    |
+     |    FFTW (multi-dimensional FFTW Library)          |
+     |    ARPACK (nonsymmetric eigensolver library)      |
+     |    ANSYSLIC enabled                               |
+     |  Issued by  : ANSYS                               |
+     |                                                   |
+     |  Platform   : WINDOWS X64 SSE2                    |
+     |  OS Level   : Windows 8/10 & Srv 2016/2019/2022   |
+     |  Compiler   : Intel Fortran XE 2019 MSVC++ 2019   |
+     |  Hostname   : LAPTOP-RD2A5VAG                     |
+     |  Precision  : Double precision (I8R8)             |
+     |                                                   |
+     |  Unauthorized use infringes Ansys Inc. copyrights |
+     |___________________________________________________|
+
+
+ Command line options: i=MAIN_Bar_6061-T651_Compression.key 
+                       memory=20m 
+                       ncpu=4
+
+ Input file: MAIN_Bar_6061-T651_Compression.key                                              
+
+ The native file format       : 64-bit small endian
+ Memory size from command line:    20000000
+ allocating  memory to    20000000 d     1977354 Initial allocation
+
+ ********  notice  ********  notice  ********  notice  ********
+ *                                                            *
+ * This is the LS-DYNA Finite Element code.                   *
+ *                                                            *
+ * Neither LST nor the authors assume any responsibility for  *
+ * the validity, accuracy, or applicability of any results    *
+ * obtained from this system. Users must verify their own     *
+ * results.                                                   *
+ *                                                            *
+ * LST endeavors to make the LS-DYNA code as complete,        *
+ * accurate and easy to use as possible.                      *
+ * Suggestions and comments are welcomed.  Please report any  *
+ * errors encountered in either the documentation or results  *
+ * immediately to LST through your site focus.                *
+ *                                                            *
+ * Copyright (C) 1990-2021                                    *
+ * by Livermore Software Technology, LLC                      *
+ * All rights reserved                                        *
+ *                                                            *
+ ********  notice  ********  notice  ********  notice  ********
+
+ Beginning of keyword reader                                   04/15/25 15:24:15
+ expanding   memory to       25713 d     2110831  
+ expanding   memory to       55713 d     2110831  
+ expanding   memory to       77117 d     2170831  
+ expanding   memory to      105745 d     2204535  
+ expanding   memory to      127765 d     2204535  
+ expanding   memory to      182765 d     2204535  
+
+                                                               04/15/25 15:24:15
+ Open include file: SNS.key
+ expanding   memory to      204584 d     2204535  
+
+                                                               04/15/25 15:24:15
+ Open include file: CONTrol_cards.key
+
+                                                               04/15/25 15:24:15
+ Open include file: DATAbase_cards.key
+ expanding   memory to      238891 d     2317367  
+ expanding   memory to      271748 d     2324656  
+
+ Memory required to process keyword     :     271748  
+ Additional dynamic memory required     :    2324660  
+
+ contracting memory to           1 d     2259533 end of keyword reader
+
+ LS-DYNA will perform a structural only analysis 
+
+ LS-DYNA keyword deck by LS-PrePost                                      
+                    ls-dyna smp d R14 R14.1.1s_1_ef50e1 date 06/16/2024
+ expanding   memory to        2001 d     1977941 material, node and element data
+ expanding   memory to        2071 d     1977960 material properties
+ expanding   memory to        2085 d     2237780 gradient of damage data
+ expanding   memory to       13683 d     2282791 user control for contact interfaces
+ contracting memory to       13663 d     2282792 thermal expansion 0
+ expanding   memory to       13665 d     2282793 cross-sectional force definitions 0
+ expanding   memory to       17741 d     2282801 temp index array for node sorting
+ contracting memory to       13665 d     2286881 just because?
+ expanding   memory to       16878 d     2295043 arbitrary element numbering input
+ ___________________________________________________
+
+ Listing the top 100 solid elements wrt aspect ratio
+ ___________________________________________________
+
+            Element #        Aspect ratio
+            =========        ============
+
+                 3525    0.5817266000E+01
+                 3526    0.5817021129E+01
+                 3524    0.5816865670E+01
+                 3527    0.5816620816E+01
+                 3523    0.5810182249E+01
+                 3528    0.5807918116E+01
+                  495    0.5764508439E+01
+                 1029    0.5746437718E+01
+                 1239    0.5746437718E+01
+                 1018    0.5746437718E+01
+                 1021    0.5746437718E+01
+                 1228    0.5746437718E+01
+                 1231    0.5746437718E+01
+                 1012    0.5746437718E+01
+                 1014    0.5746437718E+01
+                 1222    0.5746437718E+01
+                 1224    0.5746437718E+01
+                 1009    0.5746437718E+01
+                 1219    0.5746437718E+01
+                 1010    0.5746437718E+01
+                 1013    0.5746437718E+01
+                 1016    0.5746437718E+01
+                 1017    0.5746437718E+01
+                 1020    0.5746437718E+01
+                 1022    0.5746437718E+01
+                 1024    0.5746437718E+01
+                 1025    0.5746437718E+01
+                 1026    0.5746437718E+01
+                 1027    0.5746437718E+01
+                 1220    0.5746437718E+01
+                 1223    0.5746437718E+01
+                 1226    0.5746437718E+01
+                 1227    0.5746437718E+01
+                 1230    0.5746437718E+01
+                 1232    0.5746437718E+01
+                 1234    0.5746437718E+01
+                 1235    0.5746437718E+01
+                 1236    0.5746437718E+01
+                 1237    0.5746437718E+01
+                 1221    0.5745917584E+01
+                 1011    0.5745917584E+01
+                 1015    0.5745917584E+01
+                 1019    0.5745917584E+01
+                 1023    0.5745917584E+01
+                 1028    0.5745917584E+01
+                 1225    0.5745917584E+01
+                 1229    0.5745917584E+01
+                 1233    0.5745917584E+01
+                 1238    0.5745917584E+01
+                  492    0.5728194305E+01
+                 3439    0.5714830125E+01
+                 3444    0.5713956049E+01
+                 3440    0.5709282875E+01
+                 3443    0.5709014919E+01
+                 3441    0.5705045911E+01
+                 3442    0.5704778153E+01
+                  491    0.5696705621E+01
+                  490    0.5667493037E+01
+                  573    0.5615879562E+01
+                  494    0.5593623966E+01
+                 3390    0.5567876330E+01
+                  570    0.5564426561E+01
+                 3385    0.5550640636E+01
+                  569    0.5549609364E+01
+                 3387    0.5541608584E+01
+                 3386    0.5539956172E+01
+                  568    0.5532135736E+01
+                  493    0.5525820960E+01
+                 3389    0.5523429785E+01
+                 3388    0.5507373006E+01
+                  633    0.5486785356E+01
+                 3427    0.5476524743E+01
+                 3432    0.5475388307E+01
+                 3431    0.5462251091E+01
+                 3428    0.5461718937E+01
+                 3330    0.5457367246E+01
+                 3430    0.5451411370E+01
+                 3429    0.5450812404E+01
+                 3325    0.5445030436E+01
+                  572    0.5443610854E+01
+                 3326    0.5437899763E+01
+                 3327    0.5435831820E+01
+                 3329    0.5422345770E+01
+                  630    0.5417846078E+01
+                  629    0.5414624450E+01
+                  628    0.5413532140E+01
+                 3328    0.5407028770E+01
+                  571    0.5374555818E+01
+                  531    0.5373837851E+01
+                  717    0.5321433908E+01
+                 3402    0.5316151497E+01
+                  632    0.5309543315E+01
+                  526    0.5308228834E+01
+                  527    0.5302577333E+01
+                  528    0.5298990350E+01
+                  714    0.5291810219E+01
+                 3397    0.5287689552E+01
+                  699    0.5278830465E+01
+                  903    0.5275585343E+01
+                 1188    0.5275585343E+01
+ ___________________________________________________
+ contracting memory to       13685 d     2459357 spc cards
+ expanding   memory to       15673 d     3564526 load curve data
+ contracting memory to       14099 d     3568981 user_define_loading_set
+ expanding   memory to       14303 d     3568981 regularize time history data
+
+ D i g i t i z e d   l o a d   c u r v e   d a t a
+
+     Note: Curves rediscretized into LCINT intervals
+           (default=100; See *CONTROL_SOLUTION and
+           *DEFINE_CURVE) are tabulated below.  Note
+           that the rediscretized form of the curve is
+           used in the solution only in the case where
+           the curve defines material input (e.g. stress
+           vs. strain) or contact friction.  The redis-
+           cretized form is not used if the curve defines
+           a time variation of a load or boundary condition.
+
+
+     load function id number= 1
+$       lcid        sidr       lcint
+           1           0           2
+$           abscissa            ordinate
+     0.000000000E+00     1.000000000E+00
+     1.000000000E+02     1.000000000E+00
+ contracting memory to       14103 d     3568981 *DEFINE_ELEMENT_DEATH
+ expanding   memory to       23255 d     3595589 implicit contact 1
+ contracting memory to       15103 d     3595863 contact segment data 1
+ expanding   memory to       53035 d     3595863 contact segment data 3
+ contracting memory to       14103 d     3789044 contact definition
+ expanding   memory to       14107 d     3794975 contact friction
+ expanding   memory to       14108 d     3794975 implicit friction
+ expanding   memory to       14208 d     3795590 rigid bodies for disp. termination
+ expanding   memory to       14267 d     3367535 save d3plot control data
+ expanding   memory to       14269 d     3383894 sensor_control for curve
+
+ initial kinetic energy = 0.00000000E+00
+ expanding   memory to       14271 d     3387763 implicit explicit hybrid dummy
+ expanding   memory to       18347 d     3387763 implicit allocation 1
+ expanding   memory to       18354 d     3387763 implicit allocation 2
+Number of LS-DYNA  nodes                          =         4076
+Number of Implicit nodes                          =         4076
+Maximum Index                                     =         4076
+ expanding   memory to      649857 d     4036532 implicit allocation 6
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to begin solution      :     650K
+ Linear Alg dynamically allocated memory:      38K
+ Additional dynamically allocated memory:    4465K
+                                   Total:    5152K
+       1 t 0.0000E+00 dt 2.50E+00 flush i/o buffers            04/15/25 15:24:15
+       1 t 0.0000E+00 dt 2.50E+00 write d3plot file            04/15/25 15:24:15
+
+ BEGIN implicit statics  step      1 t= 2.5000E+00             04/15/25 15:24:15
+ ============================================================
+                time =  2.50000E+00
+   current step size =  2.50000E+00
+ expanding   memory to      723229 d     4035877 implicit matrix assembly allocation
+
+
+     ================================================
+     ==            IMPLICIT USAGE ALERT            ==
+     ================================================
+     == Memory Management for Implicit has changed ==
+     == after R10.  Please use:                    ==
+     ==       memory=     1M                       ==
+     ================================================
+
+ Iteration:   1     *|du|/|u| =  1.0000000E+00     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  8.9678095E-03     *Ei/E0 =  1.7519233E-05
+
+ Equilibrium iterations summary step      1 t= 2.5000E+00      04/15/25 15:24:16
+    Number of iterations to converge         =           2
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           3
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   9.9297E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.7519E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      2 t= 6.4622E+00             04/15/25 15:24:16
+ ============================================================
+                time =  6.46223E+00
+   current step size =  3.96223E+00
+ Iteration:   1     *|du|/|u| =  6.1238276E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  6.4693707E-02     *Ei/E0 =  1.0110747E-03
+ Iteration:   3     *|du|/|u| =  4.5850369E-01     *Ei/E0 =  7.2047232E-03
+ Iteration:   4     *|du|/|u| =  1.6209226E+00     *Ei/E0 =  1.2555967E-01
+ Iteration:   5     *|du|/|u| =  1.5670575E-01     *Ei/E0 =  2.0466711E-02
+ Iteration:   6     *|du|/|u| =  1.4421059E-01     *Ei/E0 =  2.4765977E-02
+ Iteration:   7     *|du|/|u| =  3.0913947E+00     *Ei/E0 =  1.0396237E-01
+ Iteration:   8     *|du|/|u| =  1.0137613E+00     *Ei/E0 =  2.4526730E-01
+ Iteration:   9     *|du|/|u| =  1.7565822E-01     *Ei/E0 =  2.6172811E-01
+ Iteration:  10     *|du|/|u| =  2.5545937E-01     *Ei/E0 =  6.9118987E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.777E+05 exceeds prior maximum   5.604E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  11     *|du|/|u| =  2.2678779E-01     *Ei/E0 =  3.7438830E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.428E+05 exceeds prior maximum   6.777E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  2.3585898E-01     *Ei/E0 =  2.6143870E-01
+ Iteration:  13     *|du|/|u| =  2.3907750E-01     *Ei/E0 =  2.2749468E-01
+ Iteration:  14     *|du|/|u| =  2.4348766E-01     *Ei/E0 =  2.2277446E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.540E+05 exceeds prior maximum   7.428E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  15     *|du|/|u| =  2.2848962E-01     *Ei/E0 =  2.3149279E-01
+ Iteration:  16     *|du|/|u| =  2.4042853E-01     *Ei/E0 =  2.3256828E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.590E+05 exceeds prior maximum   7.540E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  17     *|du|/|u| =  2.3683807E-01     *Ei/E0 =  2.4230508E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.682E+05 exceeds prior maximum   7.590E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  2.3469230E-01     *Ei/E0 =  2.4863035E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   8.089E+05 exceeds prior maximum   7.682E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  19     *|du|/|u| =  2.2659915E-01     *Ei/E0 =  2.7238243E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   8.804E+05 exceeds prior maximum   8.089E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  20     *|du|/|u| =  2.2296765E-01     *Ei/E0 =  3.1699478E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.815E+06 exceeds prior maximum   8.804E+05
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #            3444
+ convergence failure, repeat step: dtnew =  1.83911E+00
+
+ BEGIN implicit statics  step      2 t= 4.3391E+00             04/15/25 15:24:23
+ ============================================================
+                time =  4.33911E+00
+   current step size =  1.83911E+00
+ Iteration:   1     *|du|/|u| =  4.3736486E-01     *Ei/E0 =  5.0091448E-01
+ Iteration:   2     *|du|/|u| =  7.8597605E-02     *Ei/E0 =  1.1331549E-03
+ Iteration:   3     *|du|/|u| =  2.8805027E-01     *Ei/E0 =  9.8126108E-04
+ Iteration:   4     *|du|/|u| =  1.0764774E+00     *Ei/E0 =  6.0795989E-02
+ Iteration:   5     *|du|/|u| =  5.2610401E-01     *Ei/E0 =  8.1092872E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.521E+05 exceeds prior maximum   2.425E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   6     *|du|/|u| =  4.1758558E-01     *Ei/E0 =  1.0972828E-01
+ Iteration:   7     *|du|/|u| =  2.2052958E+00     *Ei/E0 =  1.4320094E-01
+ Iteration:   8     *|du|/|u| =  2.2497422E+00     *Ei/E0 =  5.6338941E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.525E+05 exceeds prior maximum   2.521E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   9     *|du|/|u| =  5.4562707E-01     *Ei/E0 =  5.3931019E-02
+ Iteration:  10     *|du|/|u| =  4.0669989E-01     *Ei/E0 =  2.5504663E-02
+ Iteration:  11     *|du|/|u| =  1.8186807E-01     *Ei/E0 =  2.2925873E-02
+ Iteration:  12     *|du|/|u| =  3.3548564E-01     *Ei/E0 =  3.7091503E-02
+ Iteration:  13     *|du|/|u| =  7.0398133E+00     *Ei/E0 =  1.9697735E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.049E+06 exceeds prior maximum   2.525E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  14     *|du|/|u| =  3.8352438E-01     *Ei/E0 =  1.3172520E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.531E+06 exceeds prior maximum   1.049E+06
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             259
+     Element #             260
+     Element #             261
+ convergence failure, repeat step: dtnew =  8.53637E-01
+
+ BEGIN implicit statics  step      2 t= 3.3536E+00             04/15/25 15:24:26
+ ============================================================
+                time =  3.35364E+00
+   current step size =  8.53637E-01
+ Iteration:   1     *|du|/|u| =  2.7238964E-01     *Ei/E0 =  1.0810539E-01
+ Iteration:   2     *|du|/|u| =  3.8536131E-02     *Ei/E0 =  2.6481450E-04
+ Iteration:   3     *|du|/|u| =  8.3188362E-01     *Ei/E0 =  5.0003245E-04
+ Iteration:   4     *|du|/|u| =  8.3137586E-01     *Ei/E0 =  9.9990604E-04
+ Iteration:   5     *|du|/|u| =  8.3094345E-01     *Ei/E0 =  1.5035612E-03
+ Iteration:   6     *|du|/|u| =  8.3050902E-01     *Ei/E0 =  2.0084584E-03
+ Iteration:   7     *|du|/|u| =  8.2993959E-01     *Ei/E0 =  2.5126286E-03
+ Iteration:   8     *|du|/|u| =  8.2930800E-01     *Ei/E0 =  3.0161589E-03
+ Iteration:   9     *|du|/|u| =  8.2854332E-01     *Ei/E0 =  3.5203182E-03
+ Iteration:  10     *|du|/|u| =  8.2763336E-01     *Ei/E0 =  4.0252627E-03
+ Iteration:  11     *|du|/|u| =  8.2661529E-01     *Ei/E0 =  4.5312795E-03
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  3.8798399E-02     *Ei/E0 =  6.6650754E-04
+ Iteration:  13     *|du|/|u| =  1.2986501E-01     *Ei/E0 =  7.8218675E-04
+ Iteration:  14     *|du|/|u| =  2.2869617E-02     *Ei/E0 =  1.1029579E-03
+ Iteration:  15     *|du|/|u| =  9.7001654E-02     *Ei/E0 =  1.8800245E-03
+ Iteration:  16     *|du|/|u| =  1.0138863E-01     *Ei/E0 =  3.7973706E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.204E+05 exceeds prior maximum   1.130E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  17     *|du|/|u| =  1.4816145E-01     *Ei/E0 =  1.8038374E-02
+ Iteration:  18     *|du|/|u| =  5.5136462E-02     *Ei/E0 =  2.1932381E-03
+ Iteration:  19     *|du|/|u| =  2.8488386E-02     *Ei/E0 =  7.5557692E-04
+ Iteration:  20     *|du|/|u| =  5.1528648E-01     *Ei/E0 =  5.2147892E-03
+ Iteration:  21     *|du|/|u| =  3.7151369E-02     *Ei/E0 =  8.3894279E-04
+ Iteration:  22     *|du|/|u| =  3.7051100E-02     *Ei/E0 =  2.1590172E-03
+ Iteration:  23     *|du|/|u| =  1.4286100E-01     *Ei/E0 =  1.6589911E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.264E+05 exceeds prior maximum   1.204E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  24     *|du|/|u| =  7.9350979E-02     *Ei/E0 =  1.3614748E-02
+ Iteration:  25     *|du|/|u| =  2.2813605E-01     *Ei/E0 =  1.8139225E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.349E+05 exceeds prior maximum   1.264E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  26     *|du|/|u| =  9.1190000E-02     *Ei/E0 =  1.1889497E-02
+ Iteration:  27     *|du|/|u| =  3.2288209E-01     *Ei/E0 =  5.2716278E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.503E+05 exceeds prior maximum   1.349E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  28     *|du|/|u| =  1.5775064E-01     *Ei/E0 =  1.1968773E-02
+ Iteration:  29     *|du|/|u| =  3.9731598E-01     *Ei/E0 =  1.2568442E-02
+ Iteration:  30     *|du|/|u| =  4.5797867E-01     *Ei/E0 =  2.1343603E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.433E+05 exceeds prior maximum   1.503E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  31     *|du|/|u| =  2.8996804E-01     *Ei/E0 =  4.5886978E-01
+ Iteration:  32     *|du|/|u| =  8.4654435E-01     *Ei/E0 =  1.6410412E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.549E+06 exceeds prior maximum   5.433E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  33     *|du|/|u| =  1.7236910E-01     *Ei/E0 =  1.7168070E+00
+ Iteration:  34     *|du|/|u| =  2.3450603E-01     *Ei/E0 =  9.0900888E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.564E+06 exceeds prior maximum   1.549E+06
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  35     *|du|/|u| =  1.6223212E-01     *Ei/E0 =  1.2701140E+00
+ Iteration:  36     *|du|/|u| =  1.5788525E-01     *Ei/E0 =  1.2556890E+00
+ Iteration:  37     *|du|/|u| =  1.3732561E-01     *Ei/E0 =  1.0534665E+00
+ Iteration:  38     *|du|/|u| =  9.9137655E-02     *Ei/E0 =  4.5023806E-01
+ Iteration:  39     *|du|/|u| =  8.4418024E-02     *Ei/E0 =  1.8352692E-01
+ Iteration:  40     *|du|/|u| =  1.5557483E-01     *Ei/E0 =  5.2143506E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.722E+06 exceeds prior maximum   1.564E+06
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  41     *|du|/|u| =  1.2184874E-01     *Ei/E0 =  1.0590646E+00
+ Iteration:  42     *|du|/|u| =  2.7550358E-01     *Ei/E0 =  1.4484745E+00
+ Iteration:  43     *|du|/|u| =  8.9603080E-02     *Ei/E0 =  6.4517686E-01
+ Iteration:  44     *|du|/|u| =  1.3446767E-01     *Ei/E0 =  1.5249711E+00
+ Iteration:  45     *|du|/|u| =  1.3902706E-01     *Ei/E0 =  1.6091752E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.220E+06 exceeds prior maximum   1.722E+06
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #            3525
+ convergence failure, repeat step: dtnew =  3.96223E-01
+
+ BEGIN implicit statics  step      2 t= 2.8962E+00             04/15/25 15:24:37
+ ============================================================
+                time =  2.89622E+00
+   current step size =  3.96223E-01
+ Iteration:   1     *|du|/|u| =  1.5742613E-01     *Ei/E0 =  2.2725672E-02
+ Iteration:   2     *|du|/|u| =  2.6550381E-02     *Ei/E0 =  1.0812807E-04
+ Iteration:   3     *|du|/|u| =  4.5517698E+01     *Ei/E0 =  7.6808005E-02
+ Iteration:   4     *|du|/|u| =  3.3665461E+01     *Ei/E0 =  1.3340277E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   3.107E+05 exceeds prior maximum   5.157E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   5     *|du|/|u| =  3.7928280E-01     *Ei/E0 =  1.5159423E-01
+ Iteration:   6     *|du|/|u| =  3.0351970E-01     *Ei/E0 =  9.6574151E-02
+ Iteration:   7     *|du|/|u| =  1.2854893E+00     *Ei/E0 =  1.1464180E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.903E+05 exceeds prior maximum   3.107E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   8     *|du|/|u| =  9.2594398E-01     *Ei/E0 =  3.3997669E-01
+ Iteration:   9     *|du|/|u| =  8.6455869E-01     *Ei/E0 =  1.4204049E-01
+ Iteration:  10     *|du|/|u| =  5.2620099E-01     *Ei/E0 =  1.8327302E-01
+ Iteration:  11     *|du|/|u| =  4.1681434E-01     *Ei/E0 =  3.5062396E-01
+ Iteration:  12     *|du|/|u| =  5.7585875E-01     *Ei/E0 =  1.7773906E-01
+ Iteration:  13     *|du|/|u| =  2.3595803E-01     *Ei/E0 =  4.9010661E-02
+ Iteration:  14     *|du|/|u| =  2.7717652E+00     *Ei/E0 =  8.0897872E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.980E+06 exceeds prior maximum   4.903E+05
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             633
+ convergence failure, repeat step: dtnew =  1.83911E-01
+
+ BEGIN implicit statics  step      2 t= 2.6839E+00             04/15/25 15:24:41
+ ============================================================
+                time =  2.68391E+00
+   current step size =  1.83911E-01
+ Iteration:   1     *|du|/|u| =  7.5080684E-02     *Ei/E0 =  4.9711154E-03
+ Iteration:   2     *|du|/|u| =  2.2961899E-02     *Ei/E0 =  6.6758060E-05
+ Iteration:   3     *|du|/|u| =  2.2879466E-02     *Ei/E0 =  3.0658529E-05
+ Iteration:   4     *|du|/|u| =  2.2850760E-02     *Ei/E0 =  2.2234245E-05
+ Iteration:   5     *|du|/|u| =  2.2840313E-02     *Ei/E0 =  1.8832968E-05
+ Iteration:   6     *|du|/|u| =  2.2839689E-02     *Ei/E0 =  1.8750915E-05
+ Iteration:   7     *|du|/|u| =  2.2852068E-02     *Ei/E0 =  2.0945630E-05
+ Iteration:   8     *|du|/|u| =  2.2856476E-02     *Ei/E0 =  2.4787486E-05
+ Iteration:   9     *|du|/|u| =  2.2914593E-02     *Ei/E0 =  3.3275301E-05
+ Iteration:  10     *|du|/|u| =  2.2936856E-02     *Ei/E0 =  4.3708794E-05
+ Iteration:  11     *|du|/|u| =  2.2951290E-02     *Ei/E0 =  6.0317213E-05
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  3.4821254E-02     *Ei/E0 =  2.7430802E-04
+ Iteration:  13     *|du|/|u| =  2.3455140E-01     *Ei/E0 =  1.2357959E-03
+ Iteration:  14     *|du|/|u| =  1.6309058E-02     *Ei/E0 =  5.2323730E-04
+ Iteration:  15     *|du|/|u| =  5.4952275E-02     *Ei/E0 =  1.0381316E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.975E+04 exceeds prior maximum   2.462E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  16     *|du|/|u| =  6.9444334E-02     *Ei/E0 =  1.7650449E-03
+ Iteration:  17     *|du|/|u| =  6.9959577E-02     *Ei/E0 =  1.4489627E-03
+ Iteration:  18     *|du|/|u| =  2.3781728E-02     *Ei/E0 =  2.2016069E-05
+ Iteration:  19     *|du|/|u| =  3.0136408E-02     *Ei/E0 =  6.2016394E-04
+ Iteration:  20     *|du|/|u| =  3.8835662E-02     *Ei/E0 =  8.8063629E-05
+ Iteration:  21     *|du|/|u| =  1.6707467E-02     *Ei/E0 =  8.4291730E-04
+ Iteration:  22     *|du|/|u| =  3.8603355E-02     *Ei/E0 =  9.4527600E-04
+ Iteration:  23     *|du|/|u| =  3.9534056E-02     *Ei/E0 =  8.1934202E-05
+ Iteration:  24     *|du|/|u| =  4.9011692E-01     *Ei/E0 =  1.5491258E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.617E+04 exceeds prior maximum   2.975E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  25     *|du|/|u| =  4.5980478E-02     *Ei/E0 =  2.8978931E-03
+ Iteration:  26     *|du|/|u| =  6.8453095E-02     *Ei/E0 =  1.8934635E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.310E+04 exceeds prior maximum   4.617E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  27     *|du|/|u| =  9.9472596E-02     *Ei/E0 =  2.8216273E-03
+ Iteration:  28     *|du|/|u| =  3.1799438E-02     *Ei/E0 =  1.4504528E-03
+ Iteration:  29     *|du|/|u| =  2.1276947E-01     *Ei/E0 =  2.8393385E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.068E+05 exceeds prior maximum   5.310E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  30     *|du|/|u| =  1.0710359E-01     *Ei/E0 =  1.3297948E-02
+ Iteration:  31     *|du|/|u| =  1.0094877E-01     *Ei/E0 =  4.8404776E-03
+ Iteration:  32     *|du|/|u| =  1.7791377E-01     *Ei/E0 =  4.2129758E-04
+ Iteration:  33     *|du|/|u| =  1.1417507E-01     *Ei/E0 =  1.0197759E-02
+ Iteration:  34     *|du|/|u| =  5.3511118E-01     *Ei/E0 =  1.6606547E-02
+ Iteration:  35     *|du|/|u| =  2.4405933E-01     *Ei/E0 =  1.6214381E-03
+ Iteration:  36     *|du|/|u| =  5.0890371E-02     *Ei/E0 =  6.2513821E-03
+ Iteration:  37     *|du|/|u| =  3.3247818E-01     *Ei/E0 =  4.2173202E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.767E+05 exceeds prior maximum   1.068E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  38     *|du|/|u| =  9.1512661E-02     *Ei/E0 =  2.2703196E-02
+ Iteration:  39     *|du|/|u| =  3.7842997E+00     *Ei/E0 =  2.7585221E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.171E+06 exceeds prior maximum   1.767E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  40     *|du|/|u| =  7.1614696E-01     *Ei/E0 =  1.4646837E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.550E+06 exceeds prior maximum   1.171E+06
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  41     *|du|/|u| =  3.5548865E-01     *Ei/E0 =  1.7732197E+00
+ Iteration:  42     *|du|/|u| =  5.7423345E-01     *Ei/E0 =  3.0643721E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.691E+06 exceeds prior maximum   1.550E+06
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #            1245
+     Element #            1246
+     Element #            1247
+     Element #            1248
+     Element #            1249
+     Element #            1250
+     Element #            1251
+     Element #            1252
+     Element #            1253
+     Element #            1254
+     Element #            1255
+     Element #            1256
+     Element #            1257
+     Element #            1258
+     Element #            1259
+     Element #            1260
+ convergence failure, repeat step: dtnew =  8.53637E-02
+
+ BEGIN implicit statics  step      2 t= 2.5854E+00             04/15/25 15:24:50
+ ============================================================
+                time =  2.58536E+00
+   current step size =  8.53637E-02
+ Iteration:   1     *|du|/|u| =  4.3377103E-02     *Ei/E0 =  1.0539403E-03
+ Iteration:   2     *|du|/|u| =  3.4168681E-02     *Ei/E0 =  3.9081002E-05
+ Iteration:   3     *|du|/|u| =  3.4251261E-02     *Ei/E0 =  2.5622739E-05
+ Iteration:   4     *|du|/|u| =  3.4366659E-02     *Ei/E0 =  1.3707511E-05
+ Iteration:   5     *|du|/|u| =  3.4504747E-02     *Ei/E0 =  3.1280352E-06
+ Iteration:   6     *|du|/|u| =  3.4654278E-02     *Ei/E0 =  6.2656039E-06
+ Iteration:   7     *|du|/|u| =  3.4809092E-02     *Ei/E0 =  1.4482207E-05
+ Iteration:   8     *|du|/|u| =  3.4953717E-02     *Ei/E0 =  2.1742392E-05
+ Iteration:   9     *|du|/|u| =  3.5209763E-02     *Ei/E0 =  3.1069983E-05
+ Iteration:  10     *|du|/|u| =  3.5453213E-02     *Ei/E0 =  3.8541189E-05
+ Iteration:  11     *|du|/|u| =  3.5678948E-02     *Ei/E0 =  4.4210665E-05
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  1.6884765E-02     *Ei/E0 =  1.1468338E-04
+ Iteration:  13     *|du|/|u| =  1.7944747E-02     *Ei/E0 =  6.6803381E-05
+ Iteration:  14     *|du|/|u| =  1.8378626E-02     *Ei/E0 =  7.5909487E-05
+ Iteration:  15     *|du|/|u| =  1.8628034E-02     *Ei/E0 =  8.1624010E-05
+ Iteration:  16     *|du|/|u| =  9.5390734E+00     *Ei/E0 =  4.4385876E-02
+ Iteration:  17     *|du|/|u| =  2.5455171E-01     *Ei/E0 =  1.6636405E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.576E+04 exceeds prior maximum   1.145E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  2.1054019E-02     *Ei/E0 =  4.9017418E-04
+ Iteration:  19     *|du|/|u| =  2.0244487E-01     *Ei/E0 =  1.7193472E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.116E+04 exceeds prior maximum   1.576E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  20     *|du|/|u| =  3.5251997E-01     *Ei/E0 =  1.4564085E-02
+ Iteration:  21     *|du|/|u| =  1.9314726E-01     *Ei/E0 =  7.2393954E-04
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.073E+05 exceeds prior maximum   7.116E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  2.4413136E-01     *Ei/E0 =  1.0221414E-02
+ Iteration:  23     *|du|/|u| =  6.0702718E-01     *Ei/E0 =  5.0296399E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.317E+05 exceeds prior maximum   1.073E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  24     *|du|/|u| =  8.0668434E-02     *Ei/E0 =  3.5784235E-02
+ Iteration:  25     *|du|/|u| =  5.5010636E-01     *Ei/E0 =  1.1437978E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.517E+05 exceeds prior maximum   1.317E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  26     *|du|/|u| =  2.3820061E-01     *Ei/E0 =  2.8227756E-02
+ Iteration:  27     *|du|/|u| =  7.2150915E+03     *Ei/E0 =  5.6532857E+02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.153E+06 exceeds prior maximum   1.517E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  28     *|du|/|u| =  9.9417453E-01     *Ei/E0 =  1.8338678E+00
+ Iteration:  29     *|du|/|u| =  1.9579418E+00     *Ei/E0 =  3.6654814E+00
+ Iteration:  30     *|du|/|u| =  4.8387655E-01     *Ei/E0 =  1.6631208E+00
+ Iteration:  31     *|du|/|u| =  3.7400824E-01     *Ei/E0 =  5.4667788E-01
+ Iteration:  32     *|du|/|u| =  4.8632523E-01     *Ei/E0 =  6.7867202E-02
+ Iteration:  33     *|du|/|u| =  1.3829235E+00     *Ei/E0 =  2.6614695E+00
+ Iteration:  34     *|du|/|u| =  9.6105308E-02     *Ei/E0 =  6.6148955E-01
+ Iteration:  35     *|du|/|u| =  8.2104206E-01     *Ei/E0 =  2.0874973E+00
+ Iteration:  36     *|du|/|u| =  9.9290430E+00     *Ei/E0 =  1.7718662E+02
+
+ LINE SEARCH stepsize = 0,
+ automatically REFORMING stiffness matrix...
+
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             561
+     Element #             531
+     Element #             603
+     Element #             513
+     Element #             560
+ convergence failure, repeat step: dtnew =  3.96223E-02
+
+ BEGIN implicit statics  step      2 t= 2.5396E+00             04/15/25 15:24:58
+ ============================================================
+                time =  2.53962E+00
+   current step size =  3.96223E-02
+ Iteration:   1     *|du|/|u| =  2.8604574E-02     *Ei/E0 =  2.2310590E-04
+ Iteration:   2     *|du|/|u| =  6.8906161E-02     *Ei/E0 =  1.0682288E-04
+ Iteration:   3     *|du|/|u| =  7.0378166E-02     *Ei/E0 =  8.6431908E-05
+ Iteration:   4     *|du|/|u| =  7.1394026E-02     *Ei/E0 =  7.3965308E-05
+ Iteration:   5     *|du|/|u| =  7.2443369E-02     *Ei/E0 =  6.2141947E-05
+ Iteration:   6     *|du|/|u| =  7.3524276E-02     *Ei/E0 =  5.1012336E-05
+ Iteration:   7     *|du|/|u| =  7.4617083E-02     *Ei/E0 =  4.0568070E-05
+ Iteration:   8     *|du|/|u| =  7.5705897E-02     *Ei/E0 =  3.1053265E-05
+ Iteration:   9     *|du|/|u| =  7.6772401E-02     *Ei/E0 =  2.2651269E-05
+ Iteration:  10     *|du|/|u| =  7.7818547E-02     *Ei/E0 =  1.4870653E-05
+ Iteration:  11     *|du|/|u| =  7.8872093E-02     *Ei/E0 =  7.1604845E-06
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  1.8420705E-02     *Ei/E0 =  1.0339317E-04
+ Iteration:  13     *|du|/|u| =  1.9138544E-02     *Ei/E0 =  6.5172033E-05
+ Iteration:  14     *|du|/|u| =  1.6161604E+01     *Ei/E0 =  6.0591670E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.257E+04 exceeds prior maximum   5.374E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  15     *|du|/|u| =  5.5187368E-02     *Ei/E0 =  5.9748463E-04
+ Iteration:  16     *|du|/|u| =  1.6693613E-02     *Ei/E0 =  3.0671534E-04
+ Iteration:  17     *|du|/|u| =  2.1255740E-01     *Ei/E0 =  1.5790270E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   3.666E+04 exceeds prior maximum   1.257E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  1.7167495E-01     *Ei/E0 =  3.4343414E-03
+ Iteration:  19     *|du|/|u| =  2.8729693E-01     *Ei/E0 =  1.3647203E-03
+ Iteration:  20     *|du|/|u| =  5.2116283E-02     *Ei/E0 =  1.4139344E-03
+ Iteration:  21     *|du|/|u| =  1.8638862E-01     *Ei/E0 =  2.5615930E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.765E+04 exceeds prior maximum   3.666E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  2.5793294E-01     *Ei/E0 =  9.1434660E-03
+ Iteration:  23     *|du|/|u| =  2.8648055E-01     *Ei/E0 =  4.3327885E-03
+ Iteration:  24     *|du|/|u| =  2.5691334E-01     *Ei/E0 =  4.6323049E-04
+ Iteration:  25     *|du|/|u| =  2.5639858E-01     *Ei/E0 =  4.4078991E-04
+ Iteration:  26     *|du|/|u| =  2.5888412E-01     *Ei/E0 =  8.7563378E-04
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.924E+04 exceeds prior maximum   5.765E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  27     *|du|/|u| =  1.8843240E-01     *Ei/E0 =  9.3393970E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.100E+05 exceeds prior maximum   5.924E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  28     *|du|/|u| =  1.2255828E-01     *Ei/E0 =  1.8718013E-02
+ Iteration:  29     *|du|/|u| =  1.9002977E-01     *Ei/E0 =  3.7540251E-02
+ Iteration:  30     *|du|/|u| =  1.1494277E+00     *Ei/E0 =  8.8927912E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   9.534E+05 exceeds prior maximum   1.100E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  31     *|du|/|u| =  4.2275505E-01     *Ei/E0 =  8.1193604E-01
+ Iteration:  32     *|du|/|u| =  5.7784553E+00     *Ei/E0 =  9.9154897E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.214E+06 exceeds prior maximum   9.534E+05
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             250
+ convergence failure, repeat step: dtnew =  1.83911E-02
+
+ BEGIN implicit statics  step      2 t= 2.5184E+00             04/15/25 15:25:07
+ ============================================================
+                time =  2.51839E+00
+   current step size =  1.83911E-02
+ Iteration:   1     *|du|/|u| =  2.3266691E-02     *Ei/E0 =  5.8106699E-05
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.758E+03 exceeds prior maximum   2.600E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   2     *|du|/|u| =  9.7481535E-03     *Ei/E0 =  2.4133569E-05
+ Iteration:   3     *|du|/|u| =  1.3565683E-02     *Ei/E0 =  2.0909117E-05
+ Iteration:   4     *|du|/|u| =  1.3962958E-02     *Ei/E0 =  2.3094494E-05
+ Iteration:   5     *|du|/|u| =  1.4436150E-02     *Ei/E0 =  2.6291357E-05
+ Iteration:   6     *|du|/|u| =  1.4877397E-02     *Ei/E0 =  3.0636337E-05
+ Iteration:   7     *|du|/|u| =  1.5237202E-02     *Ei/E0 =  3.5773322E-05
+ Iteration:   8     *|du|/|u| =  1.5477544E-02     *Ei/E0 =  4.1146371E-05
+ Iteration:   9     *|du|/|u| =  1.5621311E-02     *Ei/E0 =  4.6870658E-05
+ Iteration:  10     *|du|/|u| =  1.5669434E-02     *Ei/E0 =  5.2956207E-05
+ Iteration:  11     *|du|/|u| =  1.5637458E-02     *Ei/E0 =  5.8905639E-05
+ Iteration:  12     *|du|/|u| =  1.5251794E+00     *Ei/E0 =  6.8175903E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.737E+04 exceeds prior maximum   2.758E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  13     *|du|/|u| =  3.0393261E-02     *Ei/E0 =  5.9452915E-04
+ Iteration:  14     *|du|/|u| =  2.4044922E-01     *Ei/E0 =  1.7243726E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.878E+04 exceeds prior maximum   1.737E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  15     *|du|/|u| =  3.8273784E-01     *Ei/E0 =  1.2620648E-02
+ Iteration:  16     *|du|/|u| =  2.9190955E-01     *Ei/E0 =  5.0216167E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.291E+05 exceeds prior maximum   6.878E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  17     *|du|/|u| =  2.8830391E-01     *Ei/E0 =  3.5467739E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.517E+05 exceeds prior maximum   1.291E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  1.1707286E-01     *Ei/E0 =  4.9660006E-02
+ Iteration:  19     *|du|/|u| =  2.3351145E-01     *Ei/E0 =  6.5733618E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.576E+05 exceeds prior maximum   1.517E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  20     *|du|/|u| =  2.5038797E-01     *Ei/E0 =  1.4771299E-02
+ Iteration:  21     *|du|/|u| =  6.1744818E-01     *Ei/E0 =  6.7681925E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.282E+06 exceeds prior maximum   1.576E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  5.6337724E-01     *Ei/E0 =  3.2387895E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   3.938E+06 exceeds prior maximum   1.282E+06
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             328
+     Element #             329
+     Element #             330
+     Element #             331
+     Element #             332
+     Element #             333
+ convergence failure, repeat step: dtnew =  8.53637E-03
+
+ BEGIN implicit statics  step      2 t= 2.5085E+00             04/15/25 15:25:14
+ ============================================================
+                time =  2.50854E+00
+   current step size =  8.53637E-03
+ Iteration:   1     *|du|/|u| =  1.5798357E-02     *Ei/E0 =  2.0080061E-05
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.456E+03 exceeds prior maximum   1.301E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   2     *|du|/|u| =  1.3936560E-02     *Ei/E0 =  2.0669605E-05
+ Iteration:   3     *|du|/|u| =  1.2861158E-02     *Ei/E0 =  1.7611082E-05
+ Iteration:   4     *|du|/|u| =  1.3637955E-02     *Ei/E0 =  1.9688336E-05
+ Iteration:   5     *|du|/|u| =  1.4266802E-02     *Ei/E0 =  2.3280415E-05
+ Iteration:   6     *|du|/|u| =  1.4735926E-02     *Ei/E0 =  2.7875070E-05
+ Iteration:   7     *|du|/|u| =  1.5079582E-02     *Ei/E0 =  3.2602797E-05
+ Iteration:   8     *|du|/|u| =  1.5291387E-02     *Ei/E0 =  3.7373454E-05
+ Iteration:   9     *|du|/|u| =  1.5383829E-02     *Ei/E0 =  4.2545334E-05
+ Iteration:  10     *|du|/|u| =  1.5389871E-02     *Ei/E0 =  4.8073163E-05
+ Iteration:  11     *|du|/|u| =  1.5318461E-02     *Ei/E0 =  5.3603797E-05
+ Iteration:  12     *|du|/|u| =  1.8598863E+00     *Ei/E0 =  7.9193685E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.907E+04 exceeds prior maximum   2.456E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  13     *|du|/|u| =  3.4290266E-02     *Ei/E0 =  7.0162578E-04
+ Iteration:  14     *|du|/|u| =  2.5144352E-01     *Ei/E0 =  1.7383848E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.609E+04 exceeds prior maximum   1.907E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  15     *|du|/|u| =  4.3565960E-01     *Ei/E0 =  1.1553709E-02
+ Iteration:  16     *|du|/|u| =  3.4888264E-01     *Ei/E0 =  5.9720968E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.935E+05 exceeds prior maximum   6.609E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  17     *|du|/|u| =  3.1036190E-01     *Ei/E0 =  9.5234104E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.947E+05 exceeds prior maximum   1.935E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  1.5964170E-01     *Ei/E0 =  6.6089951E-02
+ Iteration:  19     *|du|/|u| =  8.0597501E-01     *Ei/E0 =  9.1959835E-02
+ Iteration:  20     *|du|/|u| =  1.8185352E-01     *Ei/E0 =  1.9981277E-03
+ Iteration:  21     *|du|/|u| =  5.7961181E-01     *Ei/E0 =  1.8933639E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   9.732E+05 exceeds prior maximum   1.947E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  8.8830601E-01     *Ei/E0 =  2.1530436E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.903E+06 exceeds prior maximum   9.732E+05
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             390
+     Element #             391
+     Element #             392
+     Element #             393
+     Element #             389
+ convergence failure, repeat step: dtnew =  3.96223E-03
+
+ BEGIN implicit statics  step      2 t= 2.5040E+00             04/15/25 15:25:21
+ ============================================================
+                time =  2.50396E+00
+   current step size =  3.96223E-03
+ Iteration:   1     *|du|/|u| =  1.4269191E-02     *Ei/E0 =  1.2883244E-05
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.523E+03 exceeds prior maximum   7.040E+02
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   2     *|du|/|u| =  1.7010067E-02     *Ei/E0 =  2.4896479E-05
+ Iteration:   3     *|du|/|u| =  1.2930189E-02     *Ei/E0 =  1.7909248E-05
+ Iteration:   4     *|du|/|u| =  1.3856221E-02     *Ei/E0 =  1.8136651E-05
+ Iteration:   5     *|du|/|u| =  1.4522209E-02     *Ei/E0 =  2.0344033E-05
+ Iteration:   6     *|du|/|u| =  1.5010500E-02     *Ei/E0 =  2.3383132E-05
+ Iteration:   7     *|du|/|u| =  1.5362823E-02     *Ei/E0 =  2.7091901E-05
+ Iteration:   8     *|du|/|u| =  1.5568879E-02     *Ei/E0 =  3.1035098E-05
+ Iteration:   9     *|du|/|u| =  1.5668245E-02     *Ei/E0 =  3.5416018E-05
+ Iteration:  10     *|du|/|u| =  1.5685762E-02     *Ei/E0 =  4.0147327E-05
+ Iteration:  11     *|du|/|u| =  1.5625550E-02     *Ei/E0 =  4.5291985E-05
+ Iteration:  12     *|du|/|u| =  2.4975546E+00     *Ei/E0 =  8.8962981E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.914E+04 exceeds prior maximum   2.523E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  13     *|du|/|u| =  3.6890045E-02     *Ei/E0 =  9.2812600E-04
+ Iteration:  14     *|du|/|u| =  1.8192768E-01     *Ei/E0 =  1.3763167E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.424E+04 exceeds prior maximum   1.914E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  15     *|du|/|u| =  2.7441602E-01     *Ei/E0 =  4.9562342E-03
+ Iteration:  16     *|du|/|u| =  9.1217998E-02     *Ei/E0 =  3.7531944E-04
+ Iteration:  17     *|du|/|u| =  7.5289997E-02     *Ei/E0 =  2.7068925E-04
+ Iteration:  18     *|du|/|u| =  6.3532234E-02     *Ei/E0 =  4.0864888E-06
+ Iteration:  19     *|du|/|u| =  6.2580289E-02     *Ei/E0 =  7.8387200E-05
+ Iteration:  20     *|du|/|u| =  6.3088557E-02     *Ei/E0 =  4.3998003E-05
+ Iteration:  21     *|du|/|u| =  6.0691641E-02     *Ei/E0 =  1.7431651E-04
+ Iteration:  22     *|du|/|u| =  5.6904772E-02     *Ei/E0 =  5.7039101E-04
+ Iteration:  23     *|du|/|u| =  5.3857702E-02     *Ei/E0 =  1.0026826E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.505E+04 exceeds prior maximum   4.424E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  24     *|du|/|u| =  1.3244187E-01     *Ei/E0 =  8.1157686E-03
+ Iteration:  25     *|du|/|u| =  1.2728630E-01     *Ei/E0 =  8.0158418E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.495E+04 exceeds prior maximum   4.505E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  26     *|du|/|u| =  1.1004237E-01     *Ei/E0 =  1.8062989E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.599E+04 exceeds prior maximum   6.495E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  27     *|du|/|u| =  8.8156468E-02     *Ei/E0 =  8.9865623E-03
+ Iteration:  28     *|du|/|u| =  9.1992913E-02     *Ei/E0 =  7.2117603E-04
+ Iteration:  29     *|du|/|u| =  6.6879883E-02     *Ei/E0 =  1.9217509E-03
+ Iteration:  30     *|du|/|u| =  5.9089863E-02     *Ei/E0 =  1.1255526E-03
+ Iteration:  31     *|du|/|u| =  6.2678676E-02     *Ei/E0 =  1.0390565E-03
+ Iteration:  32     *|du|/|u| =  6.7696654E-02     *Ei/E0 =  1.0376918E-03
+ Iteration:  33     *|du|/|u| =  7.3474310E-02     *Ei/E0 =  1.1234881E-03
+ Iteration:  34     *|du|/|u| =  7.9711020E-02     *Ei/E0 =  1.3007582E-03
+ Iteration:  35     *|du|/|u| =  8.6132717E-02     *Ei/E0 =  1.5778645E-03
+ Iteration:  36     *|du|/|u| =  9.2652446E-02     *Ei/E0 =  1.9631179E-03
+ Iteration:  37     *|du|/|u| =  9.9174830E-02     *Ei/E0 =  2.4675422E-03
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  38     *|du|/|u| =  4.2038931E-01     *Ei/E0 =  1.5744554E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.373E+05 exceeds prior maximum   7.599E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  39     *|du|/|u| =  1.0469754E-01     *Ei/E0 =  5.3862017E-02
+ Iteration:  40     *|du|/|u| =  3.2657520E+00     *Ei/E0 =  9.9827406E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.126E+05 exceeds prior maximum   1.373E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  41     *|du|/|u| =  2.2527034E-01     *Ei/E0 =  5.0039973E-02
+ Iteration:  42     *|du|/|u| =  5.3557714E-01     *Ei/E0 =  9.5411263E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.475E+06 exceeds prior maximum   2.126E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  43     *|du|/|u| =  4.8775694E-01     *Ei/E0 =  2.0557885E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.523E+06 exceeds prior maximum   1.475E+06
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             256
+     Element #             257
+     Element #             258
+     Element #             259
+     Element #             260
+     Element #             261
+ convergence failure, repeat step: dtnew =  2.50000E-03
+
+ BEGIN implicit statics  step      2 t= 2.5025E+00             04/15/25 15:25:31
+ ============================================================
+                time =  2.50250E+00
+   current step size =  2.50000E-03
+ Iteration:   1     *|du|/|u| =  1.7005277E-02     *Ei/E0 =  1.5352029E-05
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.599E+03 exceeds prior maximum   5.126E+02
+
+ automatically REFORMING stiffness matrix...
+ Iteration:   2     *|du|/|u| =  1.1209905E-02     *Ei/E0 =  2.0691260E-05
+ Iteration:   3     *|du|/|u| =  1.4800937E-02     *Ei/E0 =  2.2179204E-05
+ Iteration:   4     *|du|/|u| =  1.5367732E-02     *Ei/E0 =  2.5770851E-05
+ Iteration:   5     *|du|/|u| =  1.5904252E-02     *Ei/E0 =  2.9823678E-05
+ Iteration:   6     *|du|/|u| =  1.6351265E-02     *Ei/E0 =  3.4850441E-05
+ Iteration:   7     *|du|/|u| =  1.6683340E-02     *Ei/E0 =  4.0757452E-05
+ Iteration:   8     *|du|/|u| =  1.6874795E-02     *Ei/E0 =  4.6757201E-05
+ Iteration:   9     *|du|/|u| =  1.6927314E-02     *Ei/E0 =  5.1783601E-05
+ Iteration:  10     *|du|/|u| =  1.6865039E-02     *Ei/E0 =  5.6469957E-05
+ Iteration:  11     *|du|/|u| =  1.9691726E+00     *Ei/E0 =  7.9707707E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.377E+04 exceeds prior maximum   2.599E+03
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  3.8161479E-02     *Ei/E0 =  1.0870851E-03
+ Iteration:  13     *|du|/|u| =  1.6815573E-01     *Ei/E0 =  1.6610247E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.317E+04 exceeds prior maximum   2.377E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  14     *|du|/|u| =  3.6612268E-01     *Ei/E0 =  6.1307357E-03
+ Iteration:  15     *|du|/|u| =  1.8007061E-01     *Ei/E0 =  1.7428452E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.707E+04 exceeds prior maximum   5.317E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  16     *|du|/|u| =  2.2284787E-01     *Ei/E0 =  8.2036046E-03
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.446E+04 exceeds prior maximum   5.707E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  17     *|du|/|u| =  2.1717342E-01     *Ei/E0 =  1.7090493E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   8.898E+04 exceeds prior maximum   6.446E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  18     *|du|/|u| =  6.9769725E-02     *Ei/E0 =  1.9239456E-02
+ Iteration:  19     *|du|/|u| =  4.9319883E+00     *Ei/E0 =  5.3520314E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.284E+05 exceeds prior maximum   8.898E+04
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  20     *|du|/|u| =  3.4394999E-01     *Ei/E0 =  3.1361235E-02
+ Iteration:  21     *|du|/|u| =  5.4866981E+00     *Ei/E0 =  3.4260831E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.965E+05 exceeds prior maximum   1.284E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  4.7842693E-01     *Ei/E0 =  8.5432528E-01
+ Iteration:  23     *|du|/|u| =  3.5363451E-01     *Ei/E0 =  2.6514208E-01
+ Iteration:  24     *|du|/|u| =  1.9597129E+00     *Ei/E0 =  3.0458693E-01
+ Iteration:  25     *|du|/|u| =  4.5639536E-01     *Ei/E0 =  2.1450242E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   8.371E+05 exceeds prior maximum   5.965E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  26     *|du|/|u| =  7.6630817E-01     *Ei/E0 =  6.1003601E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.060E+06 exceeds prior maximum   8.371E+05
+
+ automatically REFORMING stiffness matrix...
+
+ Negative volumes in solid elements detected,
+ list of elements affected follows (at most 20):
+
+     Element #             388
+     Element #             389
+     Element #             390
+     Element #             391
+     Element #             392
+     Element #             393
+ 
+ *** Error 60004 (IMP+4)
+     *********************************************************
+     *                                                       *
+     *                -  FATAL ERROR  -                      *
+     *                                                       *
+     *  Nonlinear solver failed to find equilibrium.         *
+     *                                                       *
+     *********************************************************
+
+ Writing out last converged state for implicit.
+
+    1547 t 2.5000E+00 dt 0.00E+00 write d3plot file            04/15/25 15:25:40
+    1547 t 2.5000E+00 dt 0.00E+00 write d3plot file            04/15/25 15:25:40
+
+ E r r o r   t e r m i n a t i o n                             04/15/25 15:25:40
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to complete solution   :     724K
+ Linear Alg dynamically allocated memory:    5296K
+ Additional dynamically allocated memory:      77M
+                                   Total:      83M
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Keyword Processing ... 0.0000E+00    0.00     8.8000E-02    0.10
+    KW Reading ......... 0.0000E+00    0.00     1.7000E-02    0.02
+    KW Writing ......... 0.0000E+00    0.00     1.4000E-02    0.02
+  Initialization ....... 2.0000E+00    2.30     2.0380E+00    2.33
+    Init Proc Phase 1 .. 0.0000E+00    0.00     2.6000E-02    0.03
+    Init Proc Phase 2 .. 0.0000E+00    0.00     1.6000E-02    0.02
+  Element processing ... 3.6000E+01   41.38     3.7074E+01   42.42
+    Solids ............. 3.6000E+01   41.38     3.7024E+01   42.36
+    E Other ............ 0.0000E+00    0.00     3.2000E-02    0.04
+  Binary databases ..... 0.0000E+00    0.00     1.1000E-02    0.01
+  ASCII database ....... 0.0000E+00    0.00     1.1000E-02    0.01
+  Contact algorithm .... 0.0000E+00    0.00     3.0000E-03    0.00
+  Rigid Bodies ......... 0.0000E+00    0.00     4.0000E-03    0.00
+  Implicit ............. 0.0000E+00    0.00     3.1000E-02    0.04
+  Implicit Nonlinear ... 8.0000E+00    9.20     8.3520E+00    9.56
+    Imp. NL force mod .. 8.0000E+00    9.20     7.2430E+00    8.29
+  Implicit Lin. Alg. ... 4.1000E+01   47.13     3.9714E+01   45.44
+    Imp. LA Mtx Assemb . 1.2000E+01   13.79     1.2528E+01   14.33
+    Imp. LA Factor ..... 2.5000E+01   28.74     2.5374E+01   29.03
+    Imp. LA Solve ...... 4.0000E+00    4.60     1.8110E+00    2.07
+  Time step size ....... 0.0000E+00    0.00     1.3000E-02    0.01
+  Group force file ..... 0.0000E+00    0.00     1.0000E-03    0.00
+  Others ............... 0.0000E+00    0.00     9.0000E-03    0.01
+  Misc. 1 .............. 0.0000E+00    0.00     3.0000E-03    0.00
+    Force Constraints .. 0.0000E+00    0.00     2.0000E-03    0.00
+  Misc. 4 .............. 0.0000E+00    0.00     4.9000E-02    0.06
+    Timestep Init ...... 0.0000E+00    0.00     4.0000E-02    0.05
+    Apply Loads ........ 0.0000E+00    0.00     8.0000E-03    0.01
+  ----------------------------------------------------------------
+  T o t a l s            8.7000E+01  100.00     8.7401E+01  100.00
+
+ Problem time       =    2.5000E+00
+ Problem cycle      =      1547
+ Total CPU time     =        87 seconds (   0 hours  1 minutes 27 seconds)
+ CPU time per zone cycle  =      17100.857 nanoseconds
+ Clock time per zone cycle=      17156.184 nanoseconds
+
+ Number of CPU's    4
+ NLQ used/max     136/  136
+ Start time   04/15/2025 15:24:14  
+ End time     04/15/2025 15:25:40  
+ Elapsed time      86 seconds for    1547 cycles using  4 SMP threads
+             (      0 hour   1 minute  26 seconds)
+
+ E r r o r   t e r m i n a t i o n                             04/15/25 15:25:40

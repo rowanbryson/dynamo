@@ -1,0 +1,1129 @@
+
+
+ ***************************************************************
+ *            ANSYS LEGAL NOTICES                              *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2023 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+      Date: 04/16/2025      Time: 17:37:09  
+      ___________________________________________________ 
+     |                                                   |
+     |  LS-DYNA, A Program for Nonlinear Dynamic         |
+     |  Analysis of Structures in Three Dimensions       |
+     |  Date    : 06/16/2024    Time: 19:10:47           |
+     |  Version : smp d R14                              |
+     |  Revision: R14.1.1s-1-gef50e1efb1                 |
+     |  AnLicVer: 2024 R2 (20240501+dl-66-g8093a89)      |
+     |                                                   |
+     |  Features enabled in this version:                |
+     |    Shared Memory Parallel                         |
+     |    CESE CHEMISTRY EM ICFD STOCHASTIC_PARTICLES    |
+     |    FFTW (multi-dimensional FFTW Library)          |
+     |    ARPACK (nonsymmetric eigensolver library)      |
+     |    ANSYSLIC enabled                               |
+     |  Issued by  : ANSYS                               |
+     |                                                   |
+     |  Platform   : WINDOWS X64 SSE2                    |
+     |  OS Level   : Windows 8/10 & Srv 2016/2019/2022   |
+     |  Compiler   : Intel Fortran XE 2019 MSVC++ 2019   |
+     |  Hostname   : LAPTOP-RD2A5VAG                     |
+     |  Precision  : Double precision (I8R8)             |
+     |                                                   |
+     |  Unauthorized use infringes Ansys Inc. copyrights |
+     |___________________________________________________|
+
+
+ Command line options: i=MAIN_Bar_6061-T651_Compression.key 
+                       memory=20m 
+                       ncpu=4
+
+ Input file: MAIN_Bar_6061-T651_Compression.key                                              
+
+ The native file format       : 64-bit small endian
+ Memory size from command line:    20000000
+
+ ********  notice  ********  notice  ********  notice  ********
+ *                                                            *
+ * This is the LS-DYNA Finite Element code.                   *
+ *                                                            *
+ * Neither LST nor the authors assume any responsibility for  *
+ * the validity, accuracy, or applicability of any results    *
+ * obtained from this system. Users must verify their own     *
+ * results.                                                   *
+ *                                                            *
+ * LST endeavors to make the LS-DYNA code as complete,        *
+ * accurate and easy to use as possible.                      *
+ * Suggestions and comments are welcomed.  Please report any  *
+ * errors encountered in either the documentation or results  *
+ * immediately to LST through your site focus.                *
+ *                                                            *
+ * Copyright (C) 1990-2021                                    *
+ * by Livermore Software Technology, LLC                      *
+ * All rights reserved                                        *
+ *                                                            *
+ ********  notice  ********  notice  ********  notice  ********
+
+ Beginning of keyword reader                                   04/16/25 17:37:09
+
+                                                               04/16/25 17:37:09
+ Open include file: SNS5.key
+
+                                                               04/16/25 17:37:09
+ Open include file: CONTrol_cards.key
+
+                                                               04/16/25 17:37:09
+ Open include file: DATAbase_cards.key
+ 
+ *** Error 10246 (KEY+246)
+     line contains improperly formatted data
+      reading *DATABASE_NODFOR card.
+          At line# 38 of file
+ c:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0014_SNS5_run1\DATAbase_cards.key
+ --------------------------------------------------------------------------
+          1.         3
+ --------------------------------------------------------------------------
+
+
+         **            ******  **********    *******                            
+         **           *******  **********   ********                            
+         **          **            **      ***                                  
+         **           *******      **      **                                   
+         **                 **     **      ***                                  
+         *********   ********      **       ********                            
+         *********   ******        **         ******                            
+                                                                                
+                                                                                
+**           ******    *******    **    **  *      **    *****                  
+**          *******    ********   **    **  **     **   *******                 
+**         **          **   ***   **    **  ***    **  ***   ***                
+**           **        **   ***   **    **  ***    **  ***   ***                
+**             **   ** **    **     ****    ** **  **  *********                
+**               **    **   ***      **     **    ***  **     **                
+**               **    **   ***      **     **    ***  **     **                
+*********  *******     *******       **     **     **  **     **                
+*********  *******     ******        **     **      *  **     **                
+
+            L I S T   O F   K E Y W O R D   C O U N T S   
+
+total # of *AIRBAG_option..........................       0
+total # of *AIRBAG_INTERACTION.....................       0
+total # of *AIRBAG_PARTICLE........................       0
+total # of *AIRBAG_REFERENCE_GEOMETRY..............       0
+total # of *AIRBAG_SHELL_REFERENCE_GEOMETRY........       0
+total # of *ALE_AMBIENT_HYDROSTATIC................       0
+total # of *ALE_BURN_SWITCH_MMG....................       0
+total # of *ALE_COUPLING_NODAL.....................       0
+total # of *ALE_ELEMENT_POROSITY...................       0
+total # of *ALE_FAIL_SWITCH_MMG....................       0
+total # of *ALE_FRAGMENTATION......................       0
+total # of *ALE_FSI_SWITCH_MMG.....................       0
+total # of *ALE_INJECTION..........................       0
+total # of *ALE_MAPPING............................       0
+total # of *ALE_MAPPING_FROM_LAGRANGIAN............       0
+total # of *ALE_PRESCRIBED_MOTION..................       0
+total # of *ALE_REFERENCE_SYSTEM_GROUP.............       0
+total # of *ALE_SWITCH_MMG.........................       0
+total # of *ALE_MESH_INTERFACE.....................       0
+total # of *ALE_STRUCTURED_MESH....................       0
+total # of *ALE_STRUCTURED_MESH_VOLUME_FILLING.....       0
+total # of *ALE_STRUCTURED_FSI.....................       0
+total # of *BOUNDARY_ACOUSTIC_COUPLING.............       0
+total # of *BOUNDARY_ACOUSTIC_COUPLING_MISMATCH....       0
+total # of *BOUNDARY_ACOUSTIC_COUPLING_SPECTRAL....       0
+total # of *BOUNDARY_ACOUSTIC_MAPPING..............       0
+total # of *BOUNDARY_ACOUSTIC_COUPLING_DISSIPATIVE.       0
+total # of *BOUNDARY_ACOUSTIC_COMPLEX..............       0
+total # of *BOUNDARY_ACOUSTIC_ENTRANT..............       0
+total # of *BOUNDARY_ACOUSTIC_INTERFACE............       0
+total # of *BOUNDARY_ACOUSTIC_MECHANICAL...........       0
+total # of *BOUNDARY_ACOUSTIC_FREE_SURFACE.........       0
+total # of *BOUNDARY_ACOUSTIC_NON_REFLECTING.......       0
+total # of *BOUNDARY_ACOUSTIC_PRESCRIBED_MOTION....       0
+total # of *BOUNDARY_ACOUSTIC_PRESSURE_SPECTRAL....       0
+total # of *BOUNDARY_AEROHEATING_SEGMENT...........       0
+total # of *BOUNDARY_ALE_MAPPING...................       0
+total # of *BOUNDARY_ALE_MIXING_LENGTH.............       0
+total # of *BOUNDARY_AMBIENT.......................       0
+total # of *BOUNDARY_CONVECTION_SEGMENT............       0
+total # of *BOUNDARY_CONVECTION_SET................       0
+total # of *BOUNDARY_TEMPERATURE_PERIODIC_SET......       0
+total # of *BOUNDARY_CYCLIC........................       0
+total # of *BOUNDARY_DE_NON_REFLECTING.............       0
+total # of *BOUNDARY_ELEMENT_METHOD_FLOW...........       0
+total # of *BOUNDARY_ELEMENT_METHOD_CONTROL........       0
+total # of *BOUNDARY_ELEMENT_METHOD_NEIGHBOR.......       0
+total # of *BOUNDARY_ELEMENT_METHOD_WAKE...........       0
+total # of *BOUNDARY_ELEMENT_METHOD_SYMMETRY.......       0
+total # of *BOUNDARY_FIRE_SEGMENT..................       0
+total # of *BOUNDARY_FLUX_SEGMENT..................       0
+total # of *BOUNDARY_FLUX_SET......................       0
+total # of *BOUNDARY_FLUX_TRAJECTORY ..............       0
+total # of *BOUNDARY_NON_REFLECTING................       0
+total # of *BOUNDARY_MCOL..........................       0
+total # of *BOUNDARY_PORE_FLUID ...................       0
+total # of *BOUNDARY_PRESCRIBED_MOTION_NODE.+RIGID.       0
+total # of *BOUNDARY_PRESCRIBED_FINAL_GEOMETRY.....       0
+total # of *BOUNDARY_PRESCRIBED_MOTION_SET.........       1
+total # of *BOUNDARY_PRESCRIBED_ORIENTATION........       0
+total # of *BOUNDARY_PRESCRIBED_ACCELEROMETER......       0
+total # of *BOUNDARY_PRESSURE_OUTFLOW_SEGMENT......       0
+total # of *BOUNDARY_PRESSURE_OUTFLOW_SET..........       0
+total # of *BOUNDARY_PWP_OPTION ...................       0
+total # of *BOUNDARY_RADIATION_ENCLOSURE ..........       0
+total # of *BOUNDARY_RADIATION_SEGMENT.(Type 1)....       0
+total # of *BOUNDARY_RADIATION_SET.................       0
+total # of *BOUNDARY_RADIATION_SEGMENT.(Type 2)....       0
+total # of *BOUNDARY_RADIATION_SET.(Type 2)........       0
+total # of *BOUNDARY_SLIDING_PLANE.................       0
+total # of *BOUNDARY_SOUND_ABSORBING_LAYER.........       0
+total # of *BOUNDARY_SPC_NODE......................       0
+total # of *BOUNDARY_SPC_SET.......................       3
+total # of *BOUNDARY_SPH_FLOW......................       0
+total # of *BOUNDARY_SPH_SYMMETRY_PLANE............       0
+total # of *BOUNDARY_SPH_NON_REFLECTING............       0
+total # of *BOUNDARY_SPH_NOSLIP....................       0
+total # of *BOUNDARY_SYMMETRY_FAILURE..............       0
+total # of *BOUNDARY_TEMPERATURE_NODE..............       0
+total # of *BOUNDARY_TEMPERATURE_SET...............       0
+total # of *BOUNDARY_THERMAL_BULKFLOW_SET..........       0
+total # of *BOUNDARY_THERMAL_BULKFLOW_ELEMENT......       0
+total # of *BOUNDARY_THERMAL_BULKNODE..............       0
+total # of *BOUNDARY_THERMAL_WELD..................       0
+total # of *BOUNDARY_USA...........................       0
+total # of *BOUNDARY_PZEPOT........................       0
+total # of *LOAD_PZECHARGE ........................       0
+total # of *CESE_BOUNDARY_AXISYMMETRIC_PART........       0
+total # of *CESE_BOUNDARY_AXISYMMETRIC_PART_SET....       0
+total # of *CESE_BOUNDARY_AXISYMMETRIC_SEGMENT.....       0
+total # of *CESE_BOUNDARY_AXISYMMETRIC_SET.........       0
+total # of *CESE_BOUNDARY_CONJ_HEAT_PART...........       0
+total # of *CESE_BOUNDARY_CONJ_HEAT_PART_SET.......       0
+total # of *CESE_BOUNDARY_CONJ_HEAT_SEGMENT........       0
+total # of *CESE_BOUNDARY_CONJ_HEAT_SET............       0
+total # of *CESE_BOUNDARY_CYCLIC_PART..............       0
+total # of *CESE_BOUNDARY_CYCLIC_PART_SET..........       0
+total # of *CESE_BOUNDARY_CYCLIC_SEGMENT...........       0
+total # of *CESE_BOUNDARY_CYCLIC_SET...............       0
+total # of *CESE_BOUNDARY_FSI_PART.................       0
+total # of *CESE_BOUNDARY_FSI_PART_SET.............       0
+total # of *CESE_BOUNDARY_FSI_SEGMENT..............       0
+total # of *CESE_BOUNDARY_FSI_SET..................       0
+total # of *CESE_BOUNDARY_NON_REFLECTIVE_PART......       0
+total # of *CESE_BOUNDARY_NON_REFLECTIVE_PART_SET..       0
+total # of *CESE_BOUNDARY_NON_REFLECTIVE_SEGMENT...       0
+total # of *CESE_BOUNDARY_NON_REFLECTIVE_SET.......       0
+total # of *CESE_BOUNDARY_PRESCRIBED_PART..........       0
+total # of *CESE_BOUNDARY_PRESCRIBED_PART_SET......       0
+total # of *CESE_BOUNDARY_PRESCRIBED_SEGMENT.......       0
+total # of *CESE_BOUNDARY_PRESCRIBED_SET...........       0
+total # of *CESE_BOUNDARY_REFLECTIVE_PART..........       0
+total # of *CESE_BOUNDARY_REFLECTIVE_PART_SET......       0
+total # of *CESE_BOUNDARY_REFLECTIVE_SEGMENT.......       0
+total # of *CESE_BOUNDARY_REFLECTIVE_SET...........       0
+total # of *CESE_BOUNDARY_SLIDING_PART.............       0
+total # of *CESE_BOUNDARY_SLIDING_PART_SET.........       0
+total # of *CESE_BOUNDARY_SLIDING_SEGMENT..........       0
+total # of *CESE_BOUNDARY_SLIDING_SET..............       0
+total # of *CESE_BOUNDARY_SOLID_WALL_PART..........       0
+total # of *CESE_BOUNDARY_SOLID_WALL_PART_SET......       0
+total # of *CESE_BOUNDARY_SOLID_WALL_SEGMENT.......       0
+total # of *CESE_BOUNDARY_SOLID_WALL_SET...........       0
+total # of *CESE_CHEMISTRY_D3PLOT..................       0
+total # of *CESE_CONTROL_SOLVER....................       0
+total # of *CESE_CONTROL_TIMESTEP..................       0
+total # of *CESE_CONTROL_LIMITER...................       0
+total # of *CESE_CONTROL_MESH_MOV..................       0
+total # of *CESE_CONTROL_TURBULENCE................       0
+total # of *CESE_DRAG..............................       0
+total # of *CESE_EOS...............................       0
+total # of *CESE_FSI_EXCLUDE.......................       0
+total # of *CESE_DEFINE_POINT......................       0
+total # of *CESE_INITIAL...........................       0
+total # of *CESE_INITIAL_CHEMISTRY.................       0
+total # of *CESE_INITIAL_CHEMISTRY_ELEMENT.........       0
+total # of *CESE_INITIAL_CHEMISTRY_PART............       0
+total # of *CESE_INITIAL_CHEMISTRY_SET.............       0
+total # of *CESE_INITIAL_SET.......................       0
+total # of *CESE_INITIAL_SEGMENT...................       0
+total # of *CESE_MAT...............................       0
+total # of *CESE_PART..............................       0
+total # of *CESE_PART_MESH.........................       0
+total # of *CESE_SURFACE_MECHSSID_D3PLOT...........       0
+total # of *CESE_SURFACE_MECHVARS_D3PLOT...........       0
+total # of *CHEMISTRY_COMPOSITION..................       0
+total # of *CHEMISTRY_CONTROL_0D...................       0
+total # of *CHEMISTRY_CONTROL_1D...................       0
+total # of *CHEMISTRY_CONTROL_CSP..................       0
+total # of *CHEMISTRY_CONTROL_FULL.................       0
+total # of *CHEMISTRY_CONTROL_INFLATOR.............       0
+total # of *CHEMISTRY_CONTROL_ZND..................       0
+total # of *CHEMISTRY_DET_INITIATION...............       0
+total # of *CHEMISTRY_INFLATOR_PROPERTIES..........       0
+total # of *CHEMISTRY_PATH.........................       0
+total # of *COMPONENT_GEBOD........................       0
+total # of *COMPONENT_GEBOD_JOINT..................       0
+total # of *COMPONENT_HYBRIDIII....................       0
+total # of *COMPONENT_HYBRIDIII_JOINT..............       0
+total # of *CONSTRAINED_BEAM/SHELL_IN_SOLID........       0
+total # of *CONSTRAINED_BUTT_WELD..................       0
+total # of *CONSTRAINED_EXTRA_NODES................       0
+total # of *CONSTRAINED_EXTRA_NODES_SET............       0
+total # of *CONSTRAINED_GLOBAL.....................       0
+total # of *CONSTRAINED_INTERPOLATION..............       0
+total # of *CONSTRAINED_JOINT_type.................       0
+total # of *CONSTRAINED_JOINT_COOR_type............       0
+total # of *CONSTRAINED_JOINT_..._FAILURE..........       0
+total # of *CONSTRAINED_JOINT_USER_FORCE...........       0
+total # of *CONSTRAINED_JOINT_STIFFNESS_type.......       0
+total # of *CONSTRAINED_LAGRANGE_IN_SOLID..........       0
+total # of *CONSTRAINED_LINEAR.....................       0
+total # of *CONSTRAINED_LINEAR_LOCAL...............       0
+total # of *CONSTRAINED_NODAL_RIGID_BODY_option....       0
+total # of *CONSTRAINED_NODE_SET...................       0
+total # of *CONSTRAINED_RIGID_BODIES...............       0
+total # of *CONSTRAINED_RIGID_BODY_STOPPERS........       0
+total # of *CONSTRAINED_SHELL-SOLID................       0
+total # of *CONSTRAINED_SPLINE.....................       0
+total # of *CONSTRAINED_SPOTWELD+CONSTRAINED_RIVET.       0
+total # of *CONSTRAINED_SPR2/INTERPOLATION_SPOTWELD       0
+total # of *CONSTRAINED_TIE-BREAK..................       0
+total # of *CONSTRAINED_TIE-NODE-FAILURE...........       0
+total # of *CONTACT_option.........................       0
+total # of *CONTACT_GEOMETRIC_option...............       0
+total # of *CONTACT_GUIDED_CABLE...................       0
+total # of *CONTACT_1D.............................       0
+total # of *CONTACT_2D.............................       0
+total # of *CONTACT_2D_AUTOMATIC...................       0
+total # of *CONTROL_ACOUSTIC.......................       0
+total # of *CONTROL_ACOUSTIC_COUPLING..............       0
+total # of *CONTROL_ACOUSTIC_SPECTRAL..............       0
+total # of *CONTROL_ADAPTIVITY.....................       0
+total # of *CONTROL_ADPOPT8_REGION.................       0
+total # of *CONTROL_ALE...(see CARDs 25&26)........       0
+total # of *CONTROL_AIRBAG.........................       0
+total # of *CONTROL_BULK_VISCOSITY.................       0
+total # of *CONTROL_CHECK..........................       0
+total # of *CONTROL_CONTACT........................       1
+total # of *CONTROL_COUPLING.......................       0
+total # of *CONTROL_CPM............................       0
+total # of *CONTROL_CPU............................       0
+total # of *CONTROL_DYNAMIC_RELAXATION (DAMPING)...       0
+total # of *CONTROL_EFG............................       0
+total # of *CONTROL_ENERGY.........................       0
+total # of *CONTROL_EXPLOSIVE_SHADOW...............       0
+total # of *CONTROL_FREQUENCY_DOMAIN...............       0
+total # of *CONTROL_FREQUENCY_RESPONSE_FUNCTION....       0
+total # of *CONTROL_HOURGLASS......................       0
+total # of *MPP_option.............................       0
+total # of *CONTROL_IMPLICIT_AUTO..................       1
+total # of *CONTROL_IMPLICIT_BUCKLE................       0
+total # of *CONTROL_IMPLICIT_CONSISTENT_MASS.......       0
+total # of *CONTROL_IMPLICIT_DYNAMICS..............       0
+total # of *CONTROL_IMPLICIT_EIGENVALUE............       0
+total # of *CONTROL_IMPLICIT_FORMING...............       0
+total # of *CONTROL_IMPLICIT_GENERAL...............       1
+total # of *CONTROL_IMPLICIT_INERTIA_RELIEF........       0
+total # of *CONTROL_IMPLICIT_JOINTS................       0
+total # of *CONTROL_IMPLICIT_MODAL_DYNAMIC.........       0
+total # of *CONTROL_IMPLICIT_MODAL_DYNAMIC_DAMPING.       0
+total # of *CONTROL_IMPLICIT_MODAL_DYNAMIC_MODE....       0
+total # of *CONTROL_IMPLICIT_MODES.................       0
+total # of *CONTROL_IMPLICIT_ORDERING..............       0
+total # of *CONTROL_IMPLICIT_RESIDUAL_VECTOR.......       0
+total # of *CONTROL_IMPLICIT_ROTATIONAL_DYNAMICS...       0
+total # of *CONTROL_IMPLICIT_SOLUTION..............       0
+total # of *CONTROL_IMPLICIT_SOLVER................       0
+total # of *CONTROL_IMPLICIT_STABILIZAION..........       0
+total # of *CONTROL_IMPLICIT_STATIC_CONDENSATION...       0
+total # of *CONTROL_IMPLICIT_TERMINATION...........       0
+total # of *CONTROL_IMPLICIT_UNWRAP................       0
+total # of *CONTROL_IMPLICIT_SSD_DIRECT............       0
+total # of *CONTROL_MAT............................       0
+total # of *CONTROL_NONLOCAL.......................       0
+total # of *CONTROL_OUTPUT.........................       1
+total # of *CONTROL_PARALLEL.......................       0
+total # of *CONTROL_REFERENCE_CONFIGURATION........       0
+total # of *CONTROL_REFINE_ALE.....................       0
+total # of *CONTROL_REFINE_ALE2D...................       0
+total # of *CONTROL_REFINE_SHELL...................       0
+total # of *CONTROL_REFINE_SOLID...................       0
+total # of *CONTROL_SHELL..........................       0
+total # of *CONTROL_SOLID..........................       1
+total # of *CONTROL_SOLUTION.......................       1
+total # of *CONTROL_SPH............................       0
+total # of *CONTROL_SPH_INCOMPRESSIBLE.............       0
+total # of *CONTROL_SUBCYCLE.......................       0
+total # of *CONTROL_TERMINATION....................       1
+total # of *CONTROL_THERMAL_SOLVER.................       0
+total # of *CONTROL_THERMAL_TIMESTEP...............       0
+total # of *CONTROL_THERMAL_NONLINEAR..............       0
+total # of *CONTROL_THERMAL_EIGENVALUE.............       0
+total # of *CONTROL_THERMAL_FORMING................       0
+total # of *CONTROL_TIMESTEP.......................       1
+total # of *CONTROL_UNITS..........................       0
+total # of *CONTROL_VIBRO_ACOUSTIC.................       0
+total # of *DAMPING_FREQUENCY_RANGE................       0
+total # of *DAMPING_FREQUENCY_RANGE_DEFORM.........       0
+total # of *DAMPING_GLOBAL.........................       0
+total # of *DAMPING_PART_MASS......................       0
+total # of *DAMPING_PART_MASS_SET..................       0
+total # of *DAMPING_PART_STIFFNESS.................       0
+total # of *DAMPING_PART_STIFFNESS_SET.............       0
+total # of *DAMPING_PART_STRUCTURAL................       0
+total # of *DAMPING_PART_STRUCTURAL_SET............       0
+total # of *DAMPING_RELATIVE.......................       0
+total # of *DAMPING_STRUCTURAL.....................       0
+total # of *CONTROL_DISCRETE_SPHERE................       0
+total # of *DATABASE_ABSTAT........................       0
+total # of *DATABASE_ATDOUT........................       0
+total # of *DATABASE_AVSFLT........................       0
+total # of *DATABASE_BEARING.......................       0
+total # of *DATABASE_BNDOUT........................       1
+total # of *DATABASE_CPM_SENSOR....................       0
+total # of *DATABASE_CURVOUT.......................       0
+total # of *DATABASE_DISBOUT.......................       0
+total # of *DATABASE_DCFAIL........................       0
+total # of *DATABASE_DEFGEO........................       0
+total # of *DATABASE_DEFORC........................       0
+total # of *DATABASE_DEMASSFLOW....................       0
+total # of *DATABASE_DESURFAREA....................       0
+total # of *DATABASE_DESTAT........................       0
+total # of *DATABASE_ELOUT.........................       1
+total # of *DATABASE_FSI...........................       0
+total # of *DATABASE_FSI_SENSOR....................       0
+total # of *DATABASE_GCEOUT........................       0
+total # of *DATABASE_GLSTAT........................       0
+total # of *DATABASE_H3OUT.........................       0
+total # of *DATABASE_ISPHHTC.......................       0
+total # of *DATABASE_JNTFORC.......................       0
+total # of *DATABASE_MASSOUT.......................       0
+total # of *DATABASE_MATSUM........................       1
+total # of *DATABASE_MPGS.......... ...............       0
+total # of *DATABASE_MOVIE.........................       0
+total # of *DATABASE_NCFORC........................       0
+total # of *DATABASE_NODFOR........................       0
+total # of *DATABASE_NODOUT........................       1
+total # of *DATABASE_PBSTAT........................       0
+total # of *DATABASE_PGSTAT........................       0
+total # of *DATABASE_PG_SENSOR.....................       0
+total # of *DATABASE_PLLYOUT.......................       0
+total # of *DATABASE_PROFILE.......................       0
+total # of *DATABASE_PRTUBE........................       0
+total # of *DATABASE_PYRO..........................       0
+total # of *DATABASE_RBDOUT........................       0
+total # of *DATABASE_RCFORC_MOMENT.................       0
+total # of *DATABASE_RCFORC........................       0
+total # of *DATABASE_RWFORC........................       0
+total # of *DATABASE_SBTOUT........................       0
+total # of *DATABASE_SECFORC.......................       0
+total # of *DATABASE_SLEOUT........................       0
+total # of *DATABASE_SPCFORC.......................       1
+total # of *DATABASE_SPH...........................       0
+total # of *DATABASE_SPHMASSFLOW...................       0
+total # of *DATABASE_SPHVICINITY...................       0
+total # of *DATABASE_TRACER........................       0
+total # of *DATABASE_TRACER_ALE....................       0
+total # of *DATABASE_TRACER_GENERAL................       0
+total # of *DATABASE_TRACER_GENERATE...............       0
+total # of *DATABASE_SUPERPLASTIC..................       0
+total # of *DATABASE_SWFORC........................       0
+total # of *DATABASE_TPRINT........................       0
+total # of *DATABASE_TRHIST........................       0
+total # of *DATABASE_BINARY_D3PLOT.................       1
+total # of *DATABASE_BINARY_D3THDT.................       1
+total # of *DATABASE_BINARY_D3PART.................       0
+total # of *DATABASE_BINARY_D3DRFL.................       0
+total # of *DATABASE_BINARY_D3DUMP.................       0
+total # of *DATABASE_BINARY_RUNRSF.................       2
+total # of *DATABASE_BINARY_INTFOR.................       0
+total # of *DATABASE_BINARY_FSIFOR.................       0
+total # of *DATABASE_BINARY_CPMFOR.................       0
+total # of *DATABASE_BINARY_PBMFOR.................       0
+total # of *DATABASE_BINARY_PGFOR..................       0
+total # of *DATABASE_BINARY_DEMFOR.................       0
+total # of *DATABASE_BINARY_BLSTFOR................       0
+total # of *DATABASE_CROSS_SECTION_option..........       0
+total # of *DATABASE_D3MAX.........................       0
+total # of *DATABASE_EXTENT_AVS....................       0
+total # of *DATABASE_EXTENT_MOVIE .................       0
+total # of *DATABASE_EXTENT_MPGS...................       0
+total # of *DATABASE_EXTENT_BINARY.................       1
+total # of *DATABASE_EXTENT_BINARY_COMP............       0
+total # of *DATABASE_EXTENT_D3PART.................       0
+total # of *DATABASE_EXTENT_INTFOR.................       0
+total # of *DATABASE_FREQUENCY_ASCII_option........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3ACC........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3ACS........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3ATV........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3ERP........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3FTG........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3PSD........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3RMS........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3SPCM.......       0
+total # of *DATABASE_FREQUENCY_BINARY_D3SSD........       0
+total # of *DATABASE_FREQUENCY_BINARY_D3ZCF........       0
+total # of *DATABASE_HISTORY_NODE_option...........       2
+total # of *DATABASE_HISTORY_SOLID_option..........       0
+total # of *DATABASE_HISTORY_BEAM_option...........       0
+total # of *DATABASE_HISTORY_SHELL_option..........       0
+total # of *DATABASE_HISTORY_SPH_option............       0
+total # of *DATABASE_HISTORY_TSHELL_option.........       0
+total # of *DATABASE_MAX_SOLID_option..............       0
+total # of *DATABASE_MAX_BEAM_option...............       0
+total # of *DATABASE_MAX_SHELL_option..............       0
+total # of *DATABASE_MAX_TSHELL_option.............       0
+total # of *DATABASE_NODAL_FORCE_GROUP.............       0
+total # of *DATABASE_POWER_SPECTRAL_DENSITY........       0
+total # of *DATABASE_POWER_SPECTRAL_DENSITY_FREQUE.       0
+total # of *DATABASE_PWP_FLOW .....................       0
+total # of *DEFINE_ADAPTIVE_SOLID_TO_DES...........       0
+total # of *DEFINE_ADAPTIVE_SOLID_TO_HBOND.........       0
+total # of *DEFINE_ADAPTIVE_SOLID_TO_SPH...........       0
+total # of *DEFINE_BEAM_SOLID_COUPLING.............       0
+total # of *DEFINE_BOX.............................       0
+total # of *DEFINE_CONSTRUCTION_STAGES ............       0
+total # of *DEFINE_CONTACT_EXCLUSION...............       0
+total # of *DEFINE_COORDINATE_option...............       0
+total # of *DEFINE_CPM_BAG_INTERACTION.............       0
+total # of *DEFINE_CPM_CHAMBER.....................       0
+total # of *DEFINE_CPM_GAS_PROPERTIES..............       0
+total # of *DEFINE_CPM_NPDATA......................       0
+total # of *DEFINE_CPM_SWITCH_REGION...............       0
+total # of *DEFINE_CPM_VENT........................       0
+total # of *DEFINE_CURVE...........................       1
+total # of *DEFINE_CURVE_DUPLICATE.................       0
+total # of *DEFINE_CURVE_ENTITY....................       0
+total # of *DEFINE_CURVE_FUNCTION..................       0
+total # of *DEFINE_DE_ACTIVE_REGION................       0
+total # of *DEFINE_DE_FLOW_DRAG....................       0
+total # of *DEFINE_DE_INJECTION....................       0
+total # of *DEFINE_DE_TO_SURFACE_COUPLING..........       0
+total # of *DEFINE_DE_TO_SURFACE_EROSION...........       0
+total # of *DEFINE_DE_TO_SURFACE_TIED..............       0
+total # of *DEFINE_DE_TO_BEAM_COUPLING.............       0
+total # of *DEFINE_DE_BOND.........................       0
+total # of *DEFINE_DE_BOND_BY_PART.................       0
+total # of *DEFINE_DE_HBOND........................       0
+total # of *DEFINE_DE_BY_PART......................       0
+total # of *DEFINE_DE_MASSFLOW_PLANE...............       0
+total # of *DEFINE_DE_COHESIVE.....................       0
+total # of *DEFINE_FRACTURE........................       0
+total # of *DEFINE_FRICTION........................       0
+total # of *DEFINE_FUNCTION........................       0
+total # of *DEFINE_GROUND_MOTION...................       0
+total # of *DEFINE_HEX_SPOTWELD_ASSEMBLY...........       0
+total # of *ALE_MESH_CYLINDER......................       0
+total # of *SPH_MESH_CYLINDER......................       0
+total # of *SPH_MESH_BOX...........................       0
+total # of *ALE_MESH_BOX...........................       0
+total # of *DEFINE_MATERIAL_HISTORIES..............       0
+total # of *DEFINE_MULTI_SHEET_CONNECTORS..........       0
+total # of *DEFINE_PLANE...........................       0
+total # of *DEFINE_PARTICLE_BLAST..................       0
+total # of *DEFINE_PBLAST_HEGEO....................       0
+total # of *DEFINE_PBLAST_AIRGEO...................       0
+total # of *DEFINE_PBLAST_SENSOR...................       0
+total # of *DEFINE_PRESSURE_TUBE...................       0
+total # of *DEFINE_QUASAR_COUPLING.................       0
+total # of *DEFINE_SPH_ACTIVE_REGION...............       0
+total # of *DEFINE_SPH_AMBIENT_DRAG................       0
+total # of *DEFINE_SPH_INJECTION...................       0
+total # of *DEFINE_SPH_MASSFLOW_PLANE..............       0
+total # of *DEFINE_SPH_VICINITY_SENSOR.............       0
+total # of *DEFINE_VECTOR..........................       0
+total # of *DEFINE_VECTOR_NODE.....................       0
+total # of *DEFINE_SD_ORIENTATION..................       0
+total # of *DEFINE_ELEMENT_DEATH_SOLID.............       0
+total # of *DEFINE_ELEMENT_DEATH_BEAM..............       0
+total # of *DEFINE_ELEMENT_DEATH_SHELL.............       0
+total # of *DEFINE_ELEMENT_DEATH_TSHELL............       0
+total # of *DEFINE_PG_BAG_INTERACTION..............       0
+total # of *DEFINE_PG_CHAMBER......................       0
+total # of *DEFINE_PG_GAS_PROPERTIES...............       0
+total # of *DEFINE_PG_VENT.........................       0
+total # of *DEFINE_SHELL_ELEMENT_DEATH_THICK.......       0
+total # of *DEFINE_SOUND_ABSORBING_MATERIAL........       0
+total # of *DEFINE_ELEMENT_EROSION_SHELL...........       0
+total # of *DEFINE_ELEMENT_EROSION_TSHELL..........       0
+total # of *DEFINE_SPH_TO_SPH_COUPLING.............       0
+total # of *DEFINE_SPH_DE_COUPLING.................       0
+total # of *DEFINE_DE_CPM_COUPLING.................       0
+total # of *DEFINE_DE_MESH_BEAM....................       0
+total # of *DEFINE_DE_MESH_SURFACE.................       0
+total # of *DEFINE_DE_MESH_VOLUME..................       0
+total # of *DEFINE_DE_PATTERN_OUTPUT...............       0
+total # of *DEFINE_SPH_MESH_SURFACE................       0
+total # of *DEFINE_SPH_MESH_OBJ....................       0
+total # of *DEFINE_SPOTWELD_RUPTURE_STRESS.........       0
+total # of *DEFINE_SPOTWELD_RUPTURE_PARAMETER......       0
+total # of *DEFINE_STAGED_CONSTRUCTION_PART .......       0
+total # of *DEFINE_FP_TO_SURFACE_COUPLING..........       0
+total # of *DEFINE_SPG_TO_SURFACE_COUPLING.........       0
+total # of *DATABASE_BKSTAT........................       0
+total # of *DEFORMABLE_TO_RIGID....................       0
+total # of *DEFORMABLE_TO_RIGID_AUTOMATIC..........       0
+total # of *DEFORMABLE_TO_RIGID_INERTIA............       0
+total # of *ELEMENT_BEAM_option....................       0
+total # of *ELEMENT_BEAM_PULLEY....................       0
+total # of *ELEMENT_BEAM_SOURCE....................       0
+total # of *ELEMENT_DISCRETE.......................       0
+total # of *ELEMENT_MASS...........................       0
+total # of *ELEMENT_MASS_PART......................       0
+total # of *ELEMENT_SEATBELT.......................       0
+total # of *ELEMENT_SEATBELT_ACCELEROMETER.........       0
+total # of *ELEMENT_SEATBELT_PRETENSIONER..........       0
+total # of *ELEMENT_SEATBELT_RETRACTOR.............       0
+total # of *ELEMENT_SEATBELT_SENSOR................       0
+total # of *ELEMENT_SEATBELT_SLIPRING..............       0
+total # of *ELEMENT_SHELL_option...................       0
+total # of *ELEMENT_SHELL_NURBS_PATCH..............       0
+total # of *ELEMENT_SOLID..........................     740
+total # of *ELEMENT_SOLID_NURBS_PATCH..............       0
+total # of *ELEMENT_SPH............................       0
+total # of *ELEMENT_TSHELL_option..................       0
+total # of *ELEMENT_INERTIA........................       0
+total # of *IGA_SHELL..............................       0
+total # of *IGA_SOLID..............................       0
+total # of *MODULE_LOAD............................       0
+total # of *MODULE_USE.............................       0
+total # of *SENSOR_SWITCH_SHELL_TO_VENT............       0
+total # of *SENSOR_CPM_AIRBAG......................       0
+total # of *PG_SWITCH_SHELL_TO_VENT................       0
+total # of *EM_2DAXI...............................       0
+total # of *EM_BOUNDARY............................       0
+total # of *EM_BOUNDARY_PERIODIC...................       0
+total # of *EM_BOUNDARY_PRESCRIBED.................       0
+total # of *EM_CIRCUIT.............................       0
+total # of *EM_CIRCUIT_CONNECT.....................       0
+total # of *EM_CIRCUIT_ROGO........................       0
+total # of *EM_CONTACT.............................       0
+total # of *EM_CONTACT_MAGNET......................       0
+total # of *EM_CONTACT_RESISTANCE..................       0
+total # of *EM_CONTACT_SUBDOM......................       0
+total # of *EM_CONTROL.............................       0
+total # of *EM_CONTROL_CONTACT.....................       0
+total # of *EM_CONTROL_COUPLING....................       0
+total # of *EM_CONTROL_D3PLOT......................       0
+total # of *EM_CONTROL_EROSION.....................       0
+total # of *EM_CONTROL_MAGNET......................       0
+total # of *EM_CONTROL_SOLUTION....................       0
+total # of *EM_CONTROL_SWITCH......................       0
+total # of *EM_CONTROL_SWITCH_CONTACT..............       0
+total # of *EM_CONTROL_TIMESTEP....................       0
+total # of *EM_DATABASE_CIRCUIT....................       0
+total # of *EM_DATABASE_CIRCUIT0D..................       0
+total # of *EM_DATABASE_ELOUT......................       0
+total # of *EM_DATABASE_FIELDINE...................       0
+total # of *EM_DATABASE_GLOBALENERGY...............       0
+total # of *EM_DATABASE_MAGNET.....................       0
+total # of *EM_DATABASE_NODOUT.....................       0
+total # of *EM_DATABASE_PARTDATA...................       0
+total # of *EM_DATABASE_POINTOUT...................       0
+total # of *EM_DATABASE_ROGO.......................       0
+total # of *EM_DATABASE_TIMESTEP...................       0
+total # of *EM_EP_FIBERINITIAL.....................       0
+total # of *EM_EOS_BURGESS.........................       0
+total # of *EM_EOS_MEADON..........................       0
+total # of *EM_EOS_PERMEABILITY....................       0
+total # of *EM_EOS_TABULATED1......................       0
+total # of *EM_EOS_TABULATED2......................       0
+total # of *EM_EXTERNAL_FIELD......................       0
+total # of *EM_ISOPOTENTIAL........................       0
+total # of *EM_ISOPOTENTIAL_CONNECT................       0
+total # of *EM_ISOPOTENTIAL_ROGO...................       0
+total # of *EM_MAT_001.............................       0
+total # of *EM_MAT_002.............................       0
+total # of *EM_MAT_003.............................       0
+total # of *EM_MAT_004.............................       0
+total # of *EM_MAT_005.............................       0
+total # of *EM_MAT_006.............................       0
+total # of *EM_POINT_SET...........................       0
+total # of *EM_OUTPUT..............................       0
+total # of *EM_OUTPUT_CSYS.........................       0
+total # of *EM_OUTPUT_VTK..........................       0
+total # of *EM_RANDLES_BATMAC......................       0
+total # of *EM_RANDLES_EXOTHERMIC_REACTION.........       0
+total # of *EM_RANDLES_MESHLESS....................       0
+total # of *EM_RANDLES_SHORT.......................       0
+total # of *EM_RANDLES_SOLID.......................       0
+total # of *EM_RANDLES_TSHELL......................       0
+total # of *EM_ROTATION_AXIS.......................       0
+total # of *EM_PERMANENT_MAGNET....................       0
+total # of *EM_SOLVER_BEM..........................       0
+total # of *EM_SOLVER_BEMMAT.......................       0
+total # of *EM_SOLVER_FEM..........................       0
+total # of *EM_SOLVER_FEMBEM.......................       0
+total # of *EM_SOLVER_FEMBEM_MONOLITHIC............       0
+total # of *EM_SOLVER_BEM_FMM......................       0
+total # of *EM_VOLTAGE_DROP........................       0
+total # of *EOS_option.............................       1
+total # of *FATIGUE................................       1
+total # of *FATIGUE_FAILURE........................       0
+total # of *FATIGUE_MULTIAXIAL.....................       0
+total # of *FATIGUE_MEAN_STRESS_CORRECTION.........       0
+total # of *FATIGUE_LOADSTEP.......................       0
+total # of *FREQUENCY_DOMAIN_ACCELERATION_UNIT.....       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_BEM..........       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_DIRECTIVITY..       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_FEM..........       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_FRINGE_PLOT..       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_INCIDENT_WAVE       0
+total # of *FREQUENCY_DOMAIN_ACOUSTIC_SOUND_SPEED..       0
+total # of *FREQUENCY_DOMAIN_FRF...................       0
+total # of *FREQUENCY_DOMAIN_LOCAL.................       0
+total # of *FREQUENCY_DOMAIN_MODE..................       0
+total # of *FREQUENCY_DOMAIN_PATH..................       0
+total # of *FREQUENCY_DOMAIN_RANDOM_VIBRATION......       0
+total # of *FREQUENCY_DOMAIN_RESPONSE_SPECTRUM.....       0
+total # of *FREQUENCY_DOMAIN_SEA...................       0
+total # of *FREQUENCY_DOMAIN_SEA_CONNECTION........       0
+total # of *FREQUENCY_DOMAIN_SEA_INPUTPOWER........       0
+total # of *FREQUENCY_DOMAIN_SEA_SUBSYSTEM.........       0
+total # of *FREQUENCY_DOMAIN_SSD...................       0
+total # of *FV_MESHES..............................       0
+total # of *FV_FSI.................................       0
+total # of *HOURGLASS..............................       0
+total # of *ICFD_BOUNDARY_CONJ_HEAT................       0
+total # of *ICFD_BOUNDARY_CTANGLE..................       0
+total # of *ICFD_PRESCRIBED_FLUX_SPECIES...........       0
+total # of *ICFD_BOUNDARY_CONVECTION_TEMP..........       0
+total # of *ICFD_BOUNDARY_FLOWRATE.................       0
+total # of *ICFD_BOUNDARY_FLUX_TEMP................       0
+total # of *ICFD_BOUNDARY_FREESLIP.................       0
+total # of *ICFD_BOUNDARY_FSI......................       0
+total # of *ICFD_BOUNDARY_FSI_EXCLUDE..............       0
+total # of *ICFD_BOUNDARY_FSI_FIXED................       0
+total # of *ICFD_BOUNDARY_FSI_ONEWAY...............       0
+total # of *ICFD_BOUNDARY_FSWAVE...................       0
+total # of *ICFD_BOUNDARY_LEVELSET.................       0
+total # of *ICFD_BOUNDARY_GROUND...................       0
+total # of *ICFD_BOUNDARY_NAVIERSLIP...............       0
+total # of *ICFD_BOUNDARY_NONSLIP..................       0
+total # of *ICFD_BOUNDARY_OVERSET..................       0
+total # of *ICFD_BOUNDARY_PERIODIC.................       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_MOVEMESH......       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_POTENTIAL.....       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_PRE...........       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_TEMP..........       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_TURBULENCE....       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_VEL...........       0
+total # of *ICFD_BOUNDARY_PRESCRIBED_SPTRANSP_CONC.       0
+total # of *ICFD_BOUNDARY_RADIATION_TEMP...........       0
+total # of *ICFD_BOUNDARY_RESISTANCE...............       0
+total # of *ICFD_BOUNDARY_WEAKVEL..................       0
+total # of *ICFD_BOUNDARY_WINDKESSEL...............       0
+total # of *ICFD_CONTROL_ADAPT.....................       0
+total # of *ICFD_CONTROL_ADAPT_SIZE................       0
+total # of *ICFD_CONTROL_ADVECTION.................       0
+total # of *ICFD_CONTROL_BACKFLOW......................       0
+total # of *ICFD_CONTROL_CONJ......................       0
+total # of *ICFD_CONTROL_CONVERGENCE...............       0
+total # of *ICFD_CONTROL_DEM_COUPLING..............       0
+total # of *ICFD_CONTROL_SPH_COUPLING..............       0
+total # of *ICFD_CONTROL_EMBEDSHELL................       0
+total # of *ICFD_CONTROL_FSI.......................       0
+total # of *ICFD_CONTROL_FREESURF..................       0
+total # of *ICFD_CONTROL_GENERAL...................       0
+total # of *ICFD_CONTROL_IMMERSED..................       0
+total # of *ICFD_CONTROL_IMPOSED_MOVE..............       0
+total # of *ICFD_CONTROL_LOAD......................       0
+total # of *ICFD_CONTROL_MEMCHECK..................       0
+total # of *ICFD_CONTROL_MESH......................       0
+total # of *ICFD_CONTROL_MESH_MOV..................       0
+total # of *ICFD_CONTROL_OUTPUT....................       0
+total # of *ICFD_CONTROL_OUTPUT_SUBDOM.............       0
+total # of *ICFD_CONTROL_OUTPUT_VAR................       0
+total # of *ICFD_CONTROL_PARTITION.................       0
+total # of *ICFD_CONTROL_PERIODIC..................       0
+total # of *ICFD_CONTROL_POROUS....................       0
+total # of *ICFD_CONTROL_RANS......................       0
+total # of *ICFD_CONTROL_REDUCED...................       0
+total # of *ICFD_CONTROL_STEADY....................       0
+total # of *ICFD_CONTROL_SURFMESH..................       0
+total # of *ICFD_CONTROL_TAVERAGE..................       0
+total # of *ICFD_CONTROL_TIME......................       0
+total # of *ICFD_CONTROL_TRANSIENT.................       0
+total # of *ICFD_CONTROL_TURBULENCE................       0
+total # of *ICFD_CONTROL_TURB_SYNTHESIS............       0
+total # of *ICFD_DATABASE_AVERAGE..................       0
+total # of *ICFD_DATABASE_DRAG.....................       0
+total # of *ICFD_DATABASE_FLUX.....................       0
+total # of *ICFD_DATABASE_FLUX_SURF................       0
+total # of *ICFD_DATABASE_FORCE_DEM................       0
+total # of *ICFD_DATABASE_HTC......................       0
+total # of *ICFD_DATABASE_NODEAVG..................       0
+total # of *ICFD_DATABASE_NODOUT...................       0
+total # of *ICFD_DATABASE_POINTAVG.................       0
+total # of *ICFD_DATABASE_POINTOUT.................       0
+total # of *ICFD_DATABASE_RESIDUALS................       0
+total # of *ICFD_DATABASE_TEMP.....................       0
+total # of *ICFD_DATABASE_TIMESTEP.................       0
+total # of *ICFD_DATABASE_UINDEX...................       0
+total # of *ICFD_DATABASE_SSOUT....................       0
+total # of *ICFD_DATABASE_NTEMPOUT.................       0
+total # of *ICFD_DATABASE_SSOUT_EXCLUDE............       0
+total # of *ICFD_DATABASE_VOL......................       0
+total # of *ICFD_DATABASE_WETNESS...................       0
+total # of *ICFD_DEFINE_HEATSOURCE.................       0
+total # of *ICFD_DEFINE_NONINERTIAL................       0
+total # of *ICFD_DEFINE_POINT......................       0
+total # of *ICFD_DEFINE_RESIDENCETIMESOURCE.........       0
+total # of *ICFD_DEFINE_SOURCE.....................       0
+total # of *ICFD_DEFINE_TURBSOURCE.................       0
+total # of *ICFD_DEFINE_WAVE_DAMPING...............       0
+total # of *ICFD_INITIAL...........................       0
+total # of *ICFD_INITIAL_LEVELSET..................       0
+total # of *ICFD_INITIAL_SPTRANSP..................       0
+total # of *ICFD_INITIAL_TEMPNODE..................       0
+total # of *ICFD_INITIAL_TURBULENCE................       0
+total # of *ICFD_MAT...............................       0
+total # of *ICFD_MODEL_ELECTROSTATIC...............       0
+total # of *ICFD_MODEL_NONNEWT.....................       0
+total # of *ICFD_MODEL_POROUS......................       0
+total # of *ICFD_MODEL_SPECIES_TRANSPORT............       0
+total # of *ICFD_PART..............................       0
+total # of *ICFD_PART_VOL..........................       0
+total # of *ICFD_SECTION...........................       0
+total # of *ICFD_SET_NODE..........................       0
+total # of *ICFD_SOLVER_SPLIT......................       0
+total # of *ICFD_SOLVER_TOL_FSI....................       0
+total # of *ICFD_SOLVER_TOL_LSET...................       0
+total # of *ICFD_SOLVER_TOL_MMOV...................       0
+total # of *ICFD_SOLVER_TOL_MOM....................       0
+total # of *ICFD_SOLVER_TOL_MONOLITHIC.............       0
+total # of *ICFD_SOLVER_TOL_PRE....................       0
+total # of *ICFD_SOLVER_TOL_TEMP...................       0
+total # of *ICFD_SOLVER_TOL_TURBULENCE.............       0
+total # of *INITIAL_AIRBAG_PARTICLE_POSITION.......       0
+total # of *INITIAL_AXIAL_FORCE_BEAM...............       0
+total # of *INITIAL_CRASHFRONT.....................       0
+total # of *INITIAL_DETONATION.....................       0
+total # of *INITIAL_FATIGUE_DAMAGE_RATIO...........       0
+total # of *INITIAL_FIELD_SOLID....................       0
+total # of *INITIAL_FOAM_REFERENCE_GEOMETRY........       0
+total # of *INITIAL_IMPULSE_MINE...................       0
+total # of *INITIAL_MOMENTUM.......................       0
+total # of *INITIAL_PWP_DEPTH .....................       0
+total # of *INITIAL_STRAIN_SHELL...................       0
+total # of *INITIAL_STRAIN_SHELL_SET...............       0
+total # of *INITIAL_STRAIN_SHELL_NURBS_PATCH.......       0
+total # of *INITIAL_STRAIN_IGA_SHELL...............       0
+total # of *INITIAL_STRAIN_SOLID...................       0
+total # of *INITIAL_STRAIN_SOLID_NURBS_PATCH.......       0
+total # of *INITIAL_STRAIN_TSHELL..................       0
+total # of *INITIAL_STRAIN_TSHELL_SET..............       0
+total # of *INITIAL_STRESS_BEAM....................       0
+total # of *INITIAL_STRESS_DEPTH ..................       0
+total # of *INITIAL_STRESS_SECTION.................       0
+total # of *INITIAL_STRESS_SHELL...................       0
+total # of *INITIAL_STRESS_SHELL_SET...............       0
+total # of *INITIAL_STRESS_SHELL_NURBS_PATCH.......       0
+total # of *INITIAL_STRESS_IGA_SHELL...............       0
+total # of *INITIAL_STRESS_SOLID...................       0
+total # of *INITIAL_STRESS_SOLID_SET...............       0
+total # of *INITIAL_STRESS_SOLID_NURBS_PATCH.......       0
+total # of *INITIAL_STRESS_SPH.....................       0
+total # of *INITIAL_STRESS_TSHELL..................       0
+total # of *INITIAL_STRESS_TSHELL_SET..............       0
+total # of *INITIAL_STRESS_DES.....................       0
+total # of *INITIAL_HISTORY_NODE...................       0
+total # of *INITIAL_HISTORY_NODE_SET...............       0
+total # of *INITIAL_TEMPERATURE_SET................       0
+total # of *INITIAL_TEMPERATURE_NODE...............       0
+total # of *INITIAL_VELOCITY.......................       0
+total # of *INITIAL_VELOCITY_NODE..................       0
+total # of *INITIAL_VELOCITY_RIGID_BODY............       0
+total # of *INITIAL_VOID_PART......................       0
+total # of *INITIAL_VOID_SET.......................       0
+total # of *INITIAL_VOLUME_FRACTION_GEOMETRY.......       0
+total # of *INITIAL_HYDROSTATIC_ALE................       0
+total # of *INITIAL_EOS_ALE........................       0
+total # of *INITIAL_VAPOR_PART.....................       0
+total # of *INITIAL_ALE_MAPPING....................       0
+total # of *INITIAL_LAG_MAPPING....................       0
+total # of *INITIAL_SOLID_VOLUME...................       0
+total # of *INTEGRATION_BEAM.......................       0
+total # of *INTEGRATION_SHELL......................       0
+total # of *INTERFACE_COMPONENT_option.............       0
+total # of *INTERFACE_DE_HBOND.....................       0
+total # of *INTERFACE_LINKING_DISCRETE_NODE........       0
+total # of *INTERFACE_LINKING_DISCRETE_NODE_SET....       0
+total # of *INTERFACE_LINKING_EDGE.................       0
+total # of *INTERFACE_LINKING_SEGMENT..............       0
+total # of *INTERFACE_LINKING_FORCES...............       0
+total # of *INTERFACE_SPRINGBACK...................       0
+total # of *INTERFACE_SSI_AUX......................       0
+total # of *INTERFACE_SSI_STATIC...................       0
+total # of *INTERFACE_SSI..........................       0
+total # of *LOAD_ACOUSTIC_SOURCE...................       0
+total # of *LOAD_ALE_CONVECTION ...................       0
+total # of *LOAD_AIR_PRESSURE......................       0
+total # of *LOAD_BEAM..............................       0
+total # of *LOAD_BEAM_SET..........................       0
+total # of *LOAD_BODY_GENERALIZED..................       0
+total # of *LOAD_BODY_POROUS.......................       0
+total # of *LOAD_BODY_RX...........................       0
+total # of *LOAD_BODY_RY...........................       0
+total # of *LOAD_BODY_RZ...........................       0
+total # of *LOAD_BODY_X............................       0
+total # of *LOAD_BODY_Y............................       0
+total # of *LOAD_BODY_Z............................       0
+total # of *LOAD_BRODE.............................       0
+total # of *LOAD_BLAST.............................       0
+total # of *LOAD_BLAST_CLEARING....................       0
+total # of *LOAD_BLAST_ENHANCED....................       0
+total # of *LOAD_BLAST_SEGMENT.....................       0
+total # of *LOAD_BLAST_SEGMENT_SET.................       0
+total # of *LOAD_DENSITY_DEPTH.....................       0
+total # of *LOAD_GRAVITY_PART......................       0
+total # of *LOAD_HEAT_CONTROLLER...................       0
+total # of *LOAD_HEAT_EXOTHERMIC_REACTION..........       0
+total # of *LOAD_HEAT_GENERATION_SET...............       0
+total # of *LOAD_HEAT_GENERATION_SOLID.............       0
+total # of *LOAD_HEAT_GENERATION_SET_SHELL.........       0
+total # of *LOAD_HEAT_GENERATION_SHELL.............       0
+total # of *LOAD_MOVING_PRESSURE...................       0
+total # of *LOAD_NODE..............................       0
+total # of *LOAD_NODE_SET..........................       0
+total # of *LOAD_NSG...............................       0
+total # of *LOAD_PYRO_ACTUATOR.....................       0
+total # of *LOAD_REMOVE_PART ......................       0
+total # of *LOAD_SEGMENT...........................       0
+total # of *LOAD_SEGMENT_FSILNK....................       0
+total # of *LOAD_SEGMENT_NONUNIFORM................       0
+total # of *LOAD_SEGMENT_SET.......................       0
+total # of *LOAD_SEGMENT_SET_NONUNIFORM............       0
+total # of *LOAD_SEISMIC_SSI_AUX...................       0
+total # of *LOAD_SEISMIC_SSI_NODE..................       0
+total # of *LOAD_SEISMIC_SSI_SET...................       0
+total # of *LOAD_SEISMIC_SSI_POINT.................       0
+total # of *LOAD_SEISMIC_SSI_DECONV................       0
+total # of *LOAD_SHELL.............................       0
+total # of *LOAD_SHELL_SET.........................       0
+total # of *LOAD_STIFFEN_PART .....................       0
+total # of *LOAD_SUPERPLASTIC_FORMING..............       0
+total # of *LOAD_SURFACE_STRESS....................       0
+total # of *LOAD_THERMAL_option_ELEMENT............       0
+total # of *LOAD_THERMAL_option_NODE...............       0
+total # of *LOAD_THERMAL_option....................       0
+total # of *LOAD_THERMAL_LOAD_CURVE................       0
+total # of *LOAD_THERMAL_TOPAZ ....................       0
+total # of *LOAD_THERMAL_VARIABLE_SHELL_option.....       0
+total # of *LOAD_THERMAL_VARIABLE_BEAM _option.....       0
+total # of *LOAD_VIBRO_ACOUSTIC....................       0
+total # of *LOAD_VOLUME_LOSS ......................       0
+total # of *LSO_DOMAIN.............................       0
+total # of *LSO_ID_SET.............................       0
+total # of *LSO_POINT_SET..........................       0
+total # of *LSO_REGION.............................       0
+total # of *LSO_TIME_SEQUENCE......................       0
+total # of *LSO_VARIABLE_GROUP.....................       0
+total # of *MAT_option.............................       1
+total # of *MAT_ADD_AIRBAG_POROSITY_LEAKAGE........       0
+total # of *MAT_ADD_COHESIVE.......................       0
+total # of *MAT_ADD_DAMAGE_DIEM....................       0
+total # of *MAT_ADD_DAMAGE_GISSMO_option...........       0
+total # of *MAT_ADD_EROSION........................       0
+total # of *MAT_ADD_FATIGUE_option.................       0
+total # of *MAT_ADD_GENERALIZED_DAMAGE.............       0
+total # of *MAT_ADD_INELASTICITY...................       0
+total # of *MAT_ADD_PERMEABILITY/PORE_AIR..........       0
+total # of *MAT_ADD_PROPERTY_DEPENDENCE............       0
+total # of *MAT_ADD_PZELECTRIC.....................       0
+total # of *MAT_ADD_SOC_EXPANSION..................       0
+total # of *MAT_ADD_THERMAL_EXPANSION..............       0
+total # of *MAT_THERMAL_option.....................       0
+total # of *MAT_NONLOCAL...........................       0
+total # of *MESH_BL................................       0
+total # of *MESH_BL_SYM............................       0
+total # of *MESH_EMBEDSHELL........................       0
+total # of *MESH_EMBEDSHELL........................       0
+total # of *MESH_IMM_ELEMENT.......................       0
+total # of *MESH_IMM_NODE..........................       0
+total # of *MESH_NODE..............................       0
+total # of *MESH_SIZE..............................       0
+total # of *MESH_SIZE_SHAPE........................       0
+total # of *MESH_SURFACE_ELEMENT...................       0
+total # of *MESH_SURFACE_NODE......................       0
+total # of *MESH_VOLUME............................       0
+total # of *MESH_VOLUME_ELEMENT....................       0
+total # of *MESH_VOLUME_NODE.......................       0
+total # of *MESH_VOLUME_PART.......................       0
+total # of *NODE...................................    1067
+total # of *NODE_MERGE.............................       0
+total # of *NODE_MERGE_TOLERANCE...................       0
+total # of *PART_option card.......................       1
+total # of *PART_ANNEAL_option.....................       0
+total # of *PARTICLE_GENERAL.......................       0
+total # of *RIGIDWALL_option.......................       0
+total # of *SECTION_option.........................       1
+total # of *SENSOR_CONTROL.........................       0
+total # of *SENSOR_DEFINE .........................       0
+total # of *SENSOR_SWITCH .........................       0
+total # of *SET_2D_SEGMENT.........................       0
+total # of *SET_BEAM...............................       0
+total # of *SET_BOX ...............................       0
+total # of *SET_DISCRETE...........................       0
+total # of *SET_MODE...............................       0
+total # of *SET_NODE_option........................       0
+total # of *SET_PART...............................       0
+total # of *SET_POINT..............................       0
+total # of *SET_SEGMENT............................       0
+total # of *SET_SHELL_option.......................       0
+total # of *SET_SOLID..............................       0
+total # of *SET_TSHELL.............................       0
+total # of *STOCHASTIC_SPRAY_PARTICLES.............       0
+total # of *STOCHASTIC_TBX_PARTICLES...............       0
+total # of *TERMINATION_BODY.......................       0
+total # of *TERMINATION_DELETED_SHELLS.............       0
+total # of *TERMINATION_DELETED_SOLIDS.............       0
+total # of *TERMINATION_NODE.......................       0
+total # of *TERMINATION_CONTACT....................       0
+total # of *TITLE..................................       2
+total # of *USER_INTERFACE_CONTROL.................       0
+total # of *USER_INTERFACE_FRICTION................       0
+total # of *USER_INTERFACE_FORCES..................       0
+total # of *USER_INTERFACE_CONDUCTIVITY............       0
+total # of *USER_LOAD..............................       0
+total # of *USER_MATERIAL_VENDOR...................       0
+total # of *USER_MATERIAL_LICENSE..................       0
+total # of *USER_NONLOCAL_SEARCH...................       0
+total # of *USER_PARAMETER.........................       0
+total # of *CHANGE_BOUNDARY_CONDITIONS.............       0
+total # of *CHANGE_CONTACT_SMALL_PENETRATION.......       0
+total # of *CHANGE_RIGID_BODY_CONSTRAINTS..........       0
+total # of *CHANGE_RIGID_BODY_INERTIA..............       0
+total # of *CHANGE_THERMAL_PARAMETERS..............       0
+total # of *CHANGE_VELOCITY_ZERO...................       0
+total # of *CHANGE_VELOCITY_RIGID_BODY.............       0
+total # of *DELETE_ALECPL..........................       0
+total # of *DELETE_CONTACT.........................       0
+total # of *DELETE_CONTACT_2DAUTO..................       0
+total # of *DELETE_FSI.............................       0
+total # of *DELETE_ENTITY..........................       0
+total # of *DELETE_ELEMENT_SOLID...................       0
+total # of *DELETE_ELEMENT_BEAM....................       0
+total # of *DELETE_ELEMENT_SHELL...................       0
+total # of *DELETE_ELEMENT_TSHELL..................       0
+total # of *DELETE_PART............................       0
+total # of *RIGID_DEFORMABLE_CONTROL...............       0
+total # of *RIGID_DEFORMABLE_D2R...................       0
+total # of *RIGID_DEFORMABLE_R2D...................       0
+total # of *STRESS_INITIALIZATION..................       0
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for node time history # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for node time history # 2 is not found.
+     This is #4 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+      
+     node set for imposed boundary # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 2
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 1
+ 
+ *** Warning 10384 (KEY+384)
+     skipping nonexistent *BOUNDARY_SPC_SET setid 4
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL SPC [*BOUNDARY]
+     check node set for imposed boundary against spc # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL OUTPUT BLOCKS [*DATABASE]
+     node set for node time history # 1 is not found.
+     This is #3 in the input order)
+ 
+ *** Error 10144 (KEY+144)
+     CHECKING NODAL OUTPUT BLOCKS [*DATABASE]
+     node set for node time history # 2 is not found.
+     This is #4 in the input order)
+ 
+ *** Error 10133 (KEY+133)
+     input data failed with: 14 errors
+
+ E r r o r   t e r m i n a t i o n                             04/16/25 17:37:09
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to complete solution   :     181K
+ Additional dynamically allocated memory:    2154K
+                                   Total:    2334K
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Keyword Processing ... 0.0000E+00    0.00     1.1500E-01    3.44
+    KW Reading ......... 0.0000E+00    0.00     3.4000E-02    1.02
+    KW Writing ......... 0.0000E+00    0.00     2.9000E-02    0.87
+  Initialization ....... 3.0000E+00  100.00     3.2310E+00   96.56
+  ----------------------------------------------------------------
+  T o t a l s            3.0000E+00  100.00     3.3460E+00  100.00
+
+ Problem time       =    0.0000E+00
+ Problem cycle      =         0
+ Total CPU time     =         3 seconds (   0 hours  0 minutes  3 seconds)
+ CPU time per zone cycle  =          0.000 picoseconds
+ Clock time per zone cycle=          0.000 picoseconds
+
+ Number of CPU's    4
+ NLQ used/max     136/  136
+ Start time   04/16/2025 17:37:09  
+ End time     04/16/2025 17:37:09  
+ Elapsed time       0 second  for       0 cycles using  4 SMP threads
+             (      0 hour   0 minute   0 second )
+
+ E r r o r   t e r m i n a t i o n                             04/16/25 17:37:09

@@ -1,0 +1,497 @@
+ LS-DYNA keyword deck by LS-PrePost                                      
+                    ls-dyna smp d R14 R14.1.1s_1_ef50e1 date 06/16/2024
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p        1   ( at time 0.00000E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p        1   ( at time 0.00000E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p       10   ( at time 1.29245E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p       10   ( at time 1.29245E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p       14   ( at time 2.54839E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p       14   ( at time 2.54839E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      352   ( at time 3.47231E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      352   ( at time 3.47231E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      359   ( at time 4.39624E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      359   ( at time 4.39624E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      368   ( at time 5.86056E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      368   ( at time 5.86056E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      374   ( at time 7.32488E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      374   ( at time 7.32488E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      382   ( at time 9.64568E+00 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      382   ( at time 9.64568E+00 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      394   ( at time 1.19665E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      394   ( at time 1.19665E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      406   ( at time 1.42873E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      406   ( at time 1.42873E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      419   ( at time 1.66081E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      419   ( at time 1.66081E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      426   ( at time 1.89289E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      426   ( at time 1.89289E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      437   ( at time 2.26071E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      437   ( at time 2.26071E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      449   ( at time 2.62853E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      449   ( at time 2.62853E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      457   ( at time 2.99635E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      457   ( at time 2.99635E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      469   ( at time 3.36417E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      469   ( at time 3.36417E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      481   ( at time 3.73199E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      481   ( at time 3.73199E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      489   ( at time 4.09981E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      489   ( at time 4.09981E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      504   ( at time 4.46763E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      504   ( at time 4.46763E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      513   ( at time 4.83545E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      513   ( at time 4.83545E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      526   ( at time 5.20328E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      526   ( at time 5.20328E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      535   ( at time 5.57110E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      535   ( at time 5.57110E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      547   ( at time 5.93892E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      547   ( at time 5.93892E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      555   ( at time 6.30674E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      555   ( at time 6.30674E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      564   ( at time 6.67456E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      564   ( at time 6.67456E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      576   ( at time 7.04238E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      576   ( at time 7.04238E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      584   ( at time 7.41020E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      584   ( at time 7.41020E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      592   ( at time 7.77802E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      592   ( at time 7.77802E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      604   ( at time 8.14584E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      604   ( at time 8.14584E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      611   ( at time 8.51367E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      611   ( at time 8.51367E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      620   ( at time 9.01367E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      620   ( at time 9.01367E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      632   ( at time 9.51367E+01 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      632   ( at time 9.51367E+01 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       
+
+
+
+ n o d a l  s t r e s s  c a l c u l a t i o n s   f o r   t i m e  s t e p      639   ( at time 1.00000E+02 )
+
+ node (global)
+          stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx       plastic
+                                                                                                 strain 
+
+
+
+ n o d a l  s t r a i n  c a l c u l a t i o n s   f o r   t i m e  s t e p      639   ( at time 1.00000E+02 )
+
+ node (global)
+          strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx       

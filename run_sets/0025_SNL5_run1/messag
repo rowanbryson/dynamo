@@ -1,0 +1,1343 @@
+
+
+ ***************************************************************
+ *            ANSYS LEGAL NOTICES                              *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2023 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+      Date: 04/16/2025      Time: 19:23:54  
+      ___________________________________________________ 
+     |                                                   |
+     |  LS-DYNA, A Program for Nonlinear Dynamic         |
+     |  Analysis of Structures in Three Dimensions       |
+     |  Date    : 06/16/2024    Time: 19:10:47           |
+     |  Version : smp d R14                              |
+     |  Revision: R14.1.1s-1-gef50e1efb1                 |
+     |  AnLicVer: 2024 R2 (20240501+dl-66-g8093a89)      |
+     |                                                   |
+     |  Features enabled in this version:                |
+     |    Shared Memory Parallel                         |
+     |    CESE CHEMISTRY EM ICFD STOCHASTIC_PARTICLES    |
+     |    FFTW (multi-dimensional FFTW Library)          |
+     |    ARPACK (nonsymmetric eigensolver library)      |
+     |    ANSYSLIC enabled                               |
+     |  Issued by  : ANSYS                               |
+     |                                                   |
+     |  Platform   : WINDOWS X64 SSE2                    |
+     |  OS Level   : Windows 8/10 & Srv 2016/2019/2022   |
+     |  Compiler   : Intel Fortran XE 2019 MSVC++ 2019   |
+     |  Hostname   : LAPTOP-RD2A5VAG                     |
+     |  Precision  : Double precision (I8R8)             |
+     |                                                   |
+     |  Unauthorized use infringes Ansys Inc. copyrights |
+     |___________________________________________________|
+
+
+ Command line options: i=MAIN_Bar_6061-T651_Compression.key 
+                       memory=20m 
+                       ncpu=4
+
+ Input file: MAIN_Bar_6061-T651_Compression.key                                              
+
+ The native file format       : 64-bit small endian
+ Memory size from command line:    20000000
+ allocating  memory to    20000000 d     1977354 Initial allocation
+
+ ********  notice  ********  notice  ********  notice  ********
+ *                                                            *
+ * This is the LS-DYNA Finite Element code.                   *
+ *                                                            *
+ * Neither LST nor the authors assume any responsibility for  *
+ * the validity, accuracy, or applicability of any results    *
+ * obtained from this system. Users must verify their own     *
+ * results.                                                   *
+ *                                                            *
+ * LST endeavors to make the LS-DYNA code as complete,        *
+ * accurate and easy to use as possible.                      *
+ * Suggestions and comments are welcomed.  Please report any  *
+ * errors encountered in either the documentation or results  *
+ * immediately to LST through your site focus.                *
+ *                                                            *
+ * Copyright (C) 1990-2021                                    *
+ * by Livermore Software Technology, LLC                      *
+ * All rights reserved                                        *
+ *                                                            *
+ ********  notice  ********  notice  ********  notice  ********
+
+ Beginning of keyword reader                                   04/16/25 19:23:54
+ expanding   memory to       23116 d     2045077  
+ expanding   memory to       53116 d     2045077  
+ expanding   memory to       74520 d     2105077  
+ expanding   memory to      103148 d     2118005  
+ expanding   memory to      125168 d     2118005  
+ expanding   memory to      180168 d     2118005  
+
+                                                               04/16/25 19:23:54
+ Open include file: SNL5.key
+ expanding   memory to      201907 d     2118005  
+
+                                                               04/16/25 19:23:54
+ Open include file: CONTrol_cards.key
+
+                                                               04/16/25 19:23:54
+ Open include file: DATAbase_cards.key
+ expanding   memory to      224365 d     2144431  
+
+ Memory required to process keyword     :     224365  
+ Additional dynamic memory required     :    2144435  
+
+ contracting memory to           1 d     2131819 end of keyword reader
+
+ LS-DYNA will perform a structural only analysis 
+
+ LS-DYNA keyword deck by LS-PrePost                                      
+                    ls-dyna smp d R14 R14.1.1s_1_ef50e1 date 06/16/2024
+ expanding   memory to        2001 d     1977941 material, node and element data
+ expanding   memory to        2071 d     1977960 material properties
+ expanding   memory to        2085 d     2035139 gradient of damage data
+ expanding   memory to        4540 d     2043792 user control for contact interfaces
+ contracting memory to        4520 d     2043793 thermal expansion 0
+ expanding   memory to        4522 d     2043794 cross-sectional force definitions 0
+ expanding   memory to        5430 d     2043802 temp index array for node sorting
+ contracting memory to        4522 d     2044714 just because?
+ expanding   memory to        5138 d     2046540 arbitrary element numbering input
+ ___________________________________________________
+
+ Listing the top 100 solid elements wrt aspect ratio
+ ___________________________________________________
+
+            Element #        Aspect ratio
+            =========        ============
+
+                  522    0.6182293670E+01
+                  521    0.6175217881E+01
+                  698    0.6135264428E+01
+                  697    0.6128072466E+01
+                  578    0.6113949717E+01
+                  577    0.6107023109E+01
+                  562    0.6083072843E+01
+                  561    0.6076413832E+01
+                  646    0.6041048436E+01
+                  645    0.6034260152E+01
+                  642    0.5988666995E+01
+                  641    0.5981837174E+01
+                  523    0.5971507145E+01
+                  520    0.5951394524E+01
+                  699    0.5927552335E+01
+                  582    0.5927207743E+01
+                  581    0.5920609350E+01
+                  579    0.5909755821E+01
+                  696    0.5908285891E+01
+                  576    0.5890004186E+01
+                  563    0.5881726034E+01
+                  560    0.5862771445E+01
+                  430    0.5855994046E+01
+                  429    0.5849460954E+01
+                  647    0.5842996989E+01
+                  644    0.5824335383E+01
+                  643    0.5794735949E+01
+                  398    0.5777616370E+01
+                  390    0.5776137781E+01
+                  640    0.5775987925E+01
+                  397    0.5771107736E+01
+                  389    0.5769931040E+01
+                  418    0.5758231521E+01
+                  417    0.5752149945E+01
+                  446    0.5738069845E+01
+                  583    0.5736775457E+01
+                  445    0.5732244070E+01
+                  580    0.5718478818E+01
+                  458    0.5709392572E+01
+                  457    0.5703493727E+01
+                  490    0.5692371885E+01
+                  489    0.5685998755E+01
+                  682    0.5670394701E+01
+                  431    0.5669877547E+01
+                  681    0.5664701713E+01
+                  428    0.5652458946E+01
+                  614    0.5620895849E+01
+                  613    0.5615151938E+01
+                  586    0.5601271485E+01
+                  399    0.5596818290E+01
+                  585    0.5595152961E+01
+                  391    0.5594415717E+01
+                  419    0.5580026845E+01
+                  396    0.5578844160E+01
+                  388    0.5576707478E+01
+                  447    0.5563099656E+01
+                  466    0.5562988910E+01
+                  416    0.5562345805E+01
+                  465    0.5556741502E+01
+                  444    0.5545479459E+01
+                  459    0.5536407021E+01
+                  456    0.5519685752E+01
+                  491    0.5516077312E+01
+                  530    0.5505880617E+01
+                  683    0.5500060492E+01
+                  529    0.5499902890E+01
+                  488    0.5498714931E+01
+                  638    0.5496681903E+01
+                  637    0.5491288905E+01
+                  680    0.5483569754E+01
+                  615    0.5454284034E+01
+                  612    0.5438027373E+01
+                  587    0.5429597638E+01
+                  510    0.5422821851E+01
+                  509    0.5417561001E+01
+                  584    0.5412820080E+01
+                  478    0.5409155437E+01
+                  477    0.5403362628E+01
+                  467    0.5399819804E+01
+                  464    0.5383588676E+01
+                  486    0.5369661225E+01
+                  485    0.5364782455E+01
+                  362    0.5361312622E+01
+                  361    0.5356267957E+01
+                  622    0.5344747382E+01
+                  366    0.5342679725E+01
+                  621    0.5340021031E+01
+                  531    0.5339385743E+01
+                  365    0.5337498839E+01
+                  639    0.5336812573E+01
+                  528    0.5322695740E+01
+                  636    0.5321155510E+01
+                  414    0.5318004469E+01
+                  413    0.5313233740E+01
+                  474    0.5281054781E+01
+                  473    0.5276573051E+01
+                  511    0.5266727355E+01
+                  678    0.5258224504E+01
+                  677    0.5252969058E+01
+                  508    0.5252018291E+01
+ ___________________________________________________
+ contracting memory to        4542 d     2081124 spc cards
+ expanding   memory to        6530 d     2293511 load curve data
+ contracting memory to        4956 d     2295293 user_define_loading_set
+ expanding   memory to        5160 d     2295293 regularize time history data
+
+ D i g i t i z e d   l o a d   c u r v e   d a t a
+
+     Note: Curves rediscretized into LCINT intervals
+           (default=100; See *CONTROL_SOLUTION and
+           *DEFINE_CURVE) are tabulated below.  Note
+           that the rediscretized form of the curve is
+           used in the solution only in the case where
+           the curve defines material input (e.g. stress
+           vs. strain) or contact friction.  The redis-
+           cretized form is not used if the curve defines
+           a time variation of a load or boundary condition.
+
+
+     load function id number= 1
+$       lcid        sidr       lcint
+           1           0           2
+$           abscissa            ordinate
+     0.000000000E+00     0.000000000E+00
+     1.000000000E+02     1.000000000E+00
+ contracting memory to        4960 d     2295293 *DEFINE_ELEMENT_DEATH
+ expanding   memory to        7776 d     2300535 implicit contact 1
+ contracting memory to        5960 d     2300676 contact segment data 1
+ expanding   memory to       13612 d     2300676 contact segment data 3
+ contracting memory to        4960 d     2382977 contact definition
+ expanding   memory to        4964 d     2385668 contact friction
+ expanding   memory to        4965 d     2385668 implicit friction
+ expanding   memory to        5065 d     2386283 rigid bodies for disp. termination
+ expanding   memory to        5124 d     1958228 save d3plot control data
+ expanding   memory to        5126 d     1961915 sensor_control for curve
+
+ initial kinetic energy = 0.00000000E+00
+ expanding   memory to        5128 d     1962757 implicit explicit hybrid dummy
+ expanding   memory to        6036 d     1962757 implicit allocation 1
+ expanding   memory to        6043 d     1962757 implicit allocation 2
+Number of LS-DYNA  nodes                          =          908
+Number of Implicit nodes                          =          908
+Maximum Index                                     =          908
+ expanding   memory to      148197 d     2109686 implicit allocation 6
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to begin solution      :     225K
+ Linear Alg dynamically allocated memory:     9087
+ Additional dynamically allocated memory:    2538K
+                                   Total:    2772K
+       1 t 0.0000E+00 dt 5.00E-01 flush i/o buffers            04/16/25 19:23:54
+       1 t 0.0000E+00 dt 5.00E-01 write d3plot file            04/16/25 19:23:54
+
+ BEGIN implicit statics  step      1 t= 5.0000E-01             04/16/25 19:23:54
+ ============================================================
+                time =  5.00000E-01
+   current step size =  5.00000E-01
+ expanding   memory to      164545 d     2109675 implicit matrix assembly allocation
+
+
+     ================================================
+     ==            IMPLICIT USAGE ALERT            ==
+     ================================================
+     == Memory Management for Implicit has changed ==
+     == after R10.  Please use:                    ==
+     ==       memory=     1M                       ==
+     ================================================
+
+ Iteration:   1     *|du|/|u| =  1.0000000E+00     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  3.9943708E-03     *Ei/E0 =  1.2982732E-08
+
+ Equilibrium iterations summary step      1 t= 5.0000E-01      04/16/25 19:23:55
+    Number of iterations to converge         =           2
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           3
+
+ Convergence detected as a combination of
+     1. Current  maximum   displacement translational norm           
+        Value =   7.5796E-08 vs Tolerance =   3.1292E-07
+     2. Current  euclidian displacement translational norm           
+        Value =   4.8648E-07 vs Tolerance =   1.0000E-05
+     3. Ratio of euclidian energy       translational norms          
+        Value =   1.2983E-08 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      2 t= 1.2924E+00             04/16/25 19:23:55
+ ============================================================
+                time =  1.29245E+00
+   current step size =  7.92447E-01
+ Iteration:   1     *|du|/|u| =  6.1336020E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  3.6189164E-03     *Ei/E0 =  3.8637296E-08
+
+ Equilibrium iterations summary step      2 t= 1.2924E+00      04/16/25 19:23:55
+    Number of iterations to converge         =           2
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           3
+
+ Convergence detected as a combination of
+     1. Current  maximum   displacement translational norm           
+        Value =   1.4971E-07 vs Tolerance =   3.1292E-07
+     2. Current  euclidian displacement translational norm           
+        Value =   1.1372E-06 vs Tolerance =   1.0000E-05
+     3. Ratio of euclidian energy       translational norms          
+        Value =   3.8637E-08 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      3 t= 2.5484E+00             04/16/25 19:23:55
+ ============================================================
+                time =  2.54839E+00
+   current step size =  1.25594E+00
+ Iteration:   1     *|du|/|u| =  4.9328907E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  3.2313613E-03     *Ei/E0 =  1.5584915E-06
+
+ Equilibrium iterations summary step      3 t= 2.5484E+00      04/16/25 19:23:55
+    Number of iterations to converge         =           2
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           3
+
+ Convergence detected as a combination of
+     1. Current  maximum   displacement translational norm           
+        Value =   2.9005E-07 vs Tolerance =   3.1292E-07
+     2. Current  euclidian displacement translational norm           
+        Value =   1.9999E-06 vs Tolerance =   1.0000E-05
+     3. Ratio of euclidian energy       translational norms          
+        Value =   1.5585E-06 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      4 t= 4.5389E+00             04/16/25 19:23:55
+ ============================================================
+                time =  4.53893E+00
+   current step size =  1.99054E+00
+ Iteration:   1     *|du|/|u| =  4.3914151E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.7640353E-02     *Ei/E0 =  9.3313933E-04
+ Iteration:   3     *|du|/|u| =  5.8581233E-02     *Ei/E0 =  1.3677611E-03
+ Iteration:   4     *|du|/|u| =  1.0195920E-02     *Ei/E0 =  2.4284978E-05
+ Iteration:   5     *|du|/|u| =  2.8481990E-02     *Ei/E0 =  6.8919735E-05
+ Iteration:   6     *|du|/|u| =  3.2687213E-02     *Ei/E0 =  2.9066510E-04
+ Iteration:   7     *|du|/|u| =  1.2501151E+00     *Ei/E0 =  1.1555972E-02
+ Iteration:   8     *|du|/|u| =  1.5621486E+00     *Ei/E0 =  1.4512083E-01
+ Iteration:   9     *|du|/|u| =  1.6767041E-01     *Ei/E0 =  1.7470323E-03
+ Iteration:  10     *|du|/|u| =  1.8502270E-01     *Ei/E0 =  5.3453614E-02
+ Iteration:  11     *|du|/|u| =  2.9686447E-01     *Ei/E0 =  2.5887293E-02
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  1.0478313E-01     *Ei/E0 =  4.9558638E-02
+ Iteration:  13     *|du|/|u| =  1.5516451E-01     *Ei/E0 =  3.2015211E-02
+ Iteration:  14     *|du|/|u| =  7.3293445E-02     *Ei/E0 =  1.1410969E-03
+ Iteration:  15     *|du|/|u| =  2.0869133E+00     *Ei/E0 =  6.8950709E-02
+ Iteration:  16     *|du|/|u| =  1.9529984E-01     *Ei/E0 =  4.7964496E-02
+ Iteration:  17     *|du|/|u| =  8.2582194E-02     *Ei/E0 =  4.3926209E-02
+ Iteration:  18     *|du|/|u| =  1.4907119E-01     *Ei/E0 =  3.6533737E-02
+ Iteration:  19     *|du|/|u| =  2.3585210E+00     *Ei/E0 =  9.1398729E-02
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   2.458E+05 exceeds prior maximum   2.082E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  20     *|du|/|u| =  1.0942843E-01     *Ei/E0 =  1.6953014E-01
+ Iteration:  21     *|du|/|u| =  2.6192796E-01     *Ei/E0 =  1.7148983E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   3.318E+05 exceeds prior maximum   2.458E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  22     *|du|/|u| =  6.5578577E-02     *Ei/E0 =  2.2562329E-01
+ Iteration:  23     *|du|/|u| =  1.5060633E-01     *Ei/E0 =  1.9219579E-01
+ Iteration:  24     *|du|/|u| =  1.5163437E-01     *Ei/E0 =  1.2471602E-01
+ Iteration:  25     *|du|/|u| =  4.9568896E-01     *Ei/E0 =  1.0730901E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.832E+05 exceeds prior maximum   3.318E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  26     *|du|/|u| =  7.0848148E-02     *Ei/E0 =  7.1076301E-01
+ Iteration:  27     *|du|/|u| =  5.9609868E-02     *Ei/E0 =  2.9985864E-01
+ Iteration:  28     *|du|/|u| =  4.2457703E-02     *Ei/E0 =  1.3023566E-01
+ Iteration:  29     *|du|/|u| =  7.5966760E-02     *Ei/E0 =  1.7040194E-01
+ Iteration:  30     *|du|/|u| =  6.2156661E-02     *Ei/E0 =  9.6383682E-02
+ Iteration:  31     *|du|/|u| =  7.3587396E-02     *Ei/E0 =  1.5343876E-01
+ Iteration:  32     *|du|/|u| =  7.7678513E-02     *Ei/E0 =  2.2646637E-01
+ Iteration:  33     *|du|/|u| =  7.8342380E-02     *Ei/E0 =  3.1437270E-01
+ Iteration:  34     *|du|/|u| =  6.7002178E-02     *Ei/E0 =  3.2610818E-01
+ Iteration:  35     *|du|/|u| =  7.4876458E-02     *Ei/E0 =  4.2885246E-01
+ Iteration:  36     *|du|/|u| =  7.4782820E-02     *Ei/E0 =  4.4042739E-01
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  37     *|du|/|u| =  3.2665550E-02     *Ei/E0 =  2.3116260E-01
+ Iteration:  38     *|du|/|u| =  9.0064855E-02     *Ei/E0 =  3.7383998E-01
+ Iteration:  39     *|du|/|u| =  3.3794365E-02     *Ei/E0 =  1.1609881E-01
+ Iteration:  40     *|du|/|u| =  1.1485614E-01     *Ei/E0 =  5.1015041E-01
+ Iteration:  41     *|du|/|u| =  5.0314728E-02     *Ei/E0 =  3.2556967E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   4.885E+05 exceeds prior maximum   4.832E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  42     *|du|/|u| =  3.1276558E-02     *Ei/E0 =  3.9363216E-01
+ Iteration:  43     *|du|/|u| =  2.2636873E-02     *Ei/E0 =  1.5716769E-01
+ Iteration:  44     *|du|/|u| =  3.2173835E-02     *Ei/E0 =  1.6202419E-01
+ Iteration:  45     *|du|/|u| =  2.8636892E-02     *Ei/E0 =  8.6532723E-02
+ Iteration:  46     *|du|/|u| =  6.5681065E-02     *Ei/E0 =  1.8490488E-01
+ Iteration:  47     *|du|/|u| =  4.3147103E-02     *Ei/E0 =  2.3014443E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.018E+05 exceeds prior maximum   4.885E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  48     *|du|/|u| =  2.8888605E-02     *Ei/E0 =  2.9858157E-01
+ Iteration:  49     *|du|/|u| =  2.2109782E-02     *Ei/E0 =  1.3865223E-01
+ Iteration:  50     *|du|/|u| =  2.3812212E-02     *Ei/E0 =  9.3231991E-02
+ Iteration:  51     *|du|/|u| =  3.3233404E-02     *Ei/E0 =  9.8002526E-02
+ Iteration:  52     *|du|/|u| =  3.5893580E-02     *Ei/E0 =  1.1926563E-01
+ Iteration:  53     *|du|/|u| =  4.2354828E-02     *Ei/E0 =  2.6175615E-01
+ Iteration:  54     *|du|/|u| =  3.5855984E-02     *Ei/E0 =  3.3455550E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   5.537E+05 exceeds prior maximum   5.018E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  55     *|du|/|u| =  1.9594758E-02     *Ei/E0 =  2.6456338E-01
+ Iteration:  56     *|du|/|u| =  2.9266740E-02     *Ei/E0 =  2.2684147E-01
+ Iteration:  57     *|du|/|u| =  1.5812662E-02     *Ei/E0 =  8.1845734E-02
+ Iteration:  58     *|du|/|u| =  3.6076253E-02     *Ei/E0 =  1.8403379E-01
+ Iteration:  59     *|du|/|u| =  1.9361041E-02     *Ei/E0 =  1.2582172E-01
+ Iteration:  60     *|du|/|u| =  6.0177529E-02     *Ei/E0 =  4.9505847E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   6.956E+05 exceeds prior maximum   5.537E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  61     *|du|/|u| =  2.5963667E-02     *Ei/E0 =  4.2513025E-01
+ Iteration:  62     *|du|/|u| =  2.3599972E-02     *Ei/E0 =  1.6434910E-01
+ Iteration:  63     *|du|/|u| =  1.8190579E-02     *Ei/E0 =  8.2046481E-02
+ Iteration:  64     *|du|/|u| =  2.3889956E-02     *Ei/E0 =  1.2120113E-01
+ Iteration:  65     *|du|/|u| =  2.6252807E-02     *Ei/E0 =  1.4746621E-01
+ Iteration:  66     *|du|/|u| =  3.4210919E-02     *Ei/E0 =  2.2627079E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   7.167E+05 exceeds prior maximum   6.956E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  67     *|du|/|u| =  3.2868630E-02     *Ei/E0 =  5.2655949E-01
+ Iteration:  68     *|du|/|u| =  2.1101065E-02     *Ei/E0 =  1.7979519E-01
+ Iteration:  69     *|du|/|u| =  1.7741405E-02     *Ei/E0 =  1.0706973E-01
+ Iteration:  70     *|du|/|u| =  3.0376938E-02     *Ei/E0 =  1.7233637E-01
+ Iteration:  71     *|du|/|u| =  2.9979549E-02     *Ei/E0 =  1.7744281E-01
+ Iteration:  72     *|du|/|u| =  3.5673646E-02     *Ei/E0 =  3.3911704E-01
+ Iteration:  73     *|du|/|u| =  2.7867210E-02     *Ei/E0 =  3.3800843E-01
+ Iteration:  74     *|du|/|u| =  3.1254927E-02     *Ei/E0 =  2.9962402E-01
+ Iteration:  75     *|du|/|u| =  3.4095961E-02     *Ei/E0 =  3.1581492E-01
+ Iteration:  76     *|du|/|u| =  2.2434092E-02     *Ei/E0 =  2.8471024E-01
+ Iteration:  77     *|du|/|u| =  2.6964037E-02     *Ei/E0 =  2.0897955E-01
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  78     *|du|/|u| =  1.3852449E-02     *Ei/E0 =  1.0486227E-01
+ Iteration:  79     *|du|/|u| =  5.3711162E-02     *Ei/E0 =  3.2981290E-01
+ Iteration:  80     *|du|/|u| =  1.2921631E-02     *Ei/E0 =  1.2036230E-01
+ Iteration:  81     *|du|/|u| =  2.0329766E-02     *Ei/E0 =  1.6558856E-01
+ Iteration:  82     *|du|/|u| =  2.1222257E-02     *Ei/E0 =  9.9887369E-02
+ Iteration:  83     *|du|/|u| =  2.9849426E-02     *Ei/E0 =  1.1083820E-01
+ Iteration:  84     *|du|/|u| =  7.0711575E-02     *Ei/E0 =  2.5214792E-01
+ Iteration:  85     *|du|/|u| =  2.5133546E-02     *Ei/E0 =  3.1469695E-01
+ Iteration:  86     *|du|/|u| =  8.9708626E-02     *Ei/E0 =  1.7831615E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   8.424E+05 exceeds prior maximum   7.167E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  87     *|du|/|u| =  2.3864833E-02     *Ei/E0 =  5.9593313E-01
+ Iteration:  88     *|du|/|u| =  3.3105925E-02     *Ei/E0 =  3.3279669E-01
+ Iteration:  89     *|du|/|u| =  4.5042028E-02     *Ei/E0 =  3.7217043E-01
+ Iteration:  90     *|du|/|u| =  4.3805072E-02     *Ei/E0 =  3.3857924E-01
+ Iteration:  91     *|du|/|u| =  6.1190258E-02     *Ei/E0 =  4.7652153E-01
+ Iteration:  92     *|du|/|u| =  5.2768679E-02     *Ei/E0 =  5.5962602E-01
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   9.395E+05 exceeds prior maximum   8.424E+05
+
+ automatically REFORMING stiffness matrix...
+ Iteration:  93     *|du|/|u| =  4.4249280E-02     *Ei/E0 =  1.0056201E+00
+ Iteration:  94     *|du|/|u| =  3.7244659E-02     *Ei/E0 =  4.3735232E-01
+ Iteration:  95     *|du|/|u| =  4.1500861E-02     *Ei/E0 =  3.3689314E-01
+ Iteration:  96     *|du|/|u| =  7.1500126E-02     *Ei/E0 =  4.9671491E-01
+ Iteration:  97     *|du|/|u| =  9.4684989E-02     *Ei/E0 =  7.1810706E-01
+ Iteration:  98     *|du|/|u| =  6.2172817E-02     *Ei/E0 =  7.2885946E-01
+ Iteration:  99     *|du|/|u| =  1.1058822E-01     *Ei/E0 =  1.2781662E+00
+ Iteration: 100     *|du|/|u| =  3.4481755E-02     *Ei/E0 =  6.1638823E-01
+ Iteration: 101     *|du|/|u| =  6.7781747E-02     *Ei/E0 =  5.3576849E-01
+ Iteration: 102     *|du|/|u| =  4.2156926E-02     *Ei/E0 =  1.8900491E-01
+ Iteration: 103     *|du|/|u| =  1.8592665E-01     *Ei/E0 =  6.6997359E-01
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration: 104     *|du|/|u| =  4.9426254E-02     *Ei/E0 =  4.4361455E-01
+ Iteration: 105     *|du|/|u| =  3.0302457E-02     *Ei/E0 =  1.4015327E-01
+ Iteration: 106     *|du|/|u| =  2.6721643E-02     *Ei/E0 =  9.2670825E-02
+ Iteration: 107     *|du|/|u| =  4.4933288E-02     *Ei/E0 =  1.3453941E-01
+ Iteration: 108     *|du|/|u| =  3.8812373E-02     *Ei/E0 =  1.1185538E-01
+ Iteration: 109     *|du|/|u| =  6.8285397E-02     *Ei/E0 =  2.1407858E-01
+ Iteration: 110     *|du|/|u| =  1.7785789E-02     *Ei/E0 =  1.5598417E-01
+ Iteration: 111     *|du|/|u| =  5.2974347E-02     *Ei/E0 =  3.5093614E-01
+ Iteration: 112     *|du|/|u| =  1.1959683E-02     *Ei/E0 =  7.3732633E-02
+ Iteration: 113     *|du|/|u| =  5.6977038E-02     *Ei/E0 =  2.1359493E-01
+ Iteration: 114     *|du|/|u| =  1.5253727E-02     *Ei/E0 =  9.6355492E-02
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration: 115     *|du|/|u| =  1.4684955E-02     *Ei/E0 =  7.2317776E-02
+ Iteration: 116     *|du|/|u| =  3.7166245E-02     *Ei/E0 =  1.2029767E-01
+ Iteration: 117     *|du|/|u| =  1.7260529E-02     *Ei/E0 =  4.8462381E-02
+ Iteration: 118     *|du|/|u| =  6.8722883E-02     *Ei/E0 =  1.6275162E-01
+ Iteration: 119     *|du|/|u| =  4.8382609E-02     *Ei/E0 =  1.0300191E-01
+ Iteration: 120     *|du|/|u| =  1.4912645E-01     *Ei/E0 =  4.4319958E-01
+ Iteration: 121     *|du|/|u| =  2.7516885E-01     *Ei/E0 =  2.1102998E+00
+ DIVERGENCE (increasing translational residual norm) detected:
+   current norm   1.013E+06 exceeds prior maximum   9.395E+05
+
+ automatically REFORMING stiffness matrix...
+ convergence failure, repeat step: dtnew =  9.23925E-01
+
+ BEGIN implicit statics  step      4 t= 3.4723E+00             04/16/25 19:23:58
+ ============================================================
+                time =  3.47231E+00
+   current step size =  9.23925E-01
+ Iteration:   1     *|du|/|u| =  2.7225995E-01     *Ei/E0 =  5.1852850E-01
+ Iteration:   2     *|du|/|u| =  2.0444284E-02     *Ei/E0 =  9.6738307E-04
+ Iteration:   3     *|du|/|u| =  1.2685569E-02     *Ei/E0 =  2.8855445E-04
+ Iteration:   4     *|du|/|u| =  1.5580886E-02     *Ei/E0 =  1.3097284E-04
+ Iteration:   5     *|du|/|u| =  1.8473671E-02     *Ei/E0 =  1.1163541E-04
+ Iteration:   6     *|du|/|u| =  1.5532500E-01     *Ei/E0 =  7.7486004E-04
+ Iteration:   7     *|du|/|u| =  1.5980781E-01     *Ei/E0 =  5.5559717E-04
+ Iteration:   8     *|du|/|u| =  1.7390241E-01     *Ei/E0 =  3.9965667E-04
+ Iteration:   9     *|du|/|u| =  1.9955787E-01     *Ei/E0 =  3.3420660E-04
+ Iteration:  10     *|du|/|u| =  2.2227785E-01     *Ei/E0 =  2.0354445E-04
+ Iteration:  11     *|du|/|u| =  2.4658257E-01     *Ei/E0 =  3.3187150E-04
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  2.3041488E-02     *Ei/E0 =  1.3143883E-03
+ Iteration:  13     *|du|/|u| =  2.6366452E-02     *Ei/E0 =  1.0268275E-03
+ Iteration:  14     *|du|/|u| =  7.9589178E-03     *Ei/E0 =  2.7279153E-04
+
+ Equilibrium iterations summary step      4 t= 3.4723E+00      04/16/25 19:23:58
+    Number of iterations to converge         =          14
+    Number of stiffness reformations         =           1
+    Number of right hand side evaluations    =         108
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   6.6094E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.7279E-04 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      5 t= 4.3962E+00             04/16/25 19:23:58
+ ============================================================
+                time =  4.39624E+00
+   current step size =  9.23925E-01
+ Iteration:   1     *|du|/|u| =  2.1756316E-01     *Ei/E0 =  5.3748311E-01
+ Iteration:   2     *|du|/|u| =  1.8276541E-02     *Ei/E0 =  1.0052461E-03
+ Iteration:   3     *|du|/|u| =  2.0754889E-02     *Ei/E0 =  5.1003808E-04
+ Iteration:   4     *|du|/|u| =  1.0151642E-02     *Ei/E0 =  1.0532085E-04
+ Iteration:   5     *|du|/|u| =  3.4125776E-03     *Ei/E0 =  2.6992854E-05
+
+ Equilibrium iterations summary step      5 t= 4.3962E+00      04/16/25 19:23:59
+    Number of iterations to converge         =           5
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           6
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   3.7057E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.6993E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      6 t= 5.8606E+00             04/16/25 19:23:59
+ ============================================================
+                time =  5.86056E+00
+   current step size =  1.46432E+00
+ Iteration:   1     *|du|/|u| =  2.4871684E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.3485099E-02     *Ei/E0 =  1.8008040E-03
+ Iteration:   3     *|du|/|u| =  2.7742762E-02     *Ei/E0 =  1.1359922E-03
+ Iteration:   4     *|du|/|u| =  1.5914277E-02     *Ei/E0 =  2.6796571E-04
+ Iteration:   5     *|du|/|u| =  7.2459604E-03     *Ei/E0 =  3.3309145E-04
+ Iteration:   6     *|du|/|u| =  1.2584202E-02     *Ei/E0 =  1.5612187E-04
+ Iteration:   7     *|du|/|u| =  6.1367848E-03     *Ei/E0 =  2.4721835E-05
+
+ Equilibrium iterations summary step      6 t= 5.8606E+00      04/16/25 19:23:59
+    Number of iterations to converge         =           7
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           8
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   9.0307E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.4722E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      7 t= 7.3249E+00             04/16/25 19:23:59
+ ============================================================
+                time =  7.32488E+00
+   current step size =  1.46432E+00
+ Iteration:   1     *|du|/|u| =  2.1012412E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.1170561E-02     *Ei/E0 =  1.3017640E-03
+ Iteration:   3     *|du|/|u| =  7.8508501E-03     *Ei/E0 =  3.0069874E-04
+ Iteration:   4     *|du|/|u| =  2.0056233E-03     *Ei/E0 =  5.3064670E-05
+
+ Equilibrium iterations summary step      7 t= 7.3249E+00      04/16/25 19:23:59
+    Number of iterations to converge         =           4
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           5
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   3.7895E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   5.3065E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      8 t= 9.6457E+00             04/16/25 19:23:59
+ ============================================================
+                time =  9.64568E+00
+   current step size =  2.32079E+00
+ Iteration:   1     *|du|/|u| =  2.3226568E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.6510337E-02     *Ei/E0 =  1.9919381E-03
+ Iteration:   3     *|du|/|u| =  1.8643027E-02     *Ei/E0 =  7.5824622E-04
+ Iteration:   4     *|du|/|u| =  6.8200411E-03     *Ei/E0 =  1.7671252E-04
+ Iteration:   5     *|du|/|u| =  4.1528638E-03     *Ei/E0 =  1.2656036E-04
+ Iteration:   6     *|du|/|u| =  3.8506285E-03     *Ei/E0 =  6.1866807E-05
+
+ Equilibrium iterations summary step      8 t= 9.6457E+00      04/16/25 19:23:59
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   9.7180E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.1867E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step      9 t= 1.1966E+01             04/16/25 19:23:59
+ ============================================================
+                time =  1.19665E+01
+   current step size =  2.32079E+00
+ Iteration:   1     *|du|/|u| =  1.8644417E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.3126668E-02     *Ei/E0 =  2.3770305E-03
+ Iteration:   3     *|du|/|u| =  1.4582363E-02     *Ei/E0 =  7.8725837E-04
+ Iteration:   4     *|du|/|u| =  5.1385895E-03     *Ei/E0 =  2.1924168E-04
+ Iteration:   5     *|du|/|u| =  4.6804082E-03     *Ei/E0 =  1.5515827E-04
+ Iteration:   6     *|du|/|u| =  6.3057580E-03     *Ei/E0 =  9.3149466E-05
+ Iteration:   7     *|du|/|u| =  3.1666738E-03     *Ei/E0 =  5.3598482E-05
+ Iteration:   8     *|du|/|u| =  2.0533193E-03     *Ei/E0 =  4.4478095E-05
+
+ Equilibrium iterations summary step      9 t= 1.1966E+01      04/16/25 19:23:59
+    Number of iterations to converge         =           8
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   6.5347E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   4.4478E-05 vs Tolerance =   1.0000E-02
+     394 t 1.1966E+01 dt 2.32E+00 write d3plot file            04/16/25 19:23:59
+
+ BEGIN implicit statics  step     10 t= 1.4287E+01             04/16/25 19:23:59
+ ============================================================
+                time =  1.42873E+01
+   current step size =  2.32079E+00
+ Iteration:   1     *|du|/|u| =  1.5667362E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  1.8808834E-02     *Ei/E0 =  2.1448633E-03
+ Iteration:   3     *|du|/|u| =  8.4216240E-03     *Ei/E0 =  5.7296421E-04
+ Iteration:   4     *|du|/|u| =  6.4648604E-03     *Ei/E0 =  2.0279459E-04
+ Iteration:   5     *|du|/|u| =  3.0970271E-03     *Ei/E0 =  1.4981820E-04
+ Iteration:   6     *|du|/|u| =  2.5115110E-03     *Ei/E0 =  8.9433460E-05
+
+ Equilibrium iterations summary step     10 t= 1.4287E+01      04/16/25 19:23:59
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   9.6308E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   8.9433E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     11 t= 1.6608E+01             04/16/25 19:23:59
+ ============================================================
+                time =  1.66081E+01
+   current step size =  2.32079E+00
+ Iteration:   1     *|du|/|u| =  1.3031954E-01     *Ei/E0 =  9.9816579E-01
+ Iteration:   2     *|du|/|u| =  1.7003835E-02     *Ei/E0 =  2.5661366E-03
+ Iteration:   3     *|du|/|u| =  8.7514839E-03     *Ei/E0 =  7.5335733E-04
+ Iteration:   4     *|du|/|u| =  7.7652271E-03     *Ei/E0 =  3.6640988E-04
+ Iteration:   5     *|du|/|u| =  2.6275885E-03     *Ei/E0 =  2.2606162E-04
+ Iteration:   6     *|du|/|u| =  3.4026520E-03     *Ei/E0 =  2.1539604E-04
+ Iteration:   7     *|du|/|u| =  3.1474428E-03     *Ei/E0 =  1.1645282E-04
+ Iteration:   8     *|du|/|u| =  4.2691722E-03     *Ei/E0 =  7.1749055E-05
+ Iteration:   9     *|du|/|u| =  1.4067722E-03     *Ei/E0 =  2.4359469E-05
+
+ Equilibrium iterations summary step     11 t= 1.6608E+01      04/16/25 19:24:00
+    Number of iterations to converge         =           9
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          12
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   6.3251E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.4359E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     12 t= 1.8929E+01             04/16/25 19:24:00
+ ============================================================
+                time =  1.89289E+01
+   current step size =  2.32079E+00
+ Iteration:   1     *|du|/|u| =  1.1900511E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  1.3361727E-02     *Ei/E0 =  1.3757952E-03
+ Iteration:   3     *|du|/|u| =  5.5035261E-03     *Ei/E0 =  3.3855437E-04
+ Iteration:   4     *|du|/|u| =  1.9424076E-03     *Ei/E0 =  7.6954115E-05
+ Iteration:   5     *|du|/|u| =  1.6646479E-03     *Ei/E0 =  4.2429448E-05
+
+ Equilibrium iterations summary step     12 t= 1.8929E+01      04/16/25 19:24:00
+    Number of iterations to converge         =           5
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           6
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   8.5879E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   4.2429E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     13 t= 2.2607E+01             04/16/25 19:24:00
+ ============================================================
+                time =  2.26071E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  1.4968224E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  2.0180071E-02     *Ei/E0 =  2.5031602E-03
+ Iteration:   3     *|du|/|u| =  1.3613579E-02     *Ei/E0 =  9.0480004E-04
+ Iteration:   4     *|du|/|u| =  3.2210150E-03     *Ei/E0 =  2.4162979E-04
+ Iteration:   5     *|du|/|u| =  3.3274464E-03     *Ei/E0 =  1.6075820E-04
+ Iteration:   6     *|du|/|u| =  3.5965196E-03     *Ei/E0 =  9.3612749E-05
+ Iteration:   7     *|du|/|u| =  3.1005055E-03     *Ei/E0 =  7.8636416E-05
+ Iteration:   8     *|du|/|u| =  2.9817817E-03     *Ei/E0 =  4.0515494E-05
+ Iteration:   9     *|du|/|u| =  1.3334972E-03     *Ei/E0 =  1.8579790E-05
+
+ Equilibrium iterations summary step     13 t= 2.2607E+01      04/16/25 19:24:00
+    Number of iterations to converge         =           9
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          10
+
+ Convergence detected as a combination of
+     1. Current  euclidian displacement translational norm           
+        Value =   8.2923E-06 vs Tolerance =   1.0000E-05
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.8580E-05 vs Tolerance =   1.0000E-02
+     437 t 2.2607E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:00
+
+ BEGIN implicit statics  step     14 t= 2.6285E+01             04/16/25 19:24:00
+ ============================================================
+                time =  2.62853E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  1.2634029E-01     *Ei/E0 =  9.9712877E-01
+ Iteration:   2     *|du|/|u| =  1.6910856E-02     *Ei/E0 =  2.3934966E-03
+ Iteration:   3     *|du|/|u| =  1.1890236E-02     *Ei/E0 =  9.1756658E-04
+ Iteration:   4     *|du|/|u| =  4.3902020E-03     *Ei/E0 =  2.4621990E-04
+ Iteration:   5     *|du|/|u| =  3.3419913E-03     *Ei/E0 =  1.7528699E-04
+ Iteration:   6     *|du|/|u| =  3.7728527E-03     *Ei/E0 =  1.3688684E-04
+ Iteration:   7     *|du|/|u| =  2.1225561E-03     *Ei/E0 =  5.7715299E-05
+ Iteration:   8     *|du|/|u| =  2.9837614E-03     *Ei/E0 =  5.5866274E-05
+ Iteration:   9     *|du|/|u| =  1.8952780E-03     *Ei/E0 =  1.6966649E-05
+ Iteration:  10     *|du|/|u| =  8.6227047E-04     *Ei/E0 =  2.3234570E-05
+
+ Equilibrium iterations summary step     14 t= 2.6285E+01      04/16/25 19:24:00
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   8.6227E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.3235E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     15 t= 2.9963E+01             04/16/25 19:24:00
+ ============================================================
+                time =  2.99635E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  1.1381392E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  1.3823364E-02     *Ei/E0 =  1.7995205E-03
+ Iteration:   3     *|du|/|u| =  8.0087535E-03     *Ei/E0 =  5.9847980E-04
+ Iteration:   4     *|du|/|u| =  2.1709709E-03     *Ei/E0 =  1.7175534E-04
+ Iteration:   5     *|du|/|u| =  1.6466624E-03     *Ei/E0 =  7.1435702E-05
+ Iteration:   6     *|du|/|u| =  7.9449351E-04     *Ei/E0 =  2.9970848E-05
+
+ Equilibrium iterations summary step     15 t= 2.9963E+01      04/16/25 19:24:00
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.9449E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.9971E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     16 t= 3.3642E+01             04/16/25 19:24:00
+ ============================================================
+                time =  3.36417E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  1.0128975E-01     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  1.3167751E-02     *Ei/E0 =  2.0849379E-03
+ Iteration:   3     *|du|/|u| =  6.7321575E-03     *Ei/E0 =  6.2317405E-04
+ Iteration:   4     *|du|/|u| =  2.1307227E-03     *Ei/E0 =  1.8395694E-04
+ Iteration:   5     *|du|/|u| =  1.7466472E-03     *Ei/E0 =  8.9289155E-05
+ Iteration:   6     *|du|/|u| =  1.5306612E-03     *Ei/E0 =  4.7090440E-05
+ Iteration:   7     *|du|/|u| =  1.0658222E-03     *Ei/E0 =  2.8127341E-05
+ Iteration:   8     *|du|/|u| =  1.5412279E-03     *Ei/E0 =  1.5414967E-05
+ Iteration:   9     *|du|/|u| =  1.3015802E-03     *Ei/E0 =  6.4815790E-06
+ Iteration:  10     *|du|/|u| =  5.0739958E-04     *Ei/E0 =  9.8768622E-06
+
+ Equilibrium iterations summary step     16 t= 3.3642E+01      04/16/25 19:24:00
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   5.0740E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   9.8769E-06 vs Tolerance =   1.0000E-02
+     469 t 3.3642E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:00
+
+ BEGIN implicit statics  step     17 t= 3.7320E+01             04/16/25 19:24:00
+ ============================================================
+                time =  3.73199E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  8.6815786E-02     *Ei/E0 =  9.9026543E-01
+ Iteration:   2     *|du|/|u| =  1.1472477E-02     *Ei/E0 =  2.4991730E-03
+ Iteration:   3     *|du|/|u| =  8.7696327E-03     *Ei/E0 =  1.0113575E-03
+ Iteration:   4     *|du|/|u| =  2.9574959E-03     *Ei/E0 =  2.5771084E-04
+ Iteration:   5     *|du|/|u| =  1.9567965E-03     *Ei/E0 =  1.5116793E-04
+ Iteration:   6     *|du|/|u| =  1.7636866E-03     *Ei/E0 =  9.6263397E-05
+ Iteration:   7     *|du|/|u| =  1.0083520E-03     *Ei/E0 =  4.2784830E-05
+ Iteration:   8     *|du|/|u| =  1.4432804E-03     *Ei/E0 =  3.2143762E-05
+ Iteration:   9     *|du|/|u| =  1.7030122E-03     *Ei/E0 =  1.9833863E-05
+ Iteration:  10     *|du|/|u| =  9.5958910E-04     *Ei/E0 =  1.7179677E-05
+
+ Equilibrium iterations summary step     17 t= 3.7320E+01      04/16/25 19:24:01
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   9.5959E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.7180E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     18 t= 4.0998E+01             04/16/25 19:24:01
+ ============================================================
+                time =  4.09981E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  8.0778292E-02     *Ei/E0 =  9.9815049E-01
+ Iteration:   2     *|du|/|u| =  1.0523471E-02     *Ei/E0 =  2.2874685E-03
+ Iteration:   3     *|du|/|u| =  6.7569811E-03     *Ei/E0 =  8.1218268E-04
+ Iteration:   4     *|du|/|u| =  2.0962646E-03     *Ei/E0 =  2.3686460E-04
+ Iteration:   5     *|du|/|u| =  1.5014948E-03     *Ei/E0 =  1.0943077E-04
+ Iteration:   6     *|du|/|u| =  9.6386563E-04     *Ei/E0 =  5.6845101E-05
+
+ Equilibrium iterations summary step     18 t= 4.0998E+01      04/16/25 19:24:01
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   9.6387E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   5.6845E-05 vs Tolerance =   1.0000E-02
+     489 t 4.0998E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:01
+
+ BEGIN implicit statics  step     19 t= 4.4676E+01             04/16/25 19:24:01
+ ============================================================
+                time =  4.46763E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  7.3401311E-02     *Ei/E0 =  9.9628118E-01
+ Iteration:   2     *|du|/|u| =  1.0536323E-02     *Ei/E0 =  3.0258594E-03
+ Iteration:   3     *|du|/|u| =  7.3730525E-03     *Ei/E0 =  1.0350750E-03
+ Iteration:   4     *|du|/|u| =  2.2918767E-03     *Ei/E0 =  4.0971549E-04
+ Iteration:   5     *|du|/|u| =  1.6287665E-03     *Ei/E0 =  2.4546766E-04
+ Iteration:   6     *|du|/|u| =  1.5312383E-03     *Ei/E0 =  1.3398832E-04
+ Iteration:   7     *|du|/|u| =  2.6340154E-03     *Ei/E0 =  1.2580102E-04
+ Iteration:   8     *|du|/|u| =  2.6459619E-03     *Ei/E0 =  7.8458650E-05
+ Iteration:   9     *|du|/|u| =  1.8815461E-03     *Ei/E0 =  4.8977719E-05
+ Iteration:  10     *|du|/|u| =  1.0299629E-03     *Ei/E0 =  7.6475741E-05
+ Iteration:  11     *|du|/|u| =  1.0373371E-03     *Ei/E0 =  4.8322580E-05
+
+ ITERATION LIMIT reached, automatically REFORMING stiffness matrix...
+ Iteration:  12     *|du|/|u| =  3.0918007E-04     *Ei/E0 =  2.8887181E-05
+
+ Equilibrium iterations summary step     19 t= 4.4676E+01      04/16/25 19:24:01
+    Number of iterations to converge         =          12
+    Number of stiffness reformations         =           1
+    Number of right hand side evaluations    =          14
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   3.0918E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   2.8887E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     20 t= 4.8355E+01             04/16/25 19:24:01
+ ============================================================
+                time =  4.83545E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  6.6900588E-02     *Ei/E0 =  9.9261142E-01
+ Iteration:   2     *|du|/|u| =  9.9209485E-03     *Ei/E0 =  2.8585695E-03
+ Iteration:   3     *|du|/|u| =  6.5213577E-03     *Ei/E0 =  9.7226975E-04
+ Iteration:   4     *|du|/|u| =  1.9974232E-03     *Ei/E0 =  2.8002528E-04
+ Iteration:   5     *|du|/|u| =  1.7875186E-03     *Ei/E0 =  1.8227677E-04
+ Iteration:   6     *|du|/|u| =  1.0884894E-03     *Ei/E0 =  8.0866816E-05
+ Iteration:   7     *|du|/|u| =  7.3102198E-04     *Ei/E0 =  6.4459504E-05
+
+ Equilibrium iterations summary step     20 t= 4.8355E+01      04/16/25 19:24:01
+    Number of iterations to converge         =           7
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           8
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.3102E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.4460E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     21 t= 5.2033E+01             04/16/25 19:24:01
+ ============================================================
+                time =  5.20328E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  6.2044258E-02     *Ei/E0 =  9.9508678E-01
+ Iteration:   2     *|du|/|u| =  9.1163716E-03     *Ei/E0 =  2.9941938E-03
+ Iteration:   3     *|du|/|u| =  6.7609120E-03     *Ei/E0 =  1.1669435E-03
+ Iteration:   4     *|du|/|u| =  2.1572407E-03     *Ei/E0 =  3.3369455E-04
+ Iteration:   5     *|du|/|u| =  1.6336643E-03     *Ei/E0 =  2.4893297E-04
+ Iteration:   6     *|du|/|u| =  1.6136159E-03     *Ei/E0 =  1.4312562E-04
+ Iteration:   7     *|du|/|u| =  1.0690578E-03     *Ei/E0 =  1.0691828E-04
+ Iteration:   8     *|du|/|u| =  1.4230144E-03     *Ei/E0 =  8.3584476E-05
+ Iteration:   9     *|du|/|u| =  1.7700983E-03     *Ei/E0 =  3.5582790E-05
+ Iteration:  10     *|du|/|u| =  1.6118470E-03     *Ei/E0 =  3.6951526E-05
+ Iteration:  11     *|du|/|u| =  7.6649629E-04     *Ei/E0 =  6.0284696E-05
+
+ Equilibrium iterations summary step     21 t= 5.2033E+01      04/16/25 19:24:01
+    Number of iterations to converge         =          11
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          12
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.6650E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.0285E-05 vs Tolerance =   1.0000E-02
+     526 t 5.2033E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:01
+
+ BEGIN implicit statics  step     22 t= 5.5711E+01             04/16/25 19:24:01
+ ============================================================
+                time =  5.57110E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  5.7412981E-02     *Ei/E0 =  9.9331035E-01
+ Iteration:   2     *|du|/|u| =  7.2769258E-03     *Ei/E0 =  2.5556129E-03
+ Iteration:   3     *|du|/|u| =  6.4033112E-03     *Ei/E0 =  1.1961443E-03
+ Iteration:   4     *|du|/|u| =  1.9680658E-03     *Ei/E0 =  3.7138381E-04
+ Iteration:   5     *|du|/|u| =  1.1402242E-03     *Ei/E0 =  1.6256606E-04
+ Iteration:   6     *|du|/|u| =  1.1480938E-03     *Ei/E0 =  1.3491934E-04
+ Iteration:   7     *|du|/|u| =  8.7473029E-04     *Ei/E0 =  6.3303843E-05
+
+ Equilibrium iterations summary step     22 t= 5.5711E+01      04/16/25 19:24:02
+    Number of iterations to converge         =           7
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           8
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   8.7473E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.3304E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     23 t= 5.9389E+01             04/16/25 19:24:02
+ ============================================================
+                time =  5.93892E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  5.3678465E-02     *Ei/E0 =  9.9405118E-01
+ Iteration:   2     *|du|/|u| =  7.6811729E-03     *Ei/E0 =  2.9652784E-03
+ Iteration:   3     *|du|/|u| =  6.1952451E-03     *Ei/E0 =  1.2220059E-03
+ Iteration:   4     *|du|/|u| =  1.5802621E-03     *Ei/E0 =  3.7384230E-04
+ Iteration:   5     *|du|/|u| =  1.3700252E-03     *Ei/E0 =  2.6122150E-04
+ Iteration:   6     *|du|/|u| =  1.3896674E-03     *Ei/E0 =  1.5870409E-04
+ Iteration:   7     *|du|/|u| =  1.3602147E-03     *Ei/E0 =  1.0951421E-04
+ Iteration:   8     *|du|/|u| =  1.5319053E-03     *Ei/E0 =  8.3734416E-05
+ Iteration:   9     *|du|/|u| =  2.1289226E-03     *Ei/E0 =  5.9829539E-05
+ Iteration:  10     *|du|/|u| =  9.9992303E-04     *Ei/E0 =  4.6755894E-05
+
+ Equilibrium iterations summary step     23 t= 5.9389E+01      04/16/25 19:24:02
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   9.9992E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   4.6756E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     24 t= 6.3067E+01             04/16/25 19:24:02
+ ============================================================
+                time =  6.30674E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  4.9675997E-02     *Ei/E0 =  9.9166732E-01
+ Iteration:   2     *|du|/|u| =  6.4487750E-03     *Ei/E0 =  2.6219415E-03
+ Iteration:   3     *|du|/|u| =  5.7470882E-03     *Ei/E0 =  1.1747421E-03
+ Iteration:   4     *|du|/|u| =  1.4125763E-03     *Ei/E0 =  2.7538515E-04
+ Iteration:   5     *|du|/|u| =  1.0986325E-03     *Ei/E0 =  1.6346400E-04
+ Iteration:   6     *|du|/|u| =  7.1418657E-04     *Ei/E0 =  1.0548562E-04
+
+ Equilibrium iterations summary step     24 t= 6.3067E+01      04/16/25 19:24:02
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.1419E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.0549E-04 vs Tolerance =   1.0000E-02
+     555 t 6.3067E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:02
+
+ BEGIN implicit statics  step     25 t= 6.6746E+01             04/16/25 19:24:02
+ ============================================================
+                time =  6.67456E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  4.7474447E-02     *Ei/E0 =  9.9454473E-01
+ Iteration:   2     *|du|/|u| =  6.6973503E-03     *Ei/E0 =  2.9341127E-03
+ Iteration:   3     *|du|/|u| =  5.5659802E-03     *Ei/E0 =  1.1686206E-03
+ Iteration:   4     *|du|/|u| =  1.8366471E-03     *Ei/E0 =  3.1087060E-04
+ Iteration:   5     *|du|/|u| =  1.7628787E-03     *Ei/E0 =  2.9122876E-04
+ Iteration:   6     *|du|/|u| =  1.2115186E-03     *Ei/E0 =  1.6357059E-04
+ Iteration:   7     *|du|/|u| =  5.8476345E-04     *Ei/E0 =  1.1430040E-04
+
+ Equilibrium iterations summary step     25 t= 6.6746E+01      04/16/25 19:24:02
+    Number of iterations to converge         =           7
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           8
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   5.8476E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.1430E-04 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     26 t= 7.0424E+01             04/16/25 19:24:02
+ ============================================================
+                time =  7.04238E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  4.5069925E-02     *Ei/E0 =  9.9435552E-01
+ Iteration:   2     *|du|/|u| =  5.8692099E-03     *Ei/E0 =  2.7831802E-03
+ Iteration:   3     *|du|/|u| =  5.4163049E-03     *Ei/E0 =  1.3487960E-03
+ Iteration:   4     *|du|/|u| =  1.4443539E-03     *Ei/E0 =  3.4018343E-04
+ Iteration:   5     *|du|/|u| =  1.3475268E-03     *Ei/E0 =  2.5936700E-04
+ Iteration:   6     *|du|/|u| =  1.0829437E-03     *Ei/E0 =  1.7897010E-04
+ Iteration:   7     *|du|/|u| =  1.4804062E-03     *Ei/E0 =  1.5780346E-04
+ Iteration:   8     *|du|/|u| =  1.4945781E-03     *Ei/E0 =  7.9734172E-05
+ Iteration:   9     *|du|/|u| =  1.8927580E-03     *Ei/E0 =  8.7099905E-05
+ Iteration:  10     *|du|/|u| =  7.2606568E-04     *Ei/E0 =  6.3670513E-05
+
+ Equilibrium iterations summary step     26 t= 7.0424E+01      04/16/25 19:24:02
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.2607E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.3671E-05 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     27 t= 7.4102E+01             04/16/25 19:24:02
+ ============================================================
+                time =  7.41020E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  4.1683162E-02     *Ei/E0 =  9.8431265E-01
+ Iteration:   2     *|du|/|u| =  4.9619812E-03     *Ei/E0 =  2.4887907E-03
+ Iteration:   3     *|du|/|u| =  5.2429839E-03     *Ei/E0 =  1.2996571E-03
+ Iteration:   4     *|du|/|u| =  1.3231304E-03     *Ei/E0 =  2.6366834E-04
+ Iteration:   5     *|du|/|u| =  1.2069702E-03     *Ei/E0 =  2.1819497E-04
+ Iteration:   6     *|du|/|u| =  6.7746309E-04     *Ei/E0 =  1.0957056E-04
+
+ Equilibrium iterations summary step     27 t= 7.4102E+01      04/16/25 19:24:02
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   6.7746E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.0957E-04 vs Tolerance =   1.0000E-02
+     584 t 7.4102E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:02
+
+ BEGIN implicit statics  step     28 t= 7.7780E+01             04/16/25 19:24:02
+ ============================================================
+                time =  7.77802E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  4.0575135E-02     *Ei/E0 =  9.9467616E-01
+ Iteration:   2     *|du|/|u| =  5.2875727E-03     *Ei/E0 =  2.9269991E-03
+ Iteration:   3     *|du|/|u| =  4.9317628E-03     *Ei/E0 =  1.4093123E-03
+ Iteration:   4     *|du|/|u| =  1.5943906E-03     *Ei/E0 =  3.8072522E-04
+ Iteration:   5     *|du|/|u| =  1.8110575E-03     *Ei/E0 =  3.4384480E-04
+ Iteration:   6     *|du|/|u| =  8.9963133E-04     *Ei/E0 =  1.8953045E-04
+
+ Equilibrium iterations summary step     28 t= 7.7780E+01      04/16/25 19:24:03
+    Number of iterations to converge         =           6
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           7
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   8.9963E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.8953E-04 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     29 t= 8.1458E+01             04/16/25 19:24:03
+ ============================================================
+                time =  8.14584E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  3.8567080E-02     *Ei/E0 =  9.9480942E-01
+ Iteration:   2     *|du|/|u| =  5.0097171E-03     *Ei/E0 =  2.8089432E-03
+ Iteration:   3     *|du|/|u| =  4.7737685E-03     *Ei/E0 =  1.3629380E-03
+ Iteration:   4     *|du|/|u| =  1.5583291E-03     *Ei/E0 =  3.5347030E-04
+ Iteration:   5     *|du|/|u| =  1.3917773E-03     *Ei/E0 =  3.1586019E-04
+ Iteration:   6     *|du|/|u| =  1.2375255E-03     *Ei/E0 =  2.3402152E-04
+ Iteration:   7     *|du|/|u| =  1.2916535E-03     *Ei/E0 =  2.1594998E-04
+ Iteration:   8     *|du|/|u| =  1.1684404E-03     *Ei/E0 =  1.0340474E-04
+ Iteration:   9     *|du|/|u| =  2.5339019E-03     *Ei/E0 =  1.5800551E-04
+ Iteration:  10     *|du|/|u| =  3.7090384E-04     *Ei/E0 =  8.7215986E-05
+
+ Equilibrium iterations summary step     29 t= 8.1458E+01      04/16/25 19:24:03
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   3.7090E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   8.7216E-05 vs Tolerance =   1.0000E-02
+     604 t 8.1458E+01 dt 3.68E+00 write d3plot file            04/16/25 19:24:03
+
+ BEGIN implicit statics  step     30 t= 8.5137E+01             04/16/25 19:24:03
+ ============================================================
+                time =  8.51367E+01
+   current step size =  3.67821E+00
+ Iteration:   1     *|du|/|u| =  3.6458846E-02     *Ei/E0 =  9.9133774E-01
+ Iteration:   2     *|du|/|u| =  4.3106001E-03     *Ei/E0 =  2.5730245E-03
+ Iteration:   3     *|du|/|u| =  4.6816287E-03     *Ei/E0 =  1.4754524E-03
+ Iteration:   4     *|du|/|u| =  1.1744996E-03     *Ei/E0 =  3.5181384E-04
+ Iteration:   5     *|du|/|u| =  7.4242995E-04     *Ei/E0 =  1.6985798E-04
+
+ Equilibrium iterations summary step     30 t= 8.5137E+01      04/16/25 19:24:03
+    Number of iterations to converge         =           5
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           6
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.4243E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.6986E-04 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     31 t= 9.0137E+01             04/16/25 19:24:03
+ ============================================================
+                time =  9.01367E+01
+   current step size =  5.00000E+00
+ Iteration:   1     *|du|/|u| =  4.7162491E-02     *Ei/E0 =  1.0000000E+00
+ Iteration:   2     *|du|/|u| =  6.1542963E-03     *Ei/E0 =  2.6862833E-03
+ Iteration:   3     *|du|/|u| =  6.0299177E-03     *Ei/E0 =  1.4030745E-03
+ Iteration:   4     *|du|/|u| =  2.1060597E-03     *Ei/E0 =  3.7162121E-04
+ Iteration:   5     *|du|/|u| =  1.3342355E-03     *Ei/E0 =  2.4738112E-04
+ Iteration:   6     *|du|/|u| =  1.8326203E-03     *Ei/E0 =  2.5208412E-04
+ Iteration:   7     *|du|/|u| =  5.6508897E-04     *Ei/E0 =  1.0497120E-04
+
+ Equilibrium iterations summary step     31 t= 9.0137E+01      04/16/25 19:24:03
+    Number of iterations to converge         =           7
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           8
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   5.6509E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.0497E-04 vs Tolerance =   1.0000E-02
+
+ BEGIN implicit statics  step     32 t= 9.5137E+01             04/16/25 19:24:03
+ ============================================================
+                time =  9.51367E+01
+   current step size =  5.00000E+00
+ Iteration:   1     *|du|/|u| =  4.4157131E-02     *Ei/E0 =  9.9593572E-01
+ Iteration:   2     *|du|/|u| =  5.9400832E-03     *Ei/E0 =  2.9328103E-03
+ Iteration:   3     *|du|/|u| =  6.1797320E-03     *Ei/E0 =  1.6173467E-03
+ Iteration:   4     *|du|/|u| =  1.7162392E-03     *Ei/E0 =  4.2286605E-04
+ Iteration:   5     *|du|/|u| =  1.2021226E-03     *Ei/E0 =  2.5322022E-04
+ Iteration:   6     *|du|/|u| =  1.5233423E-03     *Ei/E0 =  2.2418853E-04
+ Iteration:   7     *|du|/|u| =  1.6570061E-03     *Ei/E0 =  1.6945141E-04
+ Iteration:   8     *|du|/|u| =  1.2605655E-03     *Ei/E0 =  1.0763739E-04
+ Iteration:   9     *|du|/|u| =  1.8173425E-03     *Ei/E0 =  1.0805474E-04
+ Iteration:  10     *|du|/|u| =  6.6356515E-04     *Ei/E0 =  6.8920641E-05
+
+ Equilibrium iterations summary step     32 t= 9.5137E+01      04/16/25 19:24:03
+    Number of iterations to converge         =          10
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =          11
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   6.6357E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   6.8921E-05 vs Tolerance =   1.0000E-02
+     632 t 9.5137E+01 dt 5.00E+00 write d3plot file            04/16/25 19:24:03
+
+ BEGIN implicit statics  step     33 t= 1.0000E+02             04/16/25 19:24:03
+ ============================================================
+                time =  1.00000E+02
+   current step size =  4.86334E+00
+ Iteration:   1     *|du|/|u| =  4.0347022E-02     *Ei/E0 =  9.4162666E-01
+ Iteration:   2     *|du|/|u| =  4.8410757E-03     *Ei/E0 =  2.5319325E-03
+ Iteration:   3     *|du|/|u| =  5.7862061E-03     *Ei/E0 =  1.5800141E-03
+ Iteration:   4     *|du|/|u| =  1.3827881E-03     *Ei/E0 =  4.4715365E-04
+ Iteration:   5     *|du|/|u| =  7.9038855E-04     *Ei/E0 =  1.6522163E-04
+
+ Equilibrium iterations summary step     33 t= 1.0000E+02      04/16/25 19:24:03
+    Number of iterations to converge         =           5
+    Number of stiffness reformations         =           0
+    Number of right hand side evaluations    =           6
+
+ Convergence detected as a combination of
+     1. Ratio of euclidian displacement translational norms          
+        Value =   7.9039E-04 vs Tolerance =   1.0000E-03
+     2. Ratio of euclidian energy       translational norms          
+        Value =   1.6522E-04 vs Tolerance =   1.0000E-02
+     639 t 1.0000E+02 dt 4.86E+00 write d3plot file            04/16/25 19:24:03
+ 
+ *** termination time reached ***
+     639 t 1.0000E+02 dt 4.86E+00 write d3dump01 file          04/16/25 19:24:03
+
+ N o r m a l    t e r m i n a t i o n                          04/16/25 19:24:03
+
+ S t o r a g e   a l l o c a t i o n   
+
+ Memory required to complete solution   :     225K
+ Linear Alg dynamically allocated memory:    1444K
+ Additional dynamically allocated memory:      12M
+                                   Total:      14M
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Keyword Processing ... 0.0000E+00    0.00     5.7000E-02    0.47
+    KW Reading ......... 0.0000E+00    0.00     9.0000E-03    0.07
+    KW Writing ......... 0.0000E+00    0.00     8.0000E-03    0.07
+  Initialization ....... 3.0000E+00   25.00     3.0390E+00   24.82
+    Init Proc Phase 1 .. 0.0000E+00    0.00     2.6000E-02    0.21
+  Element processing ... 4.0000E+00   33.33     4.2340E+00   34.57
+    Solids ............. 4.0000E+00   33.33     4.2120E+00   34.39
+    E Other ............ 0.0000E+00    0.00     9.0000E-03    0.07
+  Binary databases ..... 0.0000E+00    0.00     2.7000E-02    0.22
+  ASCII database ....... 0.0000E+00    0.00     5.9000E-02    0.48
+  Contact algorithm .... 0.0000E+00    0.00     1.0000E-03    0.01
+  Rigid Bodies ......... 0.0000E+00    0.00     1.1000E-02    0.09
+  Implicit ............. 0.0000E+00    0.00     7.8000E-02    0.64
+  Implicit Nonlinear ... 3.0000E+00   25.00     1.0760E+00    8.79
+    Imp. NL force mod .. 1.0000E+00    8.33     6.9800E-01    5.70
+  Implicit Lin. Alg. ... 2.0000E+00   16.67     3.6430E+00   29.75
+    Imp. LA Mtx Assemb . 0.0000E+00    0.00     1.7890E+00   14.61
+    Imp. LA Factor ..... 0.0000E+00    0.00     1.4150E+00   11.55
+    Imp. LA Solve ...... 2.0000E+00   16.67     4.3900E-01    3.58
+  Misc. 1 .............. 0.0000E+00    0.00     4.0000E-03    0.03
+  Misc. 3 .............. 0.0000E+00    0.00     1.4000E-02    0.11
+  Misc. 4 .............. 0.0000E+00    0.00     3.0000E-03    0.02
+    Timestep Init ...... 0.0000E+00    0.00     1.0000E-03    0.01
+    Apply Loads ........ 0.0000E+00    0.00     1.0000E-03    0.01
+  ----------------------------------------------------------------
+  T o t a l s            1.2000E+01  100.00     1.2246E+01  100.00
+
+ Problem time       =    1.0000E+02
+ Problem cycle      =       639
+ Total CPU time     =        12 seconds (   0 hours  0 minutes 12 seconds)
+ CPU time per zone cycle  =      22864.459 nanoseconds
+ Clock time per zone cycle=      23245.534 nanoseconds
+
+ Number of CPU's    4
+ NLQ used/max     136/  136
+ Start time   04/16/2025 19:23:54  
+ End time     04/16/2025 19:24:03  
+ Elapsed time       9 seconds for     639 cycles using  4 SMP threads
+             (      0 hour   0 minute   9 seconds)
+
+ N o r m a l    t e r m i n a t i o n                          04/16/25 19:24:04

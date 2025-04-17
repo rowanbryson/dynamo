@@ -1,7 +1,9 @@
 $# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
-$# Created on Apr-4-2025 (20:47:45)
+$# Created on Apr-10-2025 (21:09:41)
 open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0005_basic_run3\d3plot"
 ac
+anim forward
+anim stop; state 1;
 state +1;
 state +1;
 state +1;
@@ -9,19 +11,5 @@ state +1;
 state +1;
 state +1;
 state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state -1;
+anim forward
+anim stop; state 10;

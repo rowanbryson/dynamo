@@ -12,14 +12,19 @@ def extract_gauge_edge_nodes_ids(d3plot):
     # find the nodes in the gauge section
     gauge_z = 0
     gauge_nodemask = (node_coordinates[:, 2] == gauge_z)
+    print(gauge_nodemask.sum(), node_ids.shape[0])
+    # gauge_nodemask = np.isclose(node_coordinates[:, 2], gauge_z, atol=25.4*0.25*0.2) & gauge_nodemask
 
     gauge_ids = node_ids[gauge_nodemask]
     gauge_node_coordinates = node_coordinates[gauge_nodemask]
+    print(gauge_node_coordinates)
 
     gauge_radii = np.sqrt(gauge_node_coordinates[:, 0]**2 + gauge_node_coordinates[:, 1]**2)
+    print(gauge_radii)
     gauge_edge_radius = np.max(gauge_radii)
+    print(gauge_edge_radius)
 
-    gauge_edge_node_ids = gauge_ids[np.isclose(gauge_radii, gauge_edge_radius, atol=gauge_edge_radius*0.1)]
+    gauge_edge_node_ids = gauge_ids[np.isclose(gauge_radii, gauge_edge_radius, atol=gauge_edge_radius*0.3)]
     return gauge_edge_node_ids
 
 def extract_stress_tensor(binout):

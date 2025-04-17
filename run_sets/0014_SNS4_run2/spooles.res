@@ -1,0 +1,16 @@
+
+ ### inside SPenv_free()
+ SPmm object : location 0000018D3AA5FB00, table capacity 1000, hash capacity 1000
+                  active         idle       in-use    requested     released
+  # buffers            5          257          262       474053       474048
+  # bytes           2216      7038648      7040864   2255908592   2255906376
+ active lists, 5 buffers active, 2216 bytes active
+    active list 264
+    < loc 0, id 1, size 24, ts 0, buf 0000018D2E075830, val  5.10428e-02 link -1>
+    active list 672
+    < loc 4, id 5, size 52, ts 0, buf 0000018D39FDED50, val  8.09120e-01 link -1>
+    active list 768
+    < loc 2, id 3, size 52, ts 0, buf 0000018D2DD94930, val  9.49111e-01 link 3>
+    < loc 3, id 4, size 102, ts 0, buf 0000018D3ABBAFD0, val  5.34753e-01 link -1>
+    active list 888
+    < loc 1, id 2, size 47, ts 0, buf 0000018D2E088B50, val  2.69591e-01 link -1>

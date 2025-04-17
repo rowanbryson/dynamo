@@ -67,8 +67,9 @@ def process_run(run_id):
     import json
     os.makedirs(f'summaries/{run_id}', exist_ok=True)
 
-
-    binout = Binout(f'run_sets/{run_id}/binout*')
+    print(f'Processing run {run_id}...')
+    print(f'Path: run_sets/{run_id}/binout')
+    binout = Binout(f'run_sets/{run_id}/binout')
     d3plot = D3plot(f'run_sets/{run_id}/d3plot')
     summary = find_summary(binout, d3plot)
     # save the summary to a json file

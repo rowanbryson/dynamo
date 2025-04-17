@@ -2,13 +2,25 @@ import tools
 from lasso.dyna import Binout, D3plot, ArrayType
 import numpy as np
 
-RUN_ID = '0005_basic_run3'
+# RUN_ID = '0005_basic_run3'
 
-def run_script(run_id):
+def main():
+    # run_script('0015_SNS5_run2')
+    run_script('0015_SNS5_run2', [5, 6, 7, 8, 9])
+    run_script('0025_SNM5_run2', [1, 12, 11, 10, 9])
+    run_script('0035_SNL5_run2', [1, 12, 11, 10, 9])
+
+def run_script(run_id, gauge_edge_node_ids=None):
     binout = Binout(f'run_sets/{run_id}/binout*')
     d3plot = D3plot(f'run_sets/{run_id}/d3plot')
 
-    gauge_edge_node_ids = tools.extract.extract_gauge_edge_nodes_ids(d3plot)
+    if gauge_edge_node_ids is None:
+        gauge_edge_node_ids = tools.extract.extract_gauge_edge_nodes_ids(d3plot)
+        print(gauge_edge_node_ids.shape)
+    else:
+        gauge_edge_node_ids = np.array(gauge_edge_node_ids)
+
+    print(f'Gauge edge node ids: {gauge_edge_node_ids}')
     nodavg_ids = binout.read('eloutdet', 'nodavg', 'ids')[0]
     idx = np.isin(nodavg_ids, gauge_edge_node_ids)
 
@@ -75,11 +87,11 @@ def run_script(run_id):
     from matplotlib import pyplot as plt
     plt.figure()
     for i in range(gauge_edge_node_ids.shape[0]):
-        plt.plot(triaxiality[:, i], eps[:, i], label=f'Element {gauge_edge_node_ids[i]}', alpha=0.5)
+        plt.plot(triaxiality[:, i], eps[:, i], label=f'Node {gauge_edge_node_ids[i]}', alpha=0.5)
     plt.plot(avg_triaxiality, avg_eps, label='Average', color='black', linewidth=2)
-    plt.xlabel('Triaxiality')
+    plt.xlabel('Stress Triaxiality')
     plt.ylabel('Effective Plastic Strain')
-    plt.title('Triaxiality vs Effective Plastic Strain @ Gauge Edge')
+    # plt.title('Triaxiality vs Effective Plastic Strain @ Gauge Edge')
     plt.legend()
     plt.grid()
     # plt.show()
@@ -102,7 +114,7 @@ def run_script(run_id):
     # triaxiality and effective plastic strain vs time
     plt.figure()
     for i in range(gauge_edge_node_ids.shape[0]):
-        plt.plot(time, triaxiality[:, i], label=f'Element {gauge_edge_node_ids[i]}', alpha=0.5)
+        plt.plot(time, triaxiality[:, i], label=f'Node {gauge_edge_node_ids[i]}', alpha=0.5)
     plt.plot(time, avg_triaxiality, label='Average', color='black', linewidth=2)
     plt.xlabel('Time (s)')
     plt.ylabel('Triaxiality')
@@ -126,5 +138,59 @@ def run_script(run_id):
     # plt.show()
     plt.savefig(f'summaries/{run_id}/eps_vs_time.png')
 
+    # vm stress vs time
+    plt.figure()
+    sig_vm_ksi = sig_vm * 14.696 / 101325 / 1000 # Convert to ksi
+    avg_sig_vm_ksi = avg_sig_vm * 14.696 / 101325 / 1000 # Convert to ksi
+
+    SIG_Y = 40  # ksi
+
+    for i in range(gauge_edge_node_ids.shape[0]):
+        plt.plot(time, sig_vm_ksi[:, i], label=f'Node {gauge_edge_node_ids[i]}', alpha=0.3, marker='o', markersize=2, linewidth=1)
+    plt.plot(time, avg_sig_vm_ksi, label='Average', color='black', marker='o', markersize=2, linewidth=1)
+    plt.axhline(SIG_Y, color='red', linestyle=':', label='Approx. Yield Strength')
+    plt.xlabel('Time (s)')
+    plt.ylabel('Von Mises Stress (ksi)')
+    plt.title('Von Mises Stress vs Time @ Gauge Edge')
+    plt.legend()
+    plt.grid()
+    plt.tight_layout()
+    # plt.show()
+    plt.savefig(f'summaries/{run_id}/vm_vs_time.png')
+
+    # plot node positions on x-y plane
+    node_ids = binout.read('nodout', 'ids')
+    idx = np.isin(node_ids, gauge_edge_node_ids)
+    node_x = binout.read('nodout', 'x_coordinate')[0, idx]
+    node_y = binout.read('nodout', 'y_coordinate')[0, idx]
+    node_z = binout.read('nodout', 'z_coordinate')[0, idx]
+    node_ids = node_ids[idx]
+
+    node_x = node_x * 39.3701  # Convert to inches
+    node_y = node_y * 39.3701  # Convert to inches
+
+    plt.figure()
+    plt.text(0, 0, 'Origin', fontsize=8, ha='right', va='bottom')
+    plt.axvline(0, linestyle='--', alpha=0.3, color='black')
+    plt.axhline(0, linestyle='--', alpha=0.3, color='black')
+    for i in range(gauge_edge_node_ids.shape[0]):
+        plt.scatter(node_x[i], node_y[i], label=f'Node {gauge_edge_node_ids[i]}', s=30)
+        plt.text(node_x[i], node_y[i], f'Node {node_ids[i]}', fontsize=8, ha='right', va='bottom')
+    # plt.scatter(0, 0, label='Origin', s=30, color='black')
+    plt.xlabel('X Coordinate (inches)')
+    plt.ylabel('Y Coordinate (inches)')
+    # plt.title('Node Positions on X-Y Plane @ Gauge Edge')
+    plt.grid()
+    plt.tight_layout()
+    border = 0.05
+    plt.xlim(node_x.min() - border, node_x.max() + border)
+    plt.ylim(node_y.min() - border, node_y.max() + border)
+    plt.gca().set_aspect('equal', adjustable='box')
+    # plt.show()
+    plt.savefig(f'summaries/{run_id}/node_positions.png')
+
+
+
 if __name__ == '__main__':
-    run_script(RUN_ID)
+    # run_script(RUN_ID)
+    main()

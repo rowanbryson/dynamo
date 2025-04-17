@@ -1,0 +1,18 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-17-2025 (16:53:04)
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0015_SNS5_run2\d3plot"
+ac
+right
+bgstyle fade
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNS4.key"
+Message 1
+Message 0
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNS3.key"
+Message 1
+Message 0
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0013_SNS3_run2\d3plot"
+state +1;
+state -1;
+state +1;
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0010_SNS\d3plot"
+state +1;
