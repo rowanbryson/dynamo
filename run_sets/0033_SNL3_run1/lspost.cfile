@@ -1,0 +1,106 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-22-2025 (19:28:33)
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0033_SNL3_run1\SNL3.key"
+Message 1
+Message 0
+setnode
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
+Message 1
+Message 0
+setnode
+genselect clear
+setnode off
+setnode readlist 1
+setnode show  1
+genselect clear
+setnode off
+setnode readlist 3
+setnode show  3
+clearent NodeSet all
+genselect clear
+setnode off
+setnode readlist 3
+genselect target node
+setnode modify 3
+setnode show  3
+genselect clear
+setnode off
+setnode readlist 4
+setnode show  4
+clearent NodeSet all
+genselect clear
+setnode off
+setnode readlist 4
+genselect target node
+setnode modify 4
+setnode show  4
+loadstate 1;
+loadquat 1.000004 0.000000 0.000000 -0.000755;
+loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
+loadzoom 0.409600;
+loadpan -0.003888 0.002038;
+loadeyepos 0.000000 0.000000 0.000000;
+loadupvect 0.000000 1.000000 0.000000;
+genselect node remove region in 0.376685 0.916201 0.555930 0.861732
+loadstate 1;
+loadquat 1.000004 0.000000 0.000000 -0.000755;
+loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
+loadzoom 0.409600;
+loadpan -0.003888 0.002038;
+loadeyepos 0.000000 0.000000 0.000000;
+loadupvect 0.000000 1.000000 0.000000;
+genselect node remove region in 0.369946 0.924581 0.402291 0.571229
+setnode modifyset 4 1 0 0 0 0 "minus_z_face" 
+clearent NodeSet all
+genselect target node
+genselect clear
+genselect clear
+genselect node remove node 276/1 
+genselect node add node 276/1 
+genselect node add node 275/1 
+genselect node add node 274/1 
+genselect node add node 273/1 
+genselect node add node 272/1 
+genselect node add node 271/1 
+genselect node add node 270/1 
+genselect node add node 269/1 
+setnode createset 7 1 0 0 0 0 "gauge_area_x_edge" 
+genselect clear
+genselect node add node 278/1 
+genselect node add node 279/1 
+genselect node add node 280/1 
+genselect node add node 281/1 
+genselect node add node 282/1 
+genselect node add node 283/1 
+genselect node add node 284/1 
+genselect node add node 285/1 
+setnode createset 6 1 0 0 0 0 "gauge_area_y_edge" 
+genselect clear
+genselect node add node 1073/1 
+genselect unsel
+genselect node add node 277/1 
+setnode createset 8 1 0 0 0 0 "bottom_corner" 
+genselect clear
+genselect node add node 729/1 
+genselect unsel
+genselect node add box in 0.000100 0.000100 0.025300 -0.000100 -0.001000 0.001000
+genselect node add box in 0.000100 0.000100 0.025300 -0.000100 -0.001000 0.000100
+setnode createset 9 1 0 0 0 0 "central_z_edge" 
+genselect clear
+genselect clear
+setnode off
+setnode readlist 3
+setnode show  3
+genselect clear
+setnode off
+setnode readlist 4
+setnode show  4
+genselect clear
+setnode off
+setnode readlist 3
+setnode show  3
+save keywordabsolute 0
+save keywordbylongfmt 0
+save keywordbyi10fmt 0
+save outversion 2
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"

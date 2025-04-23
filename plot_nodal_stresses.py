@@ -6,9 +6,10 @@ import numpy as np
 
 def main():
     # run_script('0015_SNS5_run2')
-    run_script('0015_SNS5_run2', [5, 6, 7, 8, 9])
-    run_script('0025_SNM5_run2', [1, 12, 11, 10, 9])
-    run_script('0035_SNL5_run2', [1, 12, 11, 10, 9])
+    # run_script('0015_SNS5_run4', [5, 6, 7, 8, 9])
+    # run_script('0025_SNM5_run4', [1, 12, 11, 10, 9])
+    # run_script('0035_SNL5_run4', [1, 12, 11, 10, 9])
+    run_script('0035_SNL5_run5', [165, 54, 27, 26, 127])
 
 def run_script(run_id, gauge_edge_node_ids=None):
     binout = Binout(f'run_sets/{run_id}/binout*')

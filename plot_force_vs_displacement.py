@@ -9,13 +9,17 @@ from lasso.dyna import Binout, D3plot, ArrayType
 # RUN_ID = '0035_SNL5_run1'
 
 def main():
-    # make_plot('0015_SNS5_run2')
-    # make_plot('0025_SNM5_run2')
-    # make_plot('0035_SNL5_run2')
-    # experiment_vs_simulation_plot()
-    combo_plot_SNS()
-    combo_plot_SNM()
-    combo_plot_SNL()
+    # # make_plot('0015_SNS5_run2')
+    # # make_plot('0025_SNM5_run2')
+    make_plot('0033_SNL3_run1')
+    # # experiment_vs_simulation_plot()
+    # combo_plot_SNS()
+    # combo_plot_SNM()
+    # combo_plot_SNL()
+    # plot_run('0035_SNL5_run4')
+    # plot_run('0015_SNS5_run4')
+    # plot_run('0025_SNM5_run4')
+    # plot_run('0035_SNL5_run5')
 
 def combo_plot_SNS():
     plt.figure()
@@ -28,13 +32,15 @@ def combo_plot_SNS():
     plot_experiment('experimental_data/9013_SNS_test3/SNSDisplacement3.csv', 'experimental_data/9013_SNS_test3/SNSForce3.csv', color='C2', label='Test 3')
     plot_experiment('experimental_data/9013_SNS_test3/SNSDisplacement3.csv', 'experimental_data/9013_SNS_test3/SNSForce3.csv', smoothed=True, color='C2', alpha=0.5)
     
-    plot_run('0015_SNS5_run1', color='C4', label='Simulation')
+
+    plot_run('0015_SNS5_run4', smoothed=False, color='C4', label='Simulation', alpha=0.5)
+    plot_run('0015_SNS5_run4', smoothed=True, color='C4')
 
     plt.xlabel('Displacement (inch)')
     plt.ylabel('Force (lbf)')
     plt.legend()
     plt.grid()
-    plt.savefig(f'meta_plots/SNS_force_vs_displacement.png')
+    plt.savefig(f'meta_plots/SNS_force_vs_displacement-3.png')
     plt.show()
 
 def combo_plot_SNM():
@@ -48,13 +54,14 @@ def combo_plot_SNM():
     plot_experiment('experimental_data/9023_SNM_test3/SNMDisplacement3.csv', 'experimental_data/9023_SNM_test3/SNMForce3.csv', color='C2', label='Test 3')
     plot_experiment('experimental_data/9023_SNM_test3/SNMDisplacement3.csv', 'experimental_data/9023_SNM_test3/SNMForce3.csv', smoothed=True, color='C2', alpha=0.5)
     
-    plot_run('0025_SNM5_run2', color='C4', label='Simulation')
+    plot_run('0025_SNM5_run4', smoothed=False, color='C4', label='Simulation', alpha=0.5)
+    plot_run('0025_SNM5_run4', smoothed=True, color='C4')
 
     plt.xlabel('Displacement (inch)')
     plt.ylabel('Force (lbf)')
     plt.legend()
     plt.grid()
-    plt.savefig(f'meta_plots/SNM_force_vs_displacement.png')
+    plt.savefig(f'meta_plots/SNM_force_vs_displacement-3.png')
     plt.show()
 
 def combo_plot_SNL():
@@ -68,13 +75,14 @@ def combo_plot_SNL():
     plot_experiment('experimental_data/9033_SNL_test3/SNLDisplacement3.csv', 'experimental_data/9033_SNL_test3/SNLForce3.csv', color='C2', label='Test 3')
     plot_experiment('experimental_data/9033_SNL_test3/SNLDisplacement3.csv', 'experimental_data/9033_SNL_test3/SNLForce3.csv', smoothed=True, color='C2', alpha=0.5)
     
-    plot_run('0035_SNL5_run2', color='C4', label='Simulation')
+    plot_run('0035_SNL5_run5', smoothed=False, color='C4', label='Simulation', alpha=0.5)
+    plot_run('0035_SNL5_run5', smoothed=True, color='C4')
 
     plt.xlabel('Displacement (inch)')
     plt.ylabel('Force (lbf)')
     plt.legend()
     plt.grid()
-    plt.savefig(f'meta_plots/SNL_force_vs_displacement.png')
+    plt.savefig(f'meta_plots/SNL_force_vs_displacement-3.png')
     plt.show()
 
 def plot_experiment(filepath_disp, filepath_force, smoothed=False, **kwargs):
@@ -269,7 +277,7 @@ def experiment_vs_simulation_plot():
     plt.savefig(f'summaries/{RUN_ID}/force_vs_displacement.png')
     plt.show()
 
-def plot_run(RUN_ID, **kwargs):
+def plot_run(RUN_ID, smoothed=False, **kwargs):
     binout = Binout(f'run_sets/{RUN_ID}/binout*')
     d3plot = D3plot(f'run_sets/{RUN_ID}/d3plot')
 
@@ -288,21 +296,26 @@ def plot_run(RUN_ID, **kwargs):
     # convert N to lbf
     specimen_load = specimen_load * 0.224809
 
+    # apply a time average to the data using a kernel
+    kernel = np.ones(4) / 4
+    plot_displacement_smoothed = np.convolve(specimen_displacement, kernel, mode='valid')
+    plot_force_smoothed = np.convolve(specimen_load, kernel, mode='valid')
 
     # plt.figure()
-    plt.plot(specimen_displacement, specimen_load, **kwargs)
-    # plt.xlabel('Displacement (inch)')
-    # plt.ylabel('Force (lbf)')
-    # # plt.title('Force vs Displacement')
-    # plt.grid()
-    # plt.show()
-    # plt.savefig(f'summaries/{RUN_ID}/force_vs_displacement.png')
+    if smoothed is True:
+        plt.plot(plot_displacement_smoothed, plot_force_smoothed, **kwargs)
+    else:
+        plt.plot(specimen_displacement, specimen_load, **kwargs)
+
+
+
 
 def make_plot(RUN_ID):
     binout = Binout(f'run_sets/{RUN_ID}/binout*')
     d3plot = D3plot(f'run_sets/{RUN_ID}/d3plot')
 
     reference_node_index = tools.extract.find_face_node_index(binout)
+    print(reference_node_index)
     reference_node_displacement = binout.read('nodout', 'z_displacement')[:, reference_node_index]
 
     node_ids = binout.read('nodout', 'ids')
@@ -320,12 +333,22 @@ def make_plot(RUN_ID):
 
     plt.figure()
     plt.plot(specimen_displacement, specimen_load)
+    print('specimen load:', specimen_load)
+    print('specimen disp:', specimen_displacement)
     plt.xlabel('Displacement (inch)')
     plt.ylabel('Force (lbf)')
     # plt.title('Force vs Displacement')
     plt.grid()
     # plt.show()
     plt.savefig(f'summaries/{RUN_ID}/force_vs_displacement.png')
+
+    plt.figure()
+    plt.plot(time, specimen_displacement)
+    plt.xlabel('Time (s)')
+    plt.ylabel('Displacement (inch)')
+    plt.title('Displacement vs Time')
+    plt.grid()
+    plt.savefig(f'summaries/{RUN_ID}/displacement_vs_time.png') 
 
 if __name__ == '__main__':
     main()

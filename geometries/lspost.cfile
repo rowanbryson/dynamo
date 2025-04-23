@@ -1,52 +1,13 @@
 $# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
-$# Created on Apr-16-2025 (19:11:12)
-open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL5.key"
+$# Created on Apr-22-2025 (18:10:09)
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
 Message 1
 Message 0
-setnode
+genselect target part
 setnode
 genselect target node
 genselect clear
 genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.359838 0.180168 0.619272 0.291899
-setnode createset 1 1 0 0 0 0 "y_face" 
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.299191 0.159218 0.396226 0.853352
-setnode createset 2 1 0 0 0 0 "x_face" 
-genselect clear
-back
-loadstate 1;
-loadquat 0.500000 0.500000 0.500000 0.500000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 0.000000;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.383423 0.970670 0.638814 0.935754
-setnode createset 3 1 0 0 0 0 "plus_z_face" 
-genselect clear
-top
-right
-loadstate 1;
-loadquat 0.000000 0.707107 0.707107 0.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 0.000958;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.646900 0.009777 0.520889 0.027933
-setnode createset 4 1 0 0 0 0 "minus_z_face" 
-genselect clear
-clearent NodeSet all
-clearent NodeSet all
 genselect target node
 genselect clear
 genselect clear
@@ -55,157 +16,21 @@ genselect clear
 genselect target solid
 genselect clear
 genselect clear
-genselect solid add solid 53/F0/0 
-genselect solid add solid 13/F0/0 
-genselect solid add solid 21/F0/0 
-genselect solid add solid 93/F0/0 
-setsolid createset 1 0 "gauge_edge_solids" 
-genselect clear
-genselect solid add solid 53/F0/0 
-genselect solid add solid 85/F0/0 
-genselect solid add solid 77/F0/0 
-genselect solid add solid 29/F0/0 
-genselect solid add solid 13/F0/0 
-genselect solid add solid 45/F0/0 
-genselect solid add solid 21/F0/0 
-genselect solid add solid 101/F0/0 
-genselect solid add solid 37/F0/0 
-genselect solid add solid 61/F0/0 
-genselect solid add solid 69/F0/0 
-genselect solid add solid 93/F0/0 
-setsolid createset 2 0 "gauge_solids" 
-genselect clear
-setnode
-genselect clear
-genselect target node
-genselect clear
-genselect clear
-genselect node add node 1/0 
-genselect node add node 12/0 
-genselect node add node 11/0 
-genselect node add node 10/0 
-genselect node add node 9/0 
-setnode createset 5 1 0 0 0 0 "gauge_edge_nodes" 
-genselect clear
-measure select 1
-measure dist N863/0 N35/0 ;
-measure type 0
-measure select 0
-measure type 0
-measure type 0
+genselect solid add solid 469/F0/0 
+genselect solid add solid 604/F0/0 
+genselect solid add solid 589/F0/0 
+genselect solid add solid 364/F0/0 
+genselect solid add solid 529/F0/0 
+genselect solid add solid 94/F0/0 
+genselect solid add solid 49/F0/0 
+genselect solid add solid 154/F0/0 
 save keywordabsolute 0
 save keywordbylongfmt 0
 save keywordbyi10fmt 0
 save outversion 2
-save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL5.key"
-open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNM5.key"
-Message 1
-Message 0
-right
-left
-top
-back
-top
-back
-top
-setnode
-genselect target node
-genselect clear
-genselect clear
-genselect target node
-genselect clear
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.005748;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.328167 0.350559 0.643531 0.490223
-setnode createset 1 1 0 0 0 0 "y_face" 
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.005748;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.342992 0.424581 0.411051 0.963687
-setnode createset 2 1 0 0 0 0 "x_face" 
-genselect clear
-right
-loadstate 1;
-loadquat 0.000000 0.707107 0.707107 0.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 0.003832;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.652291 0.796089 0.252695 0.840782
-setnode createset 3 1 0 0 0 0 "plus_z_face" 
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.707107 0.707107 0.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.004790;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.524259 0.163408 0.665768 0.234637
-setnode createset 4 1 0 0 0 0 "minus_z_face" 
-genselect clear
-clearent NodeSet all
-genselect target node
-genselect clear
-genselect clear
-genselect node add node 1/1 
-genselect node add node 12/1 
-genselect node add node 17/1 
-genselect node add node 10/1 
-genselect unsel
-genselect unsel
-genselect node add node 11/1 
-genselect node add node 10/1 
-genselect node add node 9/1 
-setnode createset 5 1 0 0 0 0 "gauge_edge_nodes" 
-genselect clear
-setsolid
-genselect clear
-genselect target solid
-genselect clear
-genselect clear
-genselect solid add solid 38/F0/1 
-genselect solid add solid 13/F0/1 
-genselect solid add solid 18/F0/1 
-genselect solid add solid 63/F0/1 
-setsolid createset 1 0 "gauge_edge_solids" 
-genselect clear
-genselect solid add solid 38/F0/1 
-genselect solid add solid 38/F0/1 
-genselect solid add solid 13/F0/1 
-genselect solid add solid 13/F0/1 
-genselect solid add solid 33/F0/1 
-genselect solid add solid 58/F0/1 
-genselect solid add solid 53/F0/1 
-genselect solid add solid 23/F0/1 
-genselect solid add solid 43/F0/1 
-genselect solid add solid 28/F0/1 
-genselect solid add solid 18/F0/1 
-genselect solid add solid 63/F0/1 
-genselect solid add solid 68/F0/1 
-genselect solid add solid 48/F0/1 
-setsolid createset 2 0 "gauge_solids" 
-genselect clear
-save keywordabsolute 0
-save keywordbylongfmt 0
-save keywordbyi10fmt 0
-save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNM5.key"
-open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNS5.key"
-Message 1
-Message 0
-right
-top
-front
-left
-top
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key" 
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key" 
 setsolid
 genselect target solid
 genselect clear
@@ -213,103 +38,22 @@ genselect clear
 genselect target solid
 genselect clear
 genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.000479;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect solid add region in 0.356469 0.178771 0.648922 0.311453
-setnode
-genselect clear
-genselect target node
-genselect clear
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.000479;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.339623 0.160615 0.629380 0.308659
-setnode createset 1 1 0 0 0 0 "y_face" 
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.000000 0.000000 1.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.000479;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.357817 0.216480 0.410377 0.815642
-setnode createset 2 1 0 0 0 0 "x_face" 
-genselect clear
-right
-loadstate 1;
-loadquat 0.000000 0.707107 0.707107 0.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.000479;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.644205 0.983240 0.366577 0.946927
-setnode createset 3 1 0 0 0 0 "plus_z_face" 
-genselect clear
-loadstate 1;
-loadquat 0.000000 0.707107 0.707107 0.000000;
-loadgrot 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 ;
-loadpan -0.000693 -0.000479;
-loadeyepos 0.000000 0.000000 0.000000;
-loadupvect 0.000000 1.000000 0.000000;
-genselect node add region in 0.506739 0.027933 0.650270 0.078212
-setnode createset 4 1 0 0 0 0 "minus_z_face" 
-genselect clear
-genselect node add node 466/2 
+genselect solid add solid 469/F0/0 
+genselect solid add solid 604/F0/0 
+genselect solid add solid 589/F0/0 
+genselect solid add solid 304/F0/0 
+genselect solid add solid 364/F0/0 
 genselect unsel
-genselect node add node 5/2 
-genselect node add node 6/2 
-genselect node add node 7/2 
-genselect node add node 8/2 
-genselect node add node 9/2 
-setnode createset 5 1 0 0 0 0 "gauge_edge_nodes" 
-genselect clear
-setsolid
-genselect clear
-genselect target solid
-genselect clear
-genselect clear
-genselect solid add solid 23/F0/2 
-genselect solid add solid 48/F0/2 
-genselect solid add solid 48/F0/2 
-genselect solid add solid 43/F0/2 
-genselect solid add solid 63/F0/2 
+genselect unsel
+genselect solid add solid 364/F0/0 
+genselect solid add solid 529/F0/0 
+genselect solid add solid 94/F0/0 
+genselect solid add solid 49/F0/0 
+genselect solid add solid 154/F0/0 
 setsolid createset 1 0 "gauge_edge_elements" 
 genselect clear
-genselect solid add solid 23/F0/2 
-genselect solid add solid 43/F0/2 
-genselect solid add solid 28/F0/2 
-genselect solid add solid 53/F0/2 
-genselect solid add solid 33/F0/2 
-genselect solid add solid 58/F0/2 
-genselect solid add solid 48/F0/2 
-genselect solid add solid 68/F0/2 
-genselect solid add solid 18/F0/2 
-genselect solid add solid 18/F0/2 
-genselect solid add solid 63/F0/2 
-genselect solid add solid 13/F0/2 
-genselect solid add solid 38/F0/2 
-setsolid createset 2 0 "gauge_elements" 
-genselect clear
-save keywordabsolute 0
-save keywordbylongfmt 0
-save keywordbyi10fmt 0
-save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNS5.key"
-open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0025_SNM5_run1\d3plot"
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
-state +1;
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key" 
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key" 
+find node 285 
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0033_SNL3_run1\d3plot"
 state +1;

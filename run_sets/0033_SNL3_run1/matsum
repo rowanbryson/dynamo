@@ -1,0 +1,290 @@
+ LS-DYNA keyword deck by LS-PrePost                                      
+                    ls-dyna smp d R14 R14.1.1s_1_ef50e1 date 06/16/2024
+
+{BEGIN LEGEND}
+ Entity #        Title
+        1     Notched Bar                                                             
+{END LEGEND}
+
+
+
+ time =   0.0000E+00
+ mat.#=    1             inten=  -3.0765E-12     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.2924E+00
+ mat.#=    1             inten=   2.7512E-02     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.0492E+00
+ mat.#=    1             inten=   1.9175E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   3.4696E+00
+ mat.#=    1             inten=   2.9343E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   4.0095E+00
+ mat.#=    1             inten=   3.3481E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   5.0893E+00
+ mat.#=    1             inten=   4.1420E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   6.1691E+00
+ mat.#=    1             inten=   4.9043E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   7.2488E+00
+ mat.#=    1             inten=   5.6493E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   8.6444E+00
+ mat.#=    1             inten=   6.6395E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   9.5000E+00
+ mat.#=    1             inten=   7.2691E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.0356E+01
+ mat.#=    1             inten=   7.9013E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.1211E+01
+ mat.#=    1             inten=   8.5291E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.2067E+01
+ mat.#=    1             inten=   9.1387E-01     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.3423E+01
+ mat.#=    1             inten=   1.0159E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.4779E+01
+ mat.#=    1             inten=   1.1172E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.6135E+01
+ mat.#=    1             inten=   1.2160E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.7492E+01
+ mat.#=    1             inten=   1.3127E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.8848E+01
+ mat.#=    1             inten=   1.4097E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.0204E+01
+ mat.#=    1             inten=   1.5088E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.1560E+01
+ mat.#=    1             inten=   1.6144E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.2916E+01
+ mat.#=    1             inten=   1.7875E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.3052E+01
+ mat.#=    1             inten=   1.8165E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.4147E+01
+ mat.#=    1             inten=   2.0636E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.5174E+01
+ mat.#=    1             inten=   2.2604E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.6171E+01
+ mat.#=    1             inten=   2.5811E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.7169E+01
+ mat.#=    1             inten=   2.6500E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   2.8750E+01
+ mat.#=    1             inten=   2.8050E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   3.0331E+01
+ mat.#=    1             inten=   2.9091E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   3.1913E+01
+ mat.#=    1             inten=   3.0092E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   3.4418E+01
+ mat.#=    1             inten=   3.1717E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   3.6924E+01
+ mat.#=    1             inten=   3.3449E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   4.0896E+01
+ mat.#=    1             inten=   3.6190E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   4.4868E+01
+ mat.#=    1             inten=   3.9161E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   4.8839E+01
+ mat.#=    1             inten=   4.3861E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   5.2811E+01
+ mat.#=    1             inten=   4.8735E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   5.6783E+01
+ mat.#=    1             inten=   5.1304E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   6.0754E+01
+ mat.#=    1             inten=   5.3454E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   6.4726E+01
+ mat.#=    1             inten=   5.6045E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   6.8698E+01
+ mat.#=    1             inten=   5.8713E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   7.2669E+01
+ mat.#=    1             inten=   6.1225E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   7.6641E+01
+ mat.#=    1             inten=   6.3989E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   8.0612E+01
+ mat.#=    1             inten=   6.7177E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   8.4584E+01
+ mat.#=    1             inten=   7.0000E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   8.8556E+01
+ mat.#=    1             inten=   7.2616E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   9.2527E+01
+ mat.#=    1             inten=   7.5603E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   9.6499E+01
+ mat.#=    1             inten=   7.8304E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00
+
+
+ time =   1.0000E+02
+ mat.#=    1             inten=   8.0780E+00     kinen=   0.0000E+00     eroded_ie=   0.0000E+00     eroded_ke=   0.0000E+00
+ x-mom=   0.0000E+00     y-mom=   0.0000E+00     z-mom=   0.0000E+00
+ x-rbv=   0.0000E+00     y-rbv=   0.0000E+00     z-rbv=   0.0000E+00

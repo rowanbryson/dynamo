@@ -1,0 +1,180 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-22-2025 (15:14:07)
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0025_SNM5_run4\d3plot"
+ac
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state -1;
+state -1;
+state +1;
+state +1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+activelabel clearhilighttag
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0035_SNL5_run4\d3plot"
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+ident select 1
+genselect target node
+genselect target element
+genselect element add solid 94/F3/1 
+genselect element add solid 95/F3/1 
+genselect element add solid 22/F3/1 
+genselect element add solid 23/F3/1 
+genselect element add solid 14/F4/1 
+genselect element add solid 14/F4/1 
+genselect element add solid 15/F4/1 
+genselect element add solid 54/F4/1 
+genselect element add solid 55/F4/1 
+genselect target node
+genselect node add node 127/1 
+genselect node add node 26/1 
+genselect node add node 27/1 
+genselect node add node 54/1 
+genselect node add node 165/1 
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+genselect node add node 94/1 
+ident select 0
+open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0035_SNL5_run7\d3plot"
+anim start;
+anim stop; state 1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
+Message 1
+Message 0
+genselect target part
+setnode
+genselect target node
+genselect clear
+genselect clear
+genselect target node
+genselect clear
+genselect clear
+genselect node add node 285/3 
+genselect node add node 286/3 
+genselect node add node 287/3 
+genselect node add node 288/3 
+genselect node add node 289/3 
+genselect node add node 290/3 
+genselect node add node 291/3 
+genselect node add node 292/3 
+genselect node add node 269/3 
+setnode createset 5 1 0 0 0 0 "gauge_edge_nodes" 
+genselect clear
+setnode
+genselect target node
+genselect clear
+genselect clear
+genselect target node
+genselect clear
+genselect clear
+save keywordabsolute 0
+save keywordbylongfmt 0
+save keywordbyi10fmt 0
+save outversion 2
+save keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
+setnode
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\geometries\SNL3.key"
+Message 1
+Message 0
+setnode
