@@ -1,0 +1,2017 @@
+ LS-DYNA keyword deck by LS-PrePost                                      
+                    ls-dyna smp d R14 R14.1.1s_1_ef50e1 date 06/16/2024
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p        1   ( at time 0.00000E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -3.9019E-06 -3.9019E-06 -3.9019E-06  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    0.0000E+00
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    0.0000E+00
+      48-      1
+       1          -1.9509E-06 -1.9509E-06 -1.9509E-06  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    0.0000E+00
+      63-      1
+       1          -1.9509E-06 -1.9509E-06 -1.9509E-06  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    0.0000E+00
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p        1   ( at time  0.00000E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      43-      1
+      1            0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      48-      1
+      1            0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      63-      1
+      1            0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       10   ( at time 1.29245E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -7.4300E+07 -1.2279E+08 -3.3866E+08  9.7329E+06 -7.2789E+06 -3.3351E+07    2.5139E+08    4.7823E-04
+      43-      1
+       1          -9.2643E+07 -1.1361E+08 -3.3907E+08  2.2046E+07 -2.0257E+07 -2.8441E+07    2.4722E+08    5.2220E-04
+      48-      1
+       1          -1.0868E+08 -9.4748E+07 -3.3623E+08  2.1246E+07 -2.9109E+07 -1.9566E+07    2.4533E+08    5.1001E-04
+      63-      1
+       1          -1.1393E+08 -7.5948E+07 -3.3348E+08  9.9469E+06 -3.4890E+07 -6.2921E+06    2.4910E+08    4.3845E-04
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       10   ( at time  1.29245E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.9227E-03  6.6650E-04 -5.1347E-03  2.5122E-04 -2.0916E-04 -9.2292E-04
+      43-      1
+      1            1.5655E-03  1.0135E-03 -5.1694E-03  5.9224E-04 -6.3300E-04 -8.2258E-04
+      48-      1
+      1            1.0834E-03  1.4502E-03 -5.0967E-03  5.7206E-04 -9.1230E-04 -5.6816E-04
+      63-      1
+      1            7.5754E-04  1.7216E-03 -4.9652E-03  2.5499E-04 -1.0251E-03 -1.8145E-04
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       35   ( at time 2.54839E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.0992E+08 -1.4758E+08 -3.7207E+08  8.0620E+06 -4.4693E+06 -1.9715E+07    2.4837E+08    1.4888E-02
+      43-      1
+       1          -1.3426E+08 -1.4910E+08 -3.6889E+08  1.2620E+07 -1.8043E+07 -2.1043E+07    2.3361E+08    1.6364E-02
+      48-      1
+       1          -9.5186E+07 -8.9831E+07 -3.3811E+08  1.2903E+07 -2.6671E+07 -1.8047E+07    2.5289E+08    1.5233E-02
+      63-      1
+       1          -5.3690E+07 -3.1998E+07 -3.0669E+08  6.1138E+06 -3.2545E+07 -6.4964E+06    2.7089E+08    1.4313E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       35   ( at time  2.54839E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            9.8576E-03  5.6986E-03 -1.8671E-02  8.1039E-04 -5.0579E-04 -2.4197E-03
+      43-      1
+      1            8.7194E-03  6.8428E-03 -1.8788E-02  1.4807E-03 -2.1582E-03 -2.5809E-03
+      48-      1
+      1            7.8483E-03  8.4216E-03 -1.8892E-02  1.4786E-03 -3.1146E-03 -2.0646E-03
+      63-      1
+      1            7.4141E-03  9.7731E-03 -1.9208E-02  6.7658E-04 -3.6223E-03 -7.2571E-04
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       58   ( at time 3.17785E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.4003E+08 -1.7180E+08 -3.9266E+08  7.8197E+06 -1.5524E+06 -1.3155E+07    2.3982E+08    2.2736E-02
+      43-      1
+       1          -1.7720E+08 -1.8687E+08 -3.9899E+08  1.0040E+07 -1.4765E+07 -1.8259E+07    2.2158E+08    2.5208E-02
+      48-      1
+       1          -1.1157E+08 -1.0909E+08 -3.5862E+08  9.9146E+06 -2.1637E+07 -1.7998E+07    2.5362E+08    2.3030E-02
+      63-      1
+       1          -4.5955E+07 -2.8390E+07 -3.0590E+08  4.0879E+06 -2.7887E+07 -6.2268E+06    2.7376E+08    2.2007E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       58   ( at time  3.17785E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.3542E-02  8.1825E-03 -2.5222E-02  1.1159E-03 -4.7996E-04 -2.8521E-03
+      43-      1
+      1            1.1992E-02  9.7577E-03 -2.5529E-02  1.8865E-03 -2.6018E-03 -3.2602E-03
+      48-      1
+      1            1.1135E-02  1.1730E-02 -2.5785E-02  1.8312E-03 -3.7936E-03 -2.7380E-03
+      63-      1
+      1            1.0765E-02  1.3769E-02 -2.6538E-02  8.0595E-04 -4.6136E-03 -9.5357E-04
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       72   ( at time 4.80495E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -8.2359E+07 -1.0327E+08 -3.6788E+08  6.8505E+06 -4.3879E+06 -2.2086E+07    2.7866E+08    4.5542E-02
+      43-      1
+       1          -1.1588E+08 -1.3649E+08 -3.8493E+08  8.0884E+06 -1.7511E+07 -1.5810E+07    2.6294E+08    4.7860E-02
+      48-      1
+       1          -1.2403E+08 -1.2258E+08 -3.9541E+08  6.5801E+06 -1.6151E+07 -9.3560E+06    2.7426E+08    4.4136E-02
+      63-      1
+       1          -3.4328E+07 -2.4816E+07 -3.1941E+08  1.2783E+06 -1.6811E+07 -2.4439E+06    2.9145E+08    4.2891E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       72   ( at time  4.80495E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.6112E-02  1.7323E-02 -4.6395E-02  2.0893E-03 -9.7582E-04 -5.3139E-03
+      43-      1
+      1            2.3468E-02  1.8520E-02 -4.5330E-02  3.1474E-03 -4.0599E-03 -4.6716E-03
+      48-      1
+      1            2.0582E-02  2.1548E-02 -4.5498E-02  2.8001E-03 -5.1881E-03 -3.6186E-03
+      63-      1
+      1            2.0253E-02  2.4815E-02 -4.7232E-02  1.0622E-03 -6.3872E-03 -1.2097E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       82   ( at time 5.80258E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.0371E+08 -2.1190E+08 -4.1587E+08  9.1974E+06  3.0886E+06 -1.8622E+07    2.1133E+08    5.6977E-02
+      43-      1
+       1          -1.6663E+08 -1.8845E+08 -4.0738E+08  3.1682E+06 -1.2637E+07 -1.1722E+07    2.3261E+08    6.0190E-02
+      48-      1
+       1          -1.3930E+08 -1.5287E+08 -4.2357E+08  2.9343E+06 -1.8412E+07 -1.2124E+07    2.8040E+08    5.7086E-02
+      63-      1
+       1          -4.3245E+07 -3.7366E+07 -3.3653E+08 -5.6634E+05 -1.5629E+07 -1.2330E+06    2.9752E+08    5.5369E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       82   ( at time  5.80258E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3323E-02  2.4084E-02 -6.0150E-02  2.8423E-03 -1.2200E-03 -7.3371E-03
+      43-      1
+      1            3.0478E-02  2.3442E-02 -5.7275E-02  3.1524E-03 -5.4342E-03 -5.8358E-03
+      48-      1
+      1            2.6948E-02  2.6775E-02 -5.7545E-02  2.9338E-03 -6.1602E-03 -4.3348E-03
+      63-      1
+      1            2.6141E-02  3.1031E-02 -5.9631E-02  9.9534E-04 -7.1911E-03 -1.2324E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       90   ( at time 6.80021E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.9689E+08 -2.0526E+08 -4.1818E+08  1.0448E+07  4.0018E+06 -1.6724E+07    2.2001E+08    6.7609E-02
+      43-      1
+       1          -2.1033E+08 -2.2422E+08 -4.3199E+08  3.3806E+06 -2.2076E+06 -9.3290E+06    2.1577E+08    7.0707E-02
+      48-      1
+       1          -1.4681E+08 -1.5535E+08 -4.3866E+08  8.0583E+06 -2.0035E+07 -1.2396E+07    2.9089E+08    7.0495E-02
+      63-      1
+       1          -4.6384E+07 -3.8390E+07 -3.4179E+08 -2.9979E+05 -1.4602E+07 -1.1640E+06    3.0056E+08    6.8308E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       90   ( at time  6.80021E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            4.0452E-02  3.0303E-02 -7.3295E-02  3.5379E-03 -1.0449E-03 -8.9040E-03
+      43-      1
+      1            3.8423E-02  2.9260E-02 -7.0042E-02  3.4232E-03 -6.6832E-03 -7.1343E-03
+      48-      1
+      1            3.3398E-02  3.2779E-02 -7.0232E-02  3.5772E-03 -7.2169E-03 -5.0642E-03
+      63-      1
+      1            3.2108E-02  3.7567E-02 -7.2294E-02  9.9050E-04 -7.9284E-03 -1.2732E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p       99   ( at time 7.79784E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.3714E+08 -2.3617E+08 -4.5792E+08  8.5867E+06  3.7234E+06 -1.4622E+07    2.2331E+08    7.8419E-02
+      43-      1
+       1          -2.5174E+08 -2.6340E+08 -4.7703E+08 -1.2746E+06 -2.2069E+06 -1.0142E+07    2.2044E+08    8.1350E-02
+      48-      1
+       1          -2.0462E+08 -2.1821E+08 -4.6822E+08  1.5247E+06 -1.0003E+07 -7.7284E+06    2.5802E+08    8.2483E-02
+      63-      1
+       1          -5.2933E+07 -6.3167E+07 -3.5876E+08 -1.9787E+06 -1.5190E+07 -7.3828E+05    3.0201E+08    8.1601E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p       99   ( at time  7.79784E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            4.6760E-02  3.7007E-02 -8.6773E-02  4.0152E-03 -9.4844E-04 -1.0338E-02
+      43-      1
+      1            4.5468E-02  3.5193E-02 -8.3154E-02  3.2761E-03 -7.8140E-03 -8.2471E-03
+      48-      1
+      1            4.0093E-02  3.8982E-02 -8.3131E-02  3.4222E-03 -8.0571E-03 -5.9321E-03
+      63-      1
+      1            3.8845E-02  4.3392E-02 -8.5207E-02  8.4065E-04 -8.5857E-03 -1.2319E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      109   ( at time 8.79547E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.9737E+08 -2.9347E+08 -4.8341E+08  1.3477E+07  4.0581E+05 -1.5197E+07    1.9128E+08    8.9034E-02
+      43-      1
+       1          -2.8653E+08 -2.9154E+08 -5.1504E+08  3.8720E+06 -5.3837E+06 -7.3384E+06    2.2669E+08    9.2477E-02
+      48-      1
+       1          -2.2588E+08 -2.3859E+08 -4.9200E+08  5.9006E+05 -1.2764E+07 -8.6143E+06    2.6136E+08    9.4813E-02
+      63-      1
+       1          -6.6270E+07 -8.1207E+07 -3.7607E+08 -2.7643E+06 -1.9010E+07 -2.0682E+06    3.0445E+08    9.5409E-02
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      109   ( at time  8.79547E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            5.7366E-02  4.5833E-02 -1.0261E-01  4.7743E-03 -1.0703E-03 -1.3568E-02
+      43-      1
+      1            5.2157E-02  4.1730E-02 -9.6894E-02  3.6308E-03 -9.0611E-03 -9.0598E-03
+      48-      1
+      1            4.6825E-02  4.5316E-02 -9.6415E-02  3.2285E-03 -9.0314E-03 -6.7404E-03
+      63-      1
+      1            4.5795E-02  4.9381E-02 -9.8506E-02  6.5303E-04 -9.4308E-03 -1.2991E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      117   ( at time 9.79310E+00 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.6170E+08 -2.7544E+08 -4.6395E+08  1.1859E+07  1.2539E+06 -1.3453E+07    1.9821E+08    9.8728E-02
+      43-      1
+       1          -2.8693E+08 -3.0369E+08 -5.2914E+08  5.8959E+06 -1.5455E+06 -6.8177E+06    2.3482E+08    1.0307E-01
+      48-      1
+       1          -2.4759E+08 -2.5202E+08 -5.1637E+08  5.0833E+06 -1.4191E+07 -9.7154E+06    2.6839E+08    1.0682E-01
+      63-      1
+       1          -8.7136E+07 -8.7787E+07 -3.9515E+08 -1.7313E+06 -2.2359E+07 -3.4311E+06    3.1019E+08    1.0913E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      117   ( at time  9.79310E+00 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            6.7361E-02  5.2824E-02 -1.1738E-01  5.7051E-03 -1.0391E-03 -1.5787E-02
+      43-      1
+      1            5.9550E-02  4.7784E-02 -1.1017E-01  4.2145E-03 -9.8248E-03 -9.9677E-03
+      48-      1
+      1            5.3213E-02  5.1910E-02 -1.0947E-01  3.6137E-03 -9.9967E-03 -7.5449E-03
+      63-      1
+      1            5.2119E-02  5.6022E-02 -1.1182E-01  5.7754E-04 -1.0434E-02 -1.4196E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      127   ( at time 1.07907E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -3.6744E+08 -3.7096E+08 -5.2727E+08  1.3411E+07  2.1554E+05 -5.3043E+06    1.6007E+08    1.0716E-01
+      43-      1
+       1          -3.0991E+08 -3.2912E+08 -5.5612E+08  4.2045E+05 -3.7877E+06 -6.8928E+06    2.3758E+08    1.1453E-01
+      48-      1
+       1          -2.1445E+08 -2.2340E+08 -4.8859E+08  1.0547E+06 -1.7856E+07 -1.3462E+07    2.7254E+08    1.1986E-01
+      63-      1
+       1          -1.0174E+08 -1.1053E+08 -4.1582E+08 -5.4453E+06 -2.3893E+07 -3.0648E+06    3.1272E+08    1.2324E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      127   ( at time  1.07907E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            7.7709E-02  6.1290E-02 -1.3317E-01  7.0722E-03 -1.5010E-03 -1.8150E-02
+      43-      1
+      1            6.6991E-02  5.4212E-02 -1.2445E-01  4.0739E-03 -1.0793E-02 -1.0710E-02
+      48-      1
+      1            6.0816E-02  5.8939E-02 -1.2337E-01  3.6284E-03 -1.1275E-02 -8.5931E-03
+      63-      1
+      1            5.9022E-02  6.2303E-02 -1.2541E-01  1.7417E-04 -1.1288E-02 -1.5128E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      137   ( at time 1.17884E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -4.0309E+08 -4.0612E+08 -5.6513E+08  1.5339E+07  1.9600E+06 -1.8807E+06    1.6280E+08    1.1524E-01
+      43-      1
+       1          -3.2704E+08 -3.4293E+08 -5.7413E+08  1.6888E+06 -6.0869E+04 -3.3395E+06    2.3963E+08    1.2549E-01
+      48-      1
+       1          -2.2147E+08 -2.3101E+08 -4.9797E+08 -1.6084E+06 -1.6841E+07 -1.1499E+07    2.7416E+08    1.3246E-01
+      63-      1
+       1          -1.1900E+08 -1.2798E+08 -4.3614E+08 -3.7800E+06 -2.2677E+07 -2.7380E+06    3.1530E+08    1.3729E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      137   ( at time  1.17884E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            8.7008E-02  6.8970E-02 -1.4828E-01  8.6007E-03 -1.5792E-03 -1.9914E-02
+      43-      1
+      1            7.3999E-02  6.0507E-02 -1.3806E-01  4.1436E-03 -1.1367E-02 -1.1105E-02
+      48-      1
+      1            6.7906E-02  6.5434E-02 -1.3693E-01  3.3597E-03 -1.2234E-02 -9.3677E-03
+      63-      1
+      1            6.5813E-02  6.8624E-02 -1.3892E-01 -1.9602E-05 -1.2043E-02 -1.5534E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      147   ( at time 1.27860E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -4.3744E+08 -4.3231E+08 -5.9686E+08  1.7508E+07 -4.3227E+05 -1.7550E+06    1.6488E+08    1.2394E-01
+      43-      1
+       1          -3.4217E+08 -3.5732E+08 -5.9225E+08 -3.5560E+06  2.5985E+05 -3.6672E+06    2.4302E+08    1.3728E-01
+      48-      1
+       1          -2.0628E+08 -2.0673E+08 -4.8129E+08  4.6055E+06 -2.2595E+07 -1.7912E+07    2.7940E+08    1.4659E-01
+      63-      1
+       1          -8.8780E+07 -1.0041E+08 -4.1117E+08 -2.2524E+06 -3.3585E+07 -9.9250E+06    3.2251E+08    1.5352E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      147   ( at time  1.27860E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            9.5705E-02  7.8118E-02 -1.6447E-01  1.0437E-02 -1.8121E-03 -2.1380E-02
+      43-      1
+      1            8.1646E-02  6.7395E-02 -1.5275E-01  3.5932E-03 -1.1891E-02 -1.1490E-02
+      48-      1
+      1            7.5370E-02  7.3719E-02 -1.5202E-01  3.7665E-03 -1.3596E-02 -1.0426E-02
+      63-      1
+      1            7.4021E-02  7.6039E-02 -1.5432E-01 -1.2031E-04 -1.3512E-02 -1.9291E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      157   ( at time 1.37836E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -4.2170E+08 -4.1785E+08 -5.8298E+08  1.9994E+07  6.9588E+05  1.6981E+06    1.6690E+08    1.3285E-01
+      43-      1
+       1          -3.3640E+08 -3.4581E+08 -5.8489E+08 -3.6024E+06 -7.5259E+05 -2.3661E+06    2.4404E+08    1.4918E-01
+      48-      1
+       1          -2.0912E+08 -2.1694E+08 -4.9019E+08 -3.9404E+04 -2.2419E+07 -1.7160E+07    2.8153E+08    1.6018E-01
+      63-      1
+       1          -9.6226E+07 -1.1638E+08 -4.2202E+08 -9.0302E+06 -3.5710E+07 -7.7400E+06    3.2285E+08    1.6892E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      157   ( at time  1.37836E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.0460E-01  8.7254E-02 -1.8044E-01  1.2468E-02 -1.8445E-03 -2.2472E-02
+      43-      1
+      1            8.9285E-02  7.4463E-02 -1.6735E-01  2.9989E-03 -1.2354E-02 -1.1623E-02
+      48-      1
+      1            8.2944E-02  8.0894E-02 -1.6677E-01  3.5422E-03 -1.4511E-02 -1.1275E-02
+      63-      1
+      1            8.1836E-02  8.2476E-02 -1.6889E-01 -8.3807E-04 -1.4608E-02 -2.0703E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      170   ( at time 1.47813E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -3.4692E+08 -3.4398E+08 -5.0429E+08  2.4410E+07  1.1332E+06 -4.5163E+06    1.6459E+08    1.4319E-01
+      43-      1
+       1          -3.1043E+08 -3.2697E+08 -5.6208E+08 -5.6294E+06  4.9661E+06  2.9342E+05    2.4415E+08    1.6261E-01
+      48-      1
+       1          -2.0627E+08 -2.1266E+08 -4.8292E+08 -7.1698E+06 -2.2959E+07 -1.5882E+07    2.7803E+08    1.7470E-01
+      63-      1
+       1          -7.5425E+07 -9.6816E+07 -4.0100E+08 -1.0462E+07 -3.6707E+07 -7.2098E+06    3.2252E+08    1.8489E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      170   ( at time  1.47813E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.1394E-01  9.8000E-02 -1.9807E-01  1.5569E-02 -2.1441E-03 -2.3374E-02
+      43-      1
+      1            9.8050E-02  8.1493E-02 -1.8302E-01  1.7977E-03 -1.2442E-02 -1.1766E-02
+      48-      1
+      1            9.0722E-02  8.8071E-02 -1.8196E-01  2.6993E-03 -1.5696E-02 -1.2003E-02
+      63-      1
+      1            8.9954E-02  8.9220E-02 -1.8362E-01 -1.5767E-03 -1.5741E-02 -2.2801E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      180   ( at time 1.57789E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.9309E+08 -3.0034E+08 -4.6475E+08  1.8318E+07 -5.6365E+06 -1.1890E+06    1.7141E+08    1.5208E-01
+      43-      1
+       1          -3.0000E+08 -3.3773E+08 -5.7141E+08  6.7061E+06  1.4998E+06  3.2210E+06    2.5499E+08    1.7408E-01
+      48-      1
+       1          -2.3411E+08 -2.4027E+08 -5.2229E+08  3.1705E+06 -1.7779E+07 -1.4212E+07    2.8792E+08    1.8687E-01
+      63-      1
+       1          -1.5031E+08 -1.5353E+08 -4.4165E+08 -3.2209E+06 -2.1832E+07 -4.8003E+06    2.9237E+08    1.9748E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      180   ( at time  1.57789E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.2445E-01  1.0700E-01 -2.1447E-01  1.7909E-02 -2.4513E-03 -2.3585E-02
+      43-      1
+      1            1.0654E-01  8.7170E-02 -1.9733E-01  2.7386E-03 -1.2290E-02 -1.1767E-02
+      48-      1
+      1            9.7362E-02  9.4791E-02 -1.9547E-01  3.0917E-03 -1.6085E-02 -1.2483E-02
+      63-      1
+      1            9.6706E-02  9.6575E-02 -1.9779E-01 -1.9425E-03 -1.6535E-02 -2.1710E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      190   ( at time 1.67765E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.3980E+08 -1.6660E+08 -3.1940E+08  8.0756E+06 -1.1289E+06  4.5601E+06    1.6859E+08    1.6291E-01
+      43-      1
+       1          -2.3610E+08 -2.6638E+08 -5.0625E+08  3.9613E+06  5.8068E+05  1.3671E+06    2.5646E+08    1.8747E-01
+      48-      1
+       1          -2.3662E+08 -2.2526E+08 -5.1301E+08  3.5894E+06 -1.8858E+07 -1.4034E+07    2.8523E+08    2.0091E-01
+      63-      1
+       1          -2.7042E+08 -2.7108E+08 -4.8266E+08  1.2891E+06 -8.2037E+06 -5.2487E+06    2.1260E+08    2.0809E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      190   ( at time  1.67765E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.3592E-01  1.1651E-01 -2.3268E-01  1.8932E-02 -2.1381E-03 -2.3293E-02
+      43-      1
+      1            1.1625E-01  9.4985E-02 -2.1320E-01  3.1636E-03 -1.1994E-02 -1.1642E-02
+      48-      1
+      1            1.0445E-01  1.0277E-01 -2.1036E-01  3.3008E-03 -1.6426E-02 -1.2565E-02
+      63-      1
+      1            1.0526E-01  1.0574E-01 -2.1406E-01 -2.3768E-03 -1.7760E-02 -2.2214E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      200   ( at time 1.77742E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.2060E+08 -1.4545E+08 -3.0482E+08  8.2214E+06 -8.7868E+05 -9.5260E+05    1.7374E+08    1.7188E-01
+      43-      1
+       1          -2.6725E+08 -2.9426E+08 -4.9932E+08  1.8380E+06 -2.3809E+06 -3.2934E+06    2.1995E+08    1.9804E-01
+      48-      1
+       1          -2.9640E+08 -2.7307E+08 -5.3405E+08  1.4160E+07 -1.3171E+07 -8.0419E+06    2.5275E+08    2.1314E-01
+      63-      1
+       1          -3.0661E+08 -2.9761E+08 -5.1716E+08  3.6174E+06 -5.0602E+06 -1.0510E+06    2.1547E+08    2.1772E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      200   ( at time  1.77742E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.4671E-01  1.2408E-01 -2.4954E-01  2.0191E-02 -1.7321E-03 -2.3301E-02
+      43-      1
+      1            1.2607E-01  1.0400E-01 -2.2902E-01  4.1566E-03 -1.2475E-02 -1.1674E-02
+      48-      1
+      1            1.1204E-01  1.1179E-01 -2.2571E-01  4.8285E-03 -1.7079E-02 -1.2954E-02
+      63-      1
+      1            1.1221E-01  1.1376E-01 -2.2890E-01 -2.3704E-03 -1.8519E-02 -2.3467E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      210   ( at time 1.87718E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -4.0208E+07 -6.0586E+07 -2.2355E+08  1.0323E+07 -4.9849E+06 -3.0630E+06    1.7526E+08    1.8234E-01
+      43-      1
+       1          -2.2931E+08 -2.5169E+08 -4.1658E+08  2.2985E+06  3.8364E+06 -7.8874E+05    1.7732E+08    2.0834E-01
+      48-      1
+       1          -3.1677E+08 -3.1433E+08 -5.3022E+08  7.3522E+06  2.3125E+06 -1.2381E+06    2.1511E+08    2.2394E-01
+      63-      1
+       1          -3.3737E+08 -3.3492E+08 -5.5191E+08 -7.6301E+04 -1.4900E+06 -1.8918E+06    2.1581E+08    2.2842E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      210   ( at time  1.87718E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.5931E-01  1.3413E-01 -2.6881E-01  2.2150E-02 -2.0166E-03 -2.2796E-02
+      43-      1
+      1            1.3821E-01  1.1448E-01 -2.4742E-01  5.1366E-03 -1.1882E-02 -1.1351E-02
+      48-      1
+      1            1.2086E-01  1.2058E-01 -2.4181E-01  5.9595E-03 -1.7267E-02 -1.2852E-02
+      63-      1
+      1            1.2035E-01  1.2190E-01 -2.4504E-01 -3.0689E-03 -1.9023E-02 -2.3262E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      220   ( at time 1.97694E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -6.8046E+07 -7.3323E+07 -2.0352E+08  3.5173E+06 -2.1634E+06 -3.0056E+06    1.3321E+08    1.8934E-01
+      43-      1
+       1          -1.0213E+08 -1.3335E+08 -2.9048E+08  2.4720E+06 -2.6411E+06 -1.3139E+07    1.7642E+08    2.1814E-01
+      48-      1
+       1          -3.0009E+08 -3.0069E+08 -5.1653E+08  9.1751E+05 -1.5951E+06 -1.2645E+06    2.1618E+08    2.3469E-01
+      63-      1
+       1          -3.6639E+08 -3.7024E+08 -5.8444E+08  2.4737E+06 -6.9028E+05 -5.2863E+04    2.1620E+08    2.3896E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      220   ( at time  1.97694E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.6970E-01  1.4445E-01 -2.8648E-01  2.3605E-02 -2.3621E-03 -2.2757E-02
+      43-      1
+      1            1.5095E-01  1.2445E-01 -2.6495E-01  6.1366E-03 -1.1745E-02 -1.1375E-02
+      48-      1
+      1            1.3002E-01  1.2809E-01 -2.5809E-01  6.0521E-03 -1.7559E-02 -1.2774E-02
+      63-      1
+      1            1.2859E-01  1.2945E-01 -2.6071E-01 -3.4415E-03 -1.9411E-02 -2.2728E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      230   ( at time 2.07670E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -6.3223E+07 -6.2485E+07 -1.9752E+08  2.7611E+06 -4.1894E+06 -5.7639E+06    1.3532E+08    1.9612E-01
+      43-      1
+       1          -1.2682E+08 -1.4579E+08 -2.6544E+08  1.1572E+06 -7.5936E+06 -1.6705E+07    1.3401E+08    2.2560E-01
+      48-      1
+       1          -2.6671E+08 -2.7386E+08 -4.8454E+08  4.5015E+04 -5.1781E+05  1.9171E+06    2.1437E+08    2.4652E-01
+      63-      1
+       1          -3.5976E+08 -3.5779E+08 -5.7140E+08  9.5639E+05  9.8971E+06  1.5054E+06    2.1335E+08    2.5070E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      230   ( at time  2.07670E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.7934E-01  1.5442E-01 -3.0437E-01  2.4872E-02 -2.6502E-03 -2.2258E-02
+      43-      1
+      1            1.6197E-01  1.3573E-01 -2.8417E-01  7.0326E-03 -1.1885E-02 -1.0696E-02
+      48-      1
+      1            1.3967E-01  1.3611E-01 -2.7559E-01  6.0282E-03 -1.7249E-02 -1.2938E-02
+      63-      1
+      1            1.3698E-01  1.3715E-01 -2.7708E-01 -4.2192E-03 -1.9553E-02 -2.0811E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      240   ( at time 2.17647E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -7.2193E+07 -6.3395E+07 -2.0312E+08 -1.2196E+06 -3.8802E+06 -6.9723E+06    1.3626E+08    2.0250E-01
+      43-      1
+       1          -1.2011E+08 -1.3103E+08 -2.5805E+08 -2.6365E+06 -6.7793E+06 -1.6515E+07    1.3644E+08    2.3236E-01
+      48-      1
+       1          -2.7716E+08 -2.7914E+08 -4.9779E+08 -6.7147E+06  3.8675E+05 -1.6901E+06    2.1997E+08    2.5727E-01
+      63-      1
+       1          -3.4796E+08 -3.5468E+08 -5.6960E+08 -1.2472E+06  1.9912E+06 -2.3145E+06    2.1843E+08    2.6185E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      240   ( at time  2.17647E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.8841E-01  1.6435E-01 -3.2146E-01  2.5341E-02 -2.7647E-03 -2.1429E-02
+      43-      1
+      1            1.7193E-01  1.4614E-01 -3.0220E-01  7.3360E-03 -1.1704E-02 -1.0219E-02
+      48-      1
+      1            1.4783E-01  1.4415E-01 -2.9218E-01  5.5705E-03 -1.6924E-02 -1.3102E-02
+      63-      1
+      1            1.4608E-01  1.4439E-01 -2.9335E-01 -5.2448E-03 -1.9245E-02 -1.8037E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      250   ( at time 2.27623E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -6.4505E+07 -5.4117E+07 -1.9437E+08 -3.4989E+06 -3.1215E+06 -4.9518E+06    1.3587E+08    2.0903E-01
+      43-      1
+       1          -9.8244E+07 -1.1100E+08 -2.3680E+08 -2.8768E+06 -6.2398E+06 -1.9990E+07    1.3760E+08    2.3916E-01
+      48-      1
+       1          -2.7825E+08 -2.7826E+08 -4.9990E+08 -6.1352E+06  1.7024E+06 -1.4812E+06    2.2193E+08    2.6814E-01
+      63-      1
+       1          -3.5707E+08 -3.6107E+08 -5.7907E+08  4.2824E+05  3.0424E+06 -2.0056E+06    2.2012E+08    2.7299E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      250   ( at time  2.27623E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            1.9793E-01  1.7460E-01 -3.3831E-01  2.5844E-02 -2.8981E-03 -2.0779E-02
+      43-      1
+      1            1.8195E-01  1.5651E-01 -3.2008E-01  7.8511E-03 -1.1327E-02 -9.8222E-03
+      48-      1
+      1            1.5623E-01  1.5208E-01 -3.0884E-01  5.3657E-03 -1.6561E-02 -1.3216E-02
+      63-      1
+      1            1.5462E-01  1.5202E-01 -3.0961E-01 -5.9122E-03 -1.9044E-02 -1.5314E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      262   ( at time 2.37599E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -7.0420E+07 -5.9548E+07 -1.9404E+08 -5.4332E+06 -6.7828E+06 -2.0718E+07    1.3512E+08    2.1545E-01
+      43-      1
+       1          -6.5032E+07 -8.2506E+07 -1.9886E+08 -5.4035E+06 -9.1368E+06 -2.9195E+07    1.3701E+08    2.4632E-01
+      48-      1
+       1          -2.8443E+08 -2.8203E+08 -5.0186E+08 -8.1223E+06 -7.6110E+05 -5.0548E+06    2.1927E+08    2.7922E-01
+      63-      1
+       1          -3.6142E+08 -3.6563E+08 -5.8120E+08 -8.6051E+04  1.8091E+06 -1.9358E+06    2.1775E+08    2.8466E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      262   ( at time  2.37599E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.0690E-01  1.8456E-01 -3.5524E-01  2.6256E-02 -3.5608E-03 -2.0062E-02
+      43-      1
+      1            1.9254E-01  1.6761E-01 -3.3807E-01  7.9050E-03 -1.0286E-02 -9.6327E-03
+      48-      1
+      1            1.6448E-01  1.5970E-01 -3.2560E-01  5.0397E-03 -1.6187E-02 -1.3286E-02
+      63-      1
+      1            1.6353E-01  1.5940E-01 -3.2620E-01 -6.7693E-03 -1.8882E-02 -1.0805E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      272   ( at time 2.47576E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -4.9995E+07 -4.6833E+07 -1.7812E+08 -8.8614E+06 -8.7051E+06 -2.2877E+07    1.3735E+08    2.2160E-01
+      43-      1
+       1          -5.9295E+07 -6.9652E+07 -1.9473E+08 -3.3305E+06 -1.3360E+07 -2.2443E+07    1.3831E+08    2.5257E-01
+      48-      1
+       1          -2.7475E+08 -2.7258E+08 -4.9587E+08 -8.4967E+06 -1.0286E+04 -3.0075E+05    2.2270E+08    2.8987E-01
+      63-      1
+       1          -3.6106E+08 -3.5842E+08 -5.7878E+08  1.1733E+06  5.8668E+06 -1.5712E+05    2.1930E+08    2.9576E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      272   ( at time  2.47576E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.1604E-01  1.9357E-01 -3.7087E-01  2.6399E-02 -3.8411E-03 -1.9736E-02
+      43-      1
+      1            2.0150E-01  1.7685E-01 -3.5485E-01  8.4012E-03 -9.8881E-03 -9.4474E-03
+      48-      1
+      1            1.7254E-01  1.6764E-01 -3.4188E-01  4.6335E-03 -1.5323E-02 -1.3374E-02
+      63-      1
+      1            1.7146E-01  1.6711E-01 -3.4195E-01 -7.3891E-03 -1.8336E-02 -7.2596E-04
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      284   ( at time 2.57552E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.1617E+08 -1.1142E+08 -1.9508E+08 -1.4603E+07  1.6759E+06 -2.5222E+07    9.5816E+07    2.2655E-01
+      43-      1
+       1          -3.6236E+07 -4.6866E+07 -1.6803E+08 -5.7722E+06 -1.3070E+07 -2.6078E+07    1.3687E+08    2.6090E-01
+      48-      1
+       1          -2.7240E+08 -2.7520E+08 -4.9343E+08 -1.0722E+07 -5.9563E+05 -3.5921E+06    2.2052E+08    3.0160E-01
+      63-      1
+       1          -3.4447E+08 -3.3965E+08 -5.6010E+08 -3.7462E+06  7.1519E+06 -1.7283E+06    2.1854E+08    3.0858E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      284   ( at time  2.57552E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.2804E-01  2.0591E-01 -3.9139E-01  2.7330E-02 -4.0235E-03 -1.7826E-02
+      43-      1
+      1            2.1419E-01  1.8880E-01 -3.7497E-01  8.7078E-03 -6.9525E-03 -8.9684E-03
+      48-      1
+      1            1.8154E-01  1.7564E-01 -3.5974E-01  3.9641E-03 -1.4065E-02 -1.3262E-02
+      63-      1
+      1            1.8073E-01  1.7528E-01 -3.5983E-01 -8.6380E-03 -1.7791E-02  1.9151E-05
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      296   ( at time 2.67528E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.1832E+08 -1.1493E+08 -1.8839E+08 -1.5464E+07 -2.3341E+05 -3.4007E+07    9.6673E+07    2.3184E-01
+      43-      1
+       1          -2.8393E+07 -3.5075E+07 -1.5385E+08 -1.3346E+07 -1.7908E+07 -2.6568E+07    1.3624E+08    2.6848E-01
+      48-      1
+       1          -2.6285E+08 -2.6938E+08 -4.9084E+08 -1.1502E+07 -2.3066E+06 -7.2355E+06    2.2606E+08    3.1301E-01
+      63-      1
+       1          -3.3843E+08 -3.3292E+08 -5.5911E+08 -6.3549E+06 -5.0500E+05 -4.1822E+06    2.2387E+08    3.2128E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      296   ( at time  2.67528E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.3827E-01  2.1725E-01 -4.1040E-01  2.7485E-02 -3.2868E-03 -1.6995E-02
+      43-      1
+      1            2.2550E-01  1.9875E-01 -3.9317E-01  7.6614E-03 -4.7210E-03 -8.5916E-03
+      48-      1
+      1            1.9064E-01  1.8333E-01 -3.7750E-01  3.4721E-03 -1.2647E-02 -1.2782E-02
+      63-      1
+      1            1.9002E-01  1.8361E-01 -3.7779E-01 -1.0755E-02 -1.6046E-02  5.4431E-04
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      306   ( at time 2.77505E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -8.0093E+07 -8.0464E+07 -1.5101E+08 -1.2747E+07 -2.5359E+06 -3.6442E+07    9.7433E+07    2.3716E-01
+      43-      1
+       1          -3.0536E+07 -3.4188E+07 -1.5416E+08 -1.5406E+07 -2.2349E+07 -2.2562E+07    1.3632E+08    2.7544E-01
+      48-      1
+       1          -2.5320E+08 -2.5769E+08 -4.8443E+08 -1.1857E+07 -2.5580E+06 -7.2253E+06    2.3032E+08    3.2431E-01
+      63-      1
+       1          -3.4340E+08 -3.4288E+08 -5.7096E+08 -2.4816E+06 -3.4262E+06 -3.2851E+06    2.2801E+08    3.3396E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      306   ( at time  2.77505E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.4853E-01  2.2774E-01 -4.2865E-01  2.6697E-02 -2.4183E-03 -1.7741E-02
+      43-      1
+      1            2.3523E-01  2.0770E-01 -4.1065E-01  6.7776E-03 -3.7722E-03 -8.3684E-03
+      48-      1
+      1            1.9938E-01  1.9165E-01 -3.9544E-01  2.8463E-03 -1.0589E-02 -1.2503E-02
+      63-      1
+      1            1.9960E-01  1.9255E-01 -3.9619E-01 -1.1758E-02 -1.3929E-02  1.6463E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      321   ( at time 2.87481E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.1889E+08 -1.1512E+08 -1.4047E+08 -4.9234E+06  1.0303E+06 -2.4472E+07    4.9336E+07    2.4269E-01
+      43-      1
+       1           9.2306E+07  9.0033E+07 -2.9142E+07 -1.4966E+07 -9.2930E+06 -2.8888E+07    1.3384E+08    2.8568E-01
+      48-      1
+       1          -2.5244E+08 -2.5437E+08 -4.7021E+08 -1.2135E+07  6.9039E+06 -1.1129E+07    2.1901E+08    3.3915E-01
+      63-      1
+       1          -2.6751E+08 -2.7729E+08 -5.2694E+08 -6.6985E+06 -1.5345E+07 -2.1656E+06    2.5636E+08    3.5448E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      321   ( at time  2.87481E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.6285E-01  2.4555E-01 -4.6334E-01  2.1920E-02  1.3594E-03 -1.9869E-02
+      43-      1
+      1            2.4835E-01  2.2048E-01 -4.3379E-01  2.6124E-03  8.4487E-04 -7.6971E-03
+      48-      1
+      1            2.1064E-01  2.0093E-01 -4.1739E-01  1.9930E-03 -7.4655E-03 -1.2640E-02
+      63-      1
+      1            2.1255E-01  2.0291E-01 -4.1875E-01 -1.3043E-02 -1.1683E-02  2.8443E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      332   ( at time 2.97457E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -8.3651E+07 -8.0743E+07 -9.6886E+07 -4.3203E+06 -2.0257E+05 -2.7075E+07    4.9773E+07    2.4579E-01
+      43-      1
+       1           2.2000E+07  3.0243E+07 -4.2629E+07 -1.3967E+07 -1.9779E+07 -3.2307E+07    9.8325E+07    2.8922E-01
+      48-      1
+       1          -2.2277E+08 -2.0518E+08 -5.1863E+08  8.3756E+05 -2.8704E+07 -1.6819E+07    3.1044E+08    3.5581E-01
+      63-      1
+       1          -2.6043E+08 -2.6588E+08 -5.3755E+08 -7.1016E+06 -1.5402E+07 -5.7120E+06    2.7619E+08    3.6926E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      332   ( at time  2.97457E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.6920E-01  2.5343E-01 -4.7944E-01  1.9128E-02  2.2912E-03 -2.1637E-02
+      43-      1
+      1            2.5556E-01  2.2983E-01 -4.5199E-01  1.4158E-03  1.6314E-03 -4.6038E-03
+      48-      1
+      1            2.1951E-01  2.1069E-01 -4.3732E-01  3.0803E-03 -3.2822E-03 -1.2613E-02
+      63-      1
+      1            2.2237E-01  2.1249E-01 -4.3671E-01 -1.3908E-02 -9.5075E-03  3.8384E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      343   ( at time 3.07434E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -5.1619E+07 -4.8644E+07 -6.6470E+07 -4.8708E+06  7.5912E+05 -2.6987E+07    5.0313E+07    2.4974E-01
+      43-      1
+       1           3.4710E+07  3.3807E+07 -3.4880E+07 -1.4726E+07 -1.7192E+07 -3.4000E+07    9.8925E+07    2.9359E-01
+      48-      1
+       1          -2.3765E+08 -2.4152E+08 -5.1053E+08 -7.5412E+05 -1.9750E+07 -1.2642E+07    2.7399E+08    3.7108E-01
+      63-      1
+       1          -2.6207E+08 -2.7099E+08 -5.4757E+08 -6.5201E+06 -1.8404E+07 -4.8856E+06    2.8330E+08    3.8379E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      343   ( at time  3.07434E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.7623E-01  2.6360E-01 -4.9746E-01  1.4966E-02  2.8823E-03 -2.0759E-02
+      43-      1
+      1            2.6381E-01  2.3971E-01 -4.7102E-01 -7.0819E-04  2.3920E-03 -3.1384E-03
+      48-      1
+      1            2.2918E-01  2.1961E-01 -4.5652E-01  3.2398E-03  7.3817E-04 -1.2083E-02
+      63-      1
+      1            2.3224E-01  2.2114E-01 -4.5469E-01 -1.4549E-02 -7.6629E-03  4.5092E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      358   ( at time 3.17410E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -3.3331E+07 -3.1442E+07 -6.0243E+07 -7.3069E+05  5.5518E+06 -2.3867E+07    5.0810E+07    2.5349E-01
+      43-      1
+       1           3.1795E+06 -4.4422E+06 -2.0474E+07 -1.1428E+07 -8.6187E+06 -2.2053E+07    5.0110E+07    2.9630E-01
+      48-      1
+       1          -2.4707E+08 -2.5276E+08 -5.1987E+08 -6.1509E+06 -2.6308E+07 -1.6140E+07    2.7545E+08    3.8700E-01
+      63-      1
+       1          -2.8386E+08 -2.9110E+08 -5.6151E+08 -6.2852E+06 -2.0014E+07 -6.7035E+06    2.7675E+08    3.9907E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      358   ( at time  3.17410E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.8346E-01  2.7413E-01 -5.1524E-01  1.0931E-02  3.1855E-03 -1.7986E-02
+      43-      1
+      1            2.7487E-01  2.4962E-01 -4.9299E-01 -3.7594E-03  3.8315E-03 -2.2453E-03
+      48-      1
+      1            2.3896E-01  2.2823E-01 -4.7631E-01  2.7060E-03  5.0916E-03 -1.1556E-02
+      63-      1
+      1            2.4153E-01  2.2961E-01 -4.7271E-01 -1.5327E-02 -4.8774E-03  4.5405E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      368   ( at time 3.27386E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.2738E+07 -2.4703E+07 -6.1101E+07  7.4675E+05  5.5607E+06 -1.9287E+07    5.1094E+07    2.5568E-01
+      43-      1
+       1          -1.8770E+07 -3.4032E+07 -6.1080E+07 -8.0846E+06 -6.0093E+06 -1.6812E+07    5.0296E+07    2.9767E-01
+      48-      1
+       1          -1.3685E+08 -1.4090E+08 -4.1982E+08 -9.3187E+06 -2.2167E+07 -1.6620E+07    2.8550E+08    4.0201E-01
+      63-      1
+       1          -2.4366E+08 -2.2758E+08 -5.2334E+08  1.0451E+07 -2.9244E+07 -9.9973E+05    2.9304E+08    4.1474E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      368   ( at time  3.27386E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.8896E-01  2.8130E-01 -5.2873E-01  9.5396E-03  3.1342E-03 -1.6857E-02
+      43-      1
+      1            2.8176E-01  2.5523E-01 -5.1064E-01 -4.2525E-03  4.4201E-03  2.6428E-04
+      48-      1
+      1            2.4977E-01  2.3827E-01 -4.9476E-01  2.0604E-03  8.8786E-03 -1.1070E-02
+      63-      1
+      1            2.5085E-01  2.4211E-01 -4.9171E-01 -1.4496E-02 -1.1301E-03  5.8666E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      379   ( at time 3.37362E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -2.3554E+07 -1.8072E+07 -1.0373E+08 -2.8019E+06  5.6941E+06 -1.5170E+07    8.7801E+07    2.5979E-01
+      43-      1
+       1           4.8717E+06 -6.5436E+06 -3.2371E+07 -6.3341E+06 -7.3553E+06 -1.9895E+07    5.0619E+07    3.0010E-01
+      48-      1
+       1          -1.0971E+08 -1.1867E+08 -3.8606E+08 -1.4551E+07 -2.8817E+07 -2.1241E+07    2.8009E+08    4.1695E-01
+      63-      1
+       1          -2.3994E+08 -2.4109E+08 -5.2963E+08  3.1034E+06 -2.6950E+07 -1.3987E+06    2.9292E+08    4.2950E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      379   ( at time  3.37362E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            2.9593E-01  2.9146E-01 -5.4447E-01  8.4566E-03  3.1632E-03 -1.5132E-02
+      43-      1
+      1            2.9119E-01  2.6392E-01 -5.3044E-01 -5.8034E-03  5.8810E-03  2.9070E-03
+      48-      1
+      1            2.6000E-01  2.4766E-01 -5.1362E-01  6.4499E-04  1.2895E-02 -1.0938E-02
+      63-      1
+      1            2.6031E-01  2.5108E-01 -5.1000E-01 -1.4551E-02  1.9517E-03  6.6830E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      392   ( at time 3.47339E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -5.0006E+07 -4.2723E+07 -1.3306E+08 -1.0368E+06  6.3914E+06 -1.3337E+07    9.0636E+07    2.6551E-01
+      43-      1
+       1           2.2975E+07  8.7358E+06 -7.3575E+06 -6.8231E+06 -1.0336E+07 -2.1971E+07    5.0983E+07    3.0288E-01
+      48-      1
+       1          -1.2327E+08 -1.4179E+08 -4.0030E+08 -1.6142E+07 -3.6714E+07 -2.7693E+07    2.8121E+08    4.3292E-01
+      63-      1
+       1          -2.7074E+08 -2.7707E+08 -5.5817E+08  2.1909E+06 -2.5039E+07 -4.2289E+06    2.8772E+08    4.4513E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      392   ( at time  3.47339E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.0474E-01  3.0256E-01 -5.6127E-01  6.8564E-03  3.6468E-03 -1.2350E-02
+      43-      1
+      1            3.0151E-01  2.7246E-01 -5.5033E-01 -7.8140E-03  7.9296E-03  5.7110E-03
+      48-      1
+      1            2.7011E-01  2.5613E-01 -5.3284E-01 -8.6275E-04  1.7754E-02 -1.0341E-02
+      63-      1
+      1            2.7001E-01  2.6015E-01 -5.2923E-01 -1.4469E-02  5.3329E-03  7.4545E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      401   ( at time 3.57315E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.7547E+07 -1.6239E+07 -1.0722E+08 -3.8551E+06 -3.2801E+05 -8.3419E+06    9.1730E+07    2.6873E-01
+      43-      1
+       1          -4.5924E+07 -4.5924E+07 -4.5924E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.0288E-01
+      48-      1
+       1          -1.0233E+08 -1.0391E+08 -3.8707E+08 -4.0173E+06 -2.8110E+07 -1.5374E+07    2.8941E+08    4.4602E-01
+      63-      1
+       1          -2.6458E+08 -2.4557E+08 -5.5142E+08 -9.4168E+05 -1.8749E+07  9.5738E+05    2.9859E+08    4.5838E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      401   ( at time  3.57315E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1215E-01  3.0899E-01 -5.7403E-01  6.5879E-03  2.8411E-03 -9.9741E-03
+      43-      1
+      1            3.0995E-01  2.7789E-01 -5.6613E-01 -8.2697E-03  9.5189E-03  8.6563E-03
+      48-      1
+      1            2.7864E-01  2.6496E-01 -5.4912E-01 -6.8419E-04  2.1083E-02 -9.2308E-03
+      63-      1
+      1            2.7773E-01  2.7007E-01 -5.4568E-01 -1.4574E-02  8.3063E-03  7.7411E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      411   ( at time 3.67291E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -6.0479E+07 -5.6923E+07 -9.7037E+07 -1.5954E+06  1.8025E+05 -7.4778E+06    4.0678E+07    2.7125E-01
+      43-      1
+       1           1.4385E+07  8.9621E+06 -7.6422E+07 -1.0906E+07 -4.9187E+06 -2.4732E+05    9.0623E+07    3.0553E-01
+      48-      1
+       1          -8.3107E+07 -9.4620E+07 -3.2848E+08 -1.5112E+07 -1.5363E+07 -1.5684E+07    2.4423E+08    4.5698E-01
+      63-      1
+       1          -2.4337E+08 -2.6233E+08 -5.5001E+08 -7.5271E+06 -2.4233E+07 -2.2465E+06    3.0087E+08    4.7234E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      411   ( at time  3.67291E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1942E-01  3.1809E-01 -5.8844E-01  5.4823E-03  4.4672E-03 -5.5449E-03
+      43-      1
+      1            3.1817E-01  2.8458E-01 -5.8051E-01 -1.0530E-02  1.2181E-02  1.2124E-02
+      48-      1
+      1            2.8817E-01  2.7250E-01 -5.6571E-01 -2.3480E-03  2.4181E-02 -8.5388E-03
+      63-      1
+      1            2.8798E-01  2.7726E-01 -5.6296E-01 -1.5478E-02  1.1532E-02  8.6736E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      422   ( at time 3.77268E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -5.4643E+07 -5.1661E+07 -9.0493E+07 -1.1212E+06  2.7588E+05 -1.0195E+07    4.1435E+07    2.7390E-01
+      43-      1
+       1          -2.9138E+07 -2.9138E+07 -2.9138E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.0553E-01
+      48-      1
+       1          -5.9171E+07 -8.3773E+07 -3.5519E+08 -8.6980E+06 -2.9032E+07 -2.3736E+07    2.9222E+08    4.7037E-01
+      63-      1
+       1          -2.2971E+08 -2.5031E+08 -5.3742E+08 -4.8331E+06 -2.7673E+07 -3.3822E+06    3.0196E+08    4.8578E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      422   ( at time  3.77268E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.2814E-01  3.2724E-01 -6.0358E-01  4.5433E-03  5.0836E-03 -1.4893E-03
+      43-      1
+      1            3.2833E-01  2.9329E-01 -5.9914E-01 -1.2441E-02  1.5787E-02  1.6378E-02
+      48-      1
+      1            2.9791E-01  2.8006E-01 -5.8308E-01 -2.8643E-03  2.7963E-02 -7.7484E-03
+      63-      1
+      1            2.9747E-01  2.8480E-01 -5.7971E-01 -1.5976E-02  1.4738E-02  9.1977E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      432   ( at time 3.87244E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -5.6428E+07 -5.6459E+07 -9.6317E+07 -1.2138E+06 -1.6146E+05 -7.6131E+06    4.2050E+07    2.7621E-01
+      43-      1
+       1          -2.5741E+07 -2.6028E+07 -7.1664E+07 -1.1469E+06 -4.3897E+06 -9.6306E+06    4.9354E+07    3.0702E-01
+      48-      1
+       1          -5.8556E+07 -6.8549E+07 -3.0590E+08 -2.4379E+06 -2.2354E+07 -1.9273E+07    2.4787E+08    4.8132E-01
+      63-      1
+       1          -2.4398E+08 -2.4627E+08 -5.4464E+08 -2.3875E+06 -3.3804E+07 -6.5297E+06    3.0543E+08    4.9928E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      432   ( at time  3.87244E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3719E-01  3.3471E-01 -6.1803E-01  4.3407E-03  5.8822E-03  1.9540E-03
+      43-      1
+      1            3.3693E-01  2.9957E-01 -6.1526E-01 -1.2816E-02  1.7948E-02  1.9112E-02
+      48-      1
+      1            3.0673E-01  2.8861E-01 -5.9972E-01 -3.1684E-03  3.0751E-02 -6.3006E-03
+      63-      1
+      1            3.0592E-01  2.9317E-01 -5.9613E-01 -1.6341E-02  1.9093E-02  9.8497E-03
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      442   ( at time 3.97220E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1          -1.8193E+07 -5.9652E+06  2.4158E+07 -6.4513E+06 -1.9519E+06  8.7874E+06    4.2346E+07    2.7738E-01
+      43-      1
+       1          -7.6903E+07 -7.3486E+07 -1.1986E+08 -6.3352E+06  1.7354E+06 -1.0704E+07    4.9765E+07    3.0993E-01
+      48-      1
+       1          -1.9631E+07 -3.0818E+07 -2.6193E+08 -9.9982E+06 -2.2174E+07 -2.5260E+07    2.4457E+08    4.9355E-01
+      63-      1
+       1          -1.9613E+08 -2.1172E+08 -5.0563E+08 -3.0692E+06 -3.2147E+07 -8.1821E+06    3.0747E+08    5.1397E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      442   ( at time  3.97220E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3496E-01  3.3915E-01 -6.1447E-01  2.9144E-03 -1.2401E-03  5.6817E-04
+      43-      1
+      1            3.4447E-01  3.1018E-01 -6.3506E-01 -1.7149E-02  1.6032E-02  2.1599E-02
+      48-      1
+      1            3.1725E-01  2.9819E-01 -6.1852E-01 -4.8123E-03  3.3639E-02 -4.7968E-03
+      63-      1
+      1            3.1634E-01  3.0153E-01 -6.1384E-01 -1.7007E-02  2.3643E-02  1.0716E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      452   ( at time 4.07197E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -4.7218E+07 -3.1730E+07 -1.2500E+08 -1.5372E+07 -4.5693E+06 -1.2868E+07    9.3609E+07    3.1381E-01
+      48-      1
+       1           6.1577E+06 -5.5327E+06 -1.9225E+08 -1.5622E+07 -1.1002E+07 -2.0752E+07    1.9892E+08    5.0364E-01
+      63-      1
+       1          -2.2731E+08 -2.5958E+08 -5.4303E+08 -6.1950E+06 -3.9166E+07 -8.2608E+06    3.0896E+08    5.2979E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      452   ( at time  4.07197E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3479E-01  3.4722E-01 -6.1510E-01  2.5281E-04 -4.8628E-03 -1.7343E-04
+      43-      1
+      1            3.5141E-01  3.1869E-01 -6.5168E-01 -2.1055E-02  1.5969E-02  2.5683E-02
+      48-      1
+      1            3.2855E-01  3.0719E-01 -6.3813E-01 -7.1420E-03  3.6292E-02 -2.3365E-03
+      63-      1
+      1            3.2774E-01  3.0880E-01 -6.3291E-01 -1.8196E-02  2.9810E-02  1.1987E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      462   ( at time 4.17173E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -4.5019E+07 -4.3279E+07 -8.6272E+07 -3.9972E+06 -3.7889E+06 -6.9961E+06    4.4882E+07    3.1640E-01
+      48-      1
+       1           4.7086E+07  3.5447E+07 -1.5252E+08 -1.1720E+07 -1.3793E+07 -2.0706E+07    1.9981E+08    5.1300E-01
+      63-      1
+       1          -2.0624E+08 -2.4995E+08 -5.2758E+08 -3.1479E+06 -4.3444E+07 -8.0950E+06    3.1147E+08    5.4485E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      462   ( at time  4.17173E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3559E-01  3.5401E-01 -6.1759E-01 -1.1211E-04 -9.9314E-03 -1.3932E-04
+      43-      1
+      1            3.6006E-01  3.2897E-01 -6.7067E-01 -2.4089E-02  1.6972E-02  2.8853E-02
+      48-      1
+      1            3.3850E-01  3.1517E-01 -6.5579E-01 -8.7298E-03  3.8857E-02 -7.8502E-04
+      63-      1
+      1            3.3920E-01  3.1544E-01 -6.5062E-01 -1.9168E-02  3.5406E-02  1.3695E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      473   ( at time 4.27149E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.4059E+07  1.8674E+06 -9.2541E+07 -6.9436E+06 -3.3723E+06 -1.9936E+07    9.5048E+07    3.2133E-01
+      48-      1
+       1           7.1399E+07  6.6751E+07 -1.2415E+08 -1.0448E+07 -1.6683E+07 -2.3841E+07    2.0054E+08    5.2431E-01
+      63-      1
+       1          -2.2357E+08 -2.5412E+08 -5.3872E+08  1.2506E+06 -4.8891E+07 -1.3442E+07    3.1360E+08    5.6130E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      473   ( at time  4.27149E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3464E-01  3.6320E-01 -6.2101E-01 -1.0374E-04 -1.3344E-02 -3.8389E-04
+      43-      1
+      1            3.6896E-01  3.3983E-01 -6.9062E-01 -2.6152E-02  1.8173E-02  3.2096E-02
+      48-      1
+      1            3.4982E-01  3.2513E-01 -6.7667E-01 -1.1076E-02  4.2164E-02  2.3798E-03
+      63-      1
+      1            3.5044E-01  3.2316E-01 -6.6992E-01 -1.9711E-02  4.2128E-02  1.5530E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      484   ( at time 4.37126E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -4.3671E+07 -3.9617E+07 -8.5106E+07 -1.7272E+06 -1.2758E+06 -7.7656E+06    4.5782E+07    3.2359E-01
+      48-      1
+       1           4.4907E+07  4.2725E+07 -9.9945E+07 -1.3927E+06 -1.0811E+07 -1.9070E+07    1.4872E+08    5.3263E-01
+      63-      1
+       1          -2.3139E+08 -2.4668E+08 -5.4508E+08 -4.4342E+06 -3.9879E+07 -1.2911E+07    3.1491E+08    5.7642E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      484   ( at time  4.37126E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3346E-01  3.7146E-01 -6.2415E-01  8.1967E-04 -1.4890E-02 -1.1423E-03
+      43-      1
+      1            3.7915E-01  3.4959E-01 -7.0961E-01 -2.6943E-02  1.7210E-02  3.5972E-02
+      48-      1
+      1            3.6039E-01  3.3527E-01 -6.9653E-01 -1.1785E-02  4.4274E-02  4.9606E-03
+      63-      1
+      1            3.6015E-01  3.3160E-01 -6.8815E-01 -2.0993E-02  4.7493E-02  1.7263E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      495   ( at time 4.47102E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -4.3978E+07 -2.5617E+07 -1.2175E+08 -1.0929E+07  4.0638E+06 -1.6472E+07    9.5059E+07    3.2680E-01
+      48-      1
+       1           4.4850E+07  5.3942E+07 -9.7803E+07 -7.8872E+06 -1.2876E+07 -1.5716E+07    1.5217E+08    5.4001E-01
+      63-      1
+       1          -2.0994E+08 -2.3342E+08 -5.2831E+08 -2.9712E+06 -4.4291E+07 -1.3254E+07    3.1761E+08    5.9237E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      495   ( at time  4.47102E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3249E-01  3.7993E-01 -6.2856E-01  7.4168E-04 -1.7577E-02  1.2782E-03
+      43-      1
+      1            3.8690E-01  3.5679E-01 -7.2616E-01 -2.8881E-02  2.0847E-02  4.3005E-02
+      48-      1
+      1            3.6890E-01  3.4448E-01 -7.1500E-01 -1.3845E-02  4.8120E-02  9.0152E-03
+      63-      1
+      1            3.7123E-01  3.3940E-01 -7.0682E-01 -2.2033E-02  5.3244E-02  1.9457E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      506   ( at time 4.57078E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.9114E+07 -1.0751E+07 -5.8870E+07 -3.1657E+06 -3.8649E+06 -5.7370E+06    4.6439E+07    3.2871E-01
+      48-      1
+       1          -7.8308E+06 -1.8888E+07 -1.0985E+08 -6.8426E+05 -9.9156E+06 -9.9010E+06    9.9967E+07    5.4615E-01
+      63-      1
+       1          -2.1311E+08 -2.3162E+08 -5.3444E+08  4.2367E+06 -3.3532E+07 -1.0850E+07    3.1848E+08    6.0872E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      506   ( at time  4.57078E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.3002E-01  3.8878E-01 -6.3267E-01  1.7093E-03 -2.0872E-02  3.1093E-03
+      43-      1
+      1            3.9497E-01  3.6746E-01 -7.4195E-01 -3.1567E-02  2.3509E-02  5.3002E-02
+      48-      1
+      1            3.8169E-01  3.5388E-01 -7.3534E-01 -1.4931E-02  5.1527E-02  1.3335E-02
+      63-      1
+      1            3.8237E-01  3.4853E-01 -7.2740E-01 -2.2145E-02  5.6352E-02  2.1282E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      519   ( at time 4.67055E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.2657E+06 -2.4633E+06  3.7290E+06 -2.5198E+07  2.9968E+06  2.8248E+06    4.4587E+07    3.2887E-01
+      48-      1
+       1          -3.9623E+07 -4.5172E+07 -1.3523E+08 -1.0219E+07 -9.8336E+06 -1.5291E+07    9.9729E+07    5.5235E-01
+      63-      1
+       1          -2.2622E+08 -2.6368E+08 -4.9204E+08 -3.4858E+06 -4.3238E+07 -1.3000E+07    2.6126E+08    6.2520E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      519   ( at time  4.67055E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.2520E-01  3.9922E-01 -6.3498E-01 -9.4235E-04 -2.1524E-02  1.9661E-03
+      43-      1
+      1            4.0119E-01  3.7221E-01 -7.4675E-01 -3.6321E-02  2.1110E-02  5.4205E-02
+      48-      1
+      1            3.9198E-01  3.6484E-01 -7.5505E-01 -2.1375E-02  5.2899E-02  1.9666E-02
+      63-      1
+      1            3.9645E-01  3.5572E-01 -7.4872E-01 -2.5089E-02  6.5502E-02  2.5726E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      525   ( at time 4.77031E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -6.4930E+07 -7.6029E+07 -1.7617E+08  1.4188E+06  2.0698E+06 -3.9115E+06    1.0643E+08    5.5430E-01
+      63-      1
+       1          -3.2828E+08 -3.2924E+08 -5.9174E+08  5.2092E+06 -2.7984E+07 -3.0681E+06    2.6761E+08    6.3365E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      525   ( at time  4.77031E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.2530E-01  3.9898E-01 -6.3511E-01 -9.6128E-04 -2.2037E-02  2.2753E-03
+      43-      1
+      1            4.0117E-01  3.7392E-01 -7.4938E-01 -3.5795E-02  1.9953E-02  5.6690E-02
+      48-      1
+      1            3.9673E-01  3.7112E-01 -7.6704E-01 -2.2549E-02  5.4097E-02  2.3071E-02
+      63-      1
+      1            4.0182E-01  3.6178E-01 -7.6210E-01 -2.4830E-02  6.6798E-02  2.6670E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      535   ( at time 4.92842E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -5.8679E+06 -5.6534E+06 -1.4865E+08 -1.7079E+07 -1.1333E+07 -1.5487E+07    1.4966E+08    5.6574E-01
+      63-      1
+       1          -2.8206E+08 -2.9615E+08 -4.9666E+08 -8.1265E+05 -2.8222E+07 -4.8397E+06    2.1375E+08    6.4844E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      535   ( at time  4.92842E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.2361E-01  4.0152E-01 -6.3542E-01 -2.4188E-03 -2.4206E-02  4.1504E-03
+      43-      1
+      1            4.0224E-01  3.8148E-01 -7.5761E-01 -3.7994E-02  1.4266E-02  6.2708E-02
+      48-      1
+      1            4.1306E-01  3.8654E-01 -7.9478E-01 -2.7926E-02  5.5847E-02  2.9082E-02
+      63-      1
+      1            4.1738E-01  3.7350E-01 -7.8698E-01 -2.5893E-02  7.4796E-02  2.8974E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      546   ( at time 5.08654E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1           1.7756E+07  6.2215E+06 -8.5587E+07 -1.0479E+07 -4.3732E+06 -1.2968E+07    1.0253E+08    5.7642E-01
+      63-      1
+       1          -3.3170E+08 -3.5201E+08 -5.5164E+08  3.4107E+06 -2.3003E+07 -1.1559E+07    2.1527E+08    6.6686E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      546   ( at time  5.08654E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.2190E-01  4.0262E-01 -6.3472E-01 -2.0945E-03 -2.5584E-02  5.4719E-03
+      43-      1
+      1            4.0010E-01  3.9381E-01 -7.6704E-01 -3.9114E-02  7.7508E-03  6.8900E-02
+      48-      1
+      1            4.3489E-01  4.0471E-01 -8.3131E-01 -3.5512E-02  5.6371E-02  3.6843E-02
+      63-      1
+      1            4.3607E-01  3.8607E-01 -8.1948E-01 -2.6222E-02  8.2530E-02  3.2630E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      557   ( at time 5.24465E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -7.7836E+07 -7.8517E+07 -1.3105E+08 -1.6921E+06 -9.5339E+06 -2.0451E+06    5.5588E+07    5.7832E-01
+      63-      1
+       1          -2.3751E+08 -2.8557E+08 -4.6916E+08 -8.7146E+06 -2.4527E+07 -1.3429E+07    2.1775E+08    6.8875E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      557   ( at time  5.24465E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1926E-01  4.0704E-01 -6.3658E-01 -4.5765E-03 -2.3985E-02  8.5514E-03
+      43-      1
+      1            3.9828E-01  4.0164E-01 -7.7168E-01 -4.7206E-02  7.0459E-03  7.2103E-02
+      48-      1
+      1            4.4222E-01  4.0733E-01 -8.4752E-01 -4.3469E-02  5.9934E-02  4.7187E-02
+      63-      1
+      1            4.6365E-01  3.9715E-01 -8.5641E-01 -2.9816E-02  9.1278E-02  3.7836E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      567   ( at time 5.40276E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.7632E+07 -1.7632E+07 -1.7632E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1           3.6742E+07  1.7459E+07 -4.2331E+07 -2.7115E+07 -2.0646E+07  5.1668E+06    9.3081E+07    5.8375E-01
+      63-      1
+       1          -4.1844E+07 -1.1953E+08 -1.6343E+08 -1.7889E+07 -4.7045E+07  1.6907E+06    1.3777E+08    6.9584E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      567   ( at time  5.40276E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1818E-01  4.0961E-01 -6.4086E-01 -6.3129E-03 -2.4038E-02  9.9843E-03
+      43-      1
+      1            3.9428E-01  4.0983E-01 -7.7707E-01 -5.5431E-02  9.4109E-03  7.5106E-02
+      48-      1
+      1            4.5358E-01  4.2027E-01 -8.6739E-01 -5.9082E-02  6.5007E-02  5.3619E-02
+      63-      1
+      1            4.7578E-01  3.9722E-01 -8.6666E-01 -3.3658E-02  1.0497E-01  3.6139E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      576   ( at time 5.56088E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.3335E+07 -1.3335E+07 -1.3335E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -4.9035E+06 -1.2497E+07 -5.4739E+07 -6.0640E+06 -7.4942E+06  5.1972E+05    4.9421E+07    5.8699E-01
+      63-      1
+       1          -1.5487E+08 -1.8565E+08 -2.6369E+08  3.4356E+06 -2.2684E+07 -2.0822E+06    1.0503E+08    7.0213E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      576   ( at time  5.56088E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1673E-01  4.1164E-01 -6.4325E-01 -7.1854E-03 -2.4711E-02  1.1466E-02
+      43-      1
+      1            3.9316E-01  4.1506E-01 -7.8124E-01 -6.1381E-02  1.1285E-02  7.5124E-02
+      48-      1
+      1            4.6408E-01  4.3720E-01 -8.8493E-01 -6.9763E-02  6.9715E-02  5.6050E-02
+      63-      1
+      1            4.8711E-01  4.0413E-01 -8.8040E-01 -3.2422E-02  1.1471E-01  3.3720E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      584   ( at time 5.71899E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.0288E+07 -1.0288E+07 -1.0288E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -3.6125E+07 -3.6125E+07 -3.6125E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    5.8699E-01
+      63-      1
+       1           5.6236E+07  2.6236E+07 -6.0560E+07 -1.2534E+07 -6.4303E+06 -8.3819E+06    1.0883E+08    7.1022E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      584   ( at time  5.71899E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1682E-01  4.1131E-01 -6.4438E-01 -6.0875E-03 -2.5179E-02  1.1634E-02
+      43-      1
+      1            3.9063E-01  4.1869E-01 -7.8178E-01 -6.2134E-02  1.1500E-02  7.5224E-02
+      48-      1
+      1            4.6188E-01  4.4832E-01 -8.8855E-01 -7.7563E-02  6.4642E-02  5.9110E-02
+      63-      1
+      1            5.0773E-01  4.1932E-01 -9.0308E-01 -3.8731E-02  1.2242E-01  3.8856E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      589   ( at time 5.87711E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -1.8388E+07 -1.8388E+07 -1.8388E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2887E-01
+      48-      1
+       1          -1.4823E+08 -1.4823E+08 -1.4823E+08  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    5.8699E-01
+      63-      1
+       1          -2.0169E+08 -2.1657E+08 -2.6190E+08 -4.6265E+06 -5.2397E+06 -6.1654E+05    5.5657E+07    7.1186E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      589   ( at time  5.87711E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1681E-01  4.1145E-01 -6.4477E-01 -5.9959E-03 -2.5233E-02  1.1753E-02
+      43-      1
+      1            3.8999E-01  4.1987E-01 -7.8220E-01 -6.2482E-02  1.1607E-02  7.5594E-02
+      48-      1
+      1            4.6127E-01  4.5148E-01 -8.9102E-01 -8.0165E-02  6.4673E-02  6.1078E-02
+      63-      1
+      1            5.1327E-01  4.2182E-01 -9.1329E-01 -4.1727E-02  1.3105E-01  4.1902E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      597   ( at time 6.12770E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -2.8472E+07 -1.8564E+07 -4.5584E+07 -6.3828E+06  2.0178E+06  1.5394E+07    3.7496E+07    3.2925E-01
+      48-      1
+       1          -1.6222E+07  6.1655E+06 -6.3273E+07 -1.5765E+07 -2.5506E+07  1.6866E+07    8.5551E+07    5.8840E-01
+      63-      1
+       1          -4.6382E+07 -5.1189E+07 -1.5087E+08 -1.2173E+07 -6.9484E+06  1.5192E+06    1.0504E+08    7.2333E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      597   ( at time  6.12770E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1723E-01  4.1081E-01 -6.4646E-01 -4.9815E-03 -2.5758E-02  1.2073E-02
+      43-      1
+      1            3.8632E-01  4.2498E-01 -7.8339E-01 -6.3256E-02  1.1633E-02  7.6181E-02
+      48-      1
+      1            4.6078E-01  4.6438E-01 -8.9454E-01 -8.7968E-02  5.5835E-02  6.4262E-02
+      63-      1
+      1            5.3616E-01  4.3822E-01 -9.3397E-01 -5.2754E-02  1.4267E-01  4.8051E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      605   ( at time 6.37829E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -2.5693E+06  9.8138E+06 -7.2445E+06 -1.0336E+07  6.6155E+06  1.5643E+07    3.7669E+07    3.2962E-01
+      48-      1
+       1          -6.6699E+07 -6.6699E+07 -6.6699E+07  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    5.8840E-01
+      63-      1
+       1          -1.4110E+07 -1.7822E+07 -9.4720E+07 -2.5641E+07 -1.7467E+07 -3.0010E+06    9.5536E+07    7.3002E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      605   ( at time  6.37829E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1736E-01  4.1079E-01 -6.4824E-01 -4.2063E-03 -2.5844E-02  1.2475E-02
+      43-      1
+      1            3.8412E-01  4.2898E-01 -7.8310E-01 -6.3805E-02  1.1851E-02  7.6376E-02
+      48-      1
+      1            4.6121E-01  4.7567E-01 -8.9692E-01 -9.5898E-02  5.2664E-02  6.8916E-02
+      63-      1
+      1            5.5219E-01  4.4890E-01 -9.4594E-01 -6.3779E-02  1.7572E-01  5.1798E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      611   ( at time 6.62889E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -4.3668E+06 -4.3668E+06 -4.3668E+06  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -7.7394E+07 -6.3441E+07 -1.0764E+08 -2.5922E+06 -1.6199E+07  1.0901E+07    5.1915E+07    5.8886E-01
+      63-      1
+       1          -9.1892E+07 -9.8633E+07 -1.4269E+08 -1.1278E+07 -1.3960E+07 -1.0191E+06    5.7032E+07    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      611   ( at time  6.62889E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1725E-01  4.1073E-01 -6.4845E-01 -3.5113E-03 -2.6088E-02  1.2589E-02
+      43-      1
+      1            3.8246E-01  4.3254E-01 -7.8381E-01 -6.4147E-02  1.1125E-02  7.7184E-02
+      48-      1
+      1            4.6022E-01  4.8180E-01 -8.9871E-01 -9.9389E-02  5.0986E-02  7.1453E-02
+      63-      1
+      1            5.5992E-01  4.5395E-01 -9.5477E-01 -7.2135E-02  1.8805E-01  5.8197E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      615   ( at time 7.02605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -2.2214E+06 -2.9415E+06 -3.1277E+06 -6.9198E+05 -4.7693E+05  2.8361E+06    5.1901E+06    3.2962E-01
+      48-      1
+       1          -2.8289E+07 -2.4268E+07 -2.7197E+07 -2.4451E+06 -1.1108E+07  4.8587E+06    2.1723E+07    5.8886E-01
+      63-      1
+       1          -2.9319E+07 -3.5020E+07 -1.1441E+07 -6.2119E+06 -4.0954E+05 -1.1657E+07    3.1273E+07    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      615   ( at time  7.02605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1721E-01  4.1077E-01 -6.4848E-01 -3.5620E-03 -2.6056E-02  1.2696E-02
+      43-      1
+      1            3.8268E-01  4.3252E-01 -7.8379E-01 -6.4286E-02  1.1289E-02  7.7316E-02
+      48-      1
+      1            4.6044E-01  4.8185E-01 -8.9814E-01 -9.9261E-02  5.0255E-02  7.1108E-02
+      63-      1
+      1            5.5985E-01  4.5477E-01 -9.5413E-01 -7.1796E-02  1.8505E-01  5.7945E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      619   ( at time 7.52605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1          -3.7894E+05 -3.7894E+05 -3.7894E+05  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -1.5742E+07 -1.8493E+07 -1.1556E+07  6.2798E+05  1.3711E+06  2.3861E+06    7.7790E+06    5.8886E-01
+      63-      1
+       1          -1.1663E+07 -1.9772E+07 -2.2037E+06 -6.3138E+06  4.5972E+06 -3.0299E+06    2.1035E+07    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      619   ( at time  7.52605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1720E-01  4.1079E-01 -6.4850E-01 -3.5854E-03 -2.6053E-02  1.2710E-02
+      43-      1
+      1            3.8283E-01  4.3256E-01 -7.8382E-01 -6.4341E-02  1.1324E-02  7.7295E-02
+      48-      1
+      1            4.6064E-01  4.8181E-01 -8.9804E-01 -9.9245E-02  5.0200E-02  7.1011E-02
+      63-      1
+      1            5.5993E-01  4.5482E-01 -9.5395E-01 -7.1678E-02  1.8499E-01  5.7892E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      623   ( at time 8.02605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -1.0619E+07 -1.3977E+07 -5.1432E+06  3.2083E+05  8.2202E+05  1.3517E+06    8.2138E+06    5.8886E-01
+      63-      1
+       1          -4.5353E+06 -4.5197E+06 -3.6466E+06 -1.3434E+05 -5.5422E+05 -7.1355E+05    1.8109E+06    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      623   ( at time  8.02605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1719E-01  4.1079E-01 -6.4852E-01 -3.5977E-03 -2.6053E-02  1.2718E-02
+      43-      1
+      1            3.8292E-01  4.3260E-01 -7.8385E-01 -6.4364E-02  1.1340E-02  7.7291E-02
+      48-      1
+      1            4.6075E-01  4.8183E-01 -8.9802E-01 -9.9235E-02  5.0209E-02  7.0975E-02
+      63-      1
+      1            5.5995E-01  4.5488E-01 -9.5389E-01 -7.1661E-02  1.8481E-01  5.7880E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      629   ( at time 8.52605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -8.8431E+06 -1.2394E+07 -3.6092E+06  1.6872E+05  7.6435E+05  1.1116E+06    8.0080E+06    5.8886E-01
+      63-      1
+       1          -2.9922E+06 -3.0844E+06 -1.7085E+06 -2.3290E+04  4.0979E+05 -5.9894E+04    1.5135E+06    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      629   ( at time  8.52605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1719E-01  4.1079E-01 -6.4852E-01 -3.6030E-03 -2.6054E-02  1.2720E-02
+      43-      1
+      1            3.8296E-01  4.3263E-01 -7.8387E-01 -6.4372E-02  1.1344E-02  7.7287E-02
+      48-      1
+      1            4.6080E-01  4.8185E-01 -8.9803E-01 -9.9230E-02  5.0226E-02  7.0961E-02
+      63-      1
+      1            5.5996E-01  4.5490E-01 -9.5387E-01 -7.1656E-02  1.8476E-01  5.7876E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      635   ( at time 9.02605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -7.1447E+06 -1.0089E+07 -3.0566E+06  2.8617E+05  1.2595E+06  1.8344E+06    7.2470E+06    5.8886E-01
+      63-      1
+       1          -2.5057E+06 -2.6475E+06 -7.6793E+05 -5.4133E+04  4.7629E+05 -9.2670E+04    2.0004E+06    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      635   ( at time  9.02605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1719E-01  4.1079E-01 -6.4852E-01 -3.6071E-03 -2.6055E-02  1.2722E-02
+      43-      1
+      1            3.8299E-01  4.3265E-01 -7.8389E-01 -6.4378E-02  1.1346E-02  7.7285E-02
+      48-      1
+      1            4.6084E-01  4.8187E-01 -8.9803E-01 -9.9228E-02  5.0241E-02  7.0955E-02
+      63-      1
+      1            5.5996E-01  4.5490E-01 -9.5385E-01 -7.1655E-02  1.8475E-01  5.7889E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      641   ( at time 9.52605E+01 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -6.6335E+06 -9.5841E+06 -2.6356E+06  2.1052E+05  1.3094E+06  1.6760E+06    7.0844E+06    5.8886E-01
+      63-      1
+       1          -2.3031E+06 -2.4685E+06 -4.6169E+05 -6.7680E+04  4.5126E+05 -1.1074E+05    2.0939E+06    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      641   ( at time  9.52605E+01 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1719E-01  4.1079E-01 -6.4853E-01 -3.6102E-03 -2.6057E-02  1.2723E-02
+      43-      1
+      1            3.8302E-01  4.3267E-01 -7.8390E-01 -6.4382E-02  1.1347E-02  7.7282E-02
+      48-      1
+      1            4.6088E-01  4.8188E-01 -8.9804E-01 -9.9227E-02  5.0260E-02  7.0953E-02
+      63-      1
+      1            5.5996E-01  4.5491E-01 -9.5384E-01 -7.1655E-02  1.8475E-01  5.7901E-02
+
+
+
+ e l e m e n t   s t r e s s   c a l c u l a t i o n s   f o r   t i m e  s t e p      647   ( at time 1.00000E+02 )
+
+ element  materl
+     ipt  stress       sig-xx      sig-yy      sig-zz      sig-xy      sig-yz      sig-zx                       yield
+           state                                                                                  effsg      function
+      23-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    2.7738E-01
+      43-      1
+       1           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00    0.0000E+00    3.2962E-01
+      48-      1
+       1          -6.1398E+06 -9.1189E+06 -2.2841E+06  1.5032E+05  1.3321E+06  1.5399E+06    6.9089E+06    5.8886E-01
+      63-      1
+       1          -2.1885E+06 -2.3596E+06 -3.4993E+05 -6.9711E+04  4.1607E+05 -1.2206E+05    2.0743E+06    7.3298E-01
+
+
+
+ e l e m e n t   s t r a i n   c a l c u l a t i o n s   f o r   t i m e  s t e p      647   ( at time  1.00000E+02 )
+
+ element  strain       eps-xx      eps-yy      eps-zz      eps-xy      eps-yz      eps-zx                            yield
+ num/ipt   state
+      23-      1
+      1            3.1718E-01  4.1079E-01 -6.4853E-01 -3.6128E-03 -2.6058E-02  1.2724E-02
+      43-      1
+      1            3.8304E-01  4.3269E-01 -7.8392E-01 -6.4387E-02  1.1348E-02  7.7280E-02
+      48-      1
+      1            4.6091E-01  4.8189E-01 -8.9805E-01 -9.9228E-02  5.0279E-02  7.0953E-02
+      63-      1
+      1            5.5996E-01  4.5491E-01 -9.5384E-01 -7.1655E-02  1.8476E-01  5.7912E-02

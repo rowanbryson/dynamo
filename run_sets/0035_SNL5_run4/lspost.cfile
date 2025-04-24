@@ -2,3 +2,47 @@ $# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Win
 $# Created on Apr-22-2025 (17:49:31)
 open d3plot "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0035_SNL5_run4\d3plot"
 ac
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+fringe 7
+pfringe
+fringe 520
+pfringe
+fringe 7
+pfringe
+pcontour
+pcontour
+pcontour
+pcontour
+pcontour
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state -1;
+state +1;
+state +1;
+state +1;
+state +1;
+state +1;
+fringe 520
+pfringe

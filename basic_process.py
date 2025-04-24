@@ -15,7 +15,9 @@ if __name__ == '__main__':
 
     # dyna_tools.run_lsdyna('0015_SNS5', '0015_SNS5_run4')
     # dyna_tools.run_lsdyna('0025_SNM5', '0025_SNM5_run4')
-    dyna_tools.run_lsdyna('0033_SNL3', '0033_SNL3_run1')
+    dyna_tools.run_lsdyna('0016_SNS6', '0016_SNS6_run2')
+    dyna_tools.run_lsdyna('0026_SNM6', '0026_SNM6_run2')
+    dyna_tools.run_lsdyna('0036_SNL6', '0036_SNL6_run2')
     # dyna_tools.run_lsdyna('0010_SNS', '0010_SNS_run3')
 
 
@@ -23,4 +25,6 @@ if __name__ == '__main__':
     # outputs.process_run('0025_SNM5_run4')
     # outputs.process_run('0035_SNL5_run4')
     # outputs.process_run('0015_SNS4_run2')
-    outputs.process_run('0033_SNL3_run1')
+    outputs.process_run('0016_SNS6_run2')
+    outputs.process_run('0026_SNM6_run2')
+    outputs.process_run('0036_SNL6_run2')

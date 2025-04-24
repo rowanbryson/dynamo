@@ -9,7 +9,12 @@ def main():
     # run_script('0015_SNS5_run4', [5, 6, 7, 8, 9])
     # run_script('0025_SNM5_run4', [1, 12, 11, 10, 9])
     # run_script('0035_SNL5_run4', [1, 12, 11, 10, 9])
-    run_script('0035_SNL5_run5', [165, 54, 27, 26, 127])
+    # run_script('0035_SNL5_run5', [165, 54, 27, 26, 127])
+    # run_script('0033_SNL3_run3', [269, 292, 291, 290, 289, 288, 287, 286, 285])
+    run_script('0016_SNS6_run2', [5, 6, 7, 8, 9])
+    run_script('0026_SNM6_run2', [1, 12, 11, 10, 9])
+    run_script('0036_SNL6_run2', [1, 12, 11, 10, 9])
+
 
 def run_script(run_id, gauge_edge_node_ids=None):
     binout = Binout(f'run_sets/{run_id}/binout*')

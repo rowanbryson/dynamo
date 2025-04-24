@@ -11,7 +11,7 @@ from lasso.dyna import Binout, D3plot, ArrayType
 def main():
     # # make_plot('0015_SNS5_run2')
     # # make_plot('0025_SNM5_run2')
-    make_plot('0033_SNL3_run1')
+    # make_plot('0033_SNL3_run2')
     # # experiment_vs_simulation_plot()
     # combo_plot_SNS()
     # combo_plot_SNM()
@@ -20,6 +20,11 @@ def main():
     # plot_run('0015_SNS5_run4')
     # plot_run('0025_SNM5_run4')
     # plot_run('0035_SNL5_run5')
+    make_plot('0016_SNS6_run2')
+    make_plot('0026_SNM6_run2')
+    make_plot('0036_SNL6_run2')
+    # combo_plot_SNL()
+
 
 def combo_plot_SNS():
     plt.figure()

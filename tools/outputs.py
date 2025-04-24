@@ -79,11 +79,11 @@ def process_run(run_id):
         json.dump(jsonable_summary, f, indent=4)
     df = summary_to_df(summary)
     df.to_csv(f'summaries/{run_id}/summary.csv')
-    print(f'Summary saved to summaries/{run_id}/summary.csv')
-    plot_force_vs_displacement(summary)
-    plt.savefig(f'summaries/{run_id}/force_vs_displacement.png')
-    plot_eps_triaxiality(summary)
-    plt.savefig(f'summaries/{run_id}/triaxiality_vs_eps.png')
+    # print(f'Summary saved to summaries/{run_id}/summary.csv')
+    # plot_force_vs_displacement(summary)
+    # plt.savefig(f'summaries/{run_id}/force_vs_displacement.png')
+    # plot_eps_triaxiality(summary)
+    # plt.savefig(f'summaries/{run_id}/triaxiality_vs_eps.png')
 
 if __name__ == '__main__':
     # get the summary
