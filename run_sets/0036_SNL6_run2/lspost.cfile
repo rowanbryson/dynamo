@@ -1,0 +1,14 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.10.3-21Apr2023 -64bit-Window
+$# Created on Apr-24-2025 (03:51:15)
+open keyword "C:\Users\jbrys\Documents\A00\C41\40-49 Design\49 Analysis\49.11 FEA repo\dynamo\run_sets\0036_SNL6_run2\SNL6.key"
+Message 1
+Message 0
+ident select 1
+genselect target node
+genselect node add node 9/0 
+genselect node add node 10/0 
+genselect node add node 11/0 
+genselect node add node 12/0 
+genselect node add node 1/0 
+ident select 0
+back

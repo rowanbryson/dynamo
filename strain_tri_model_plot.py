@@ -161,11 +161,11 @@ def plot_eps_tri_time_5_with_johnson():
     EPS_AT_FRACTURE_TENSION_BAR_4 = 0.0397820620995518
     EPS_AT_FRACTURE_TENSION_BAR_5 = 0.066960232403737
 
-    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_1 = 0.33
-    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_2 = 0.33
-    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_3 = 0.33
-    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_4 = 0.33
-    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_5 = 0.33
+    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_1 = 1
+    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_2 = 1
+    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_3 = 1
+    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_4 = 1
+    TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_5 = 1
 
     EPS_TENSION = [EPS_AT_FRACTURE_TENSION_BAR_1, EPS_AT_FRACTURE_TENSION_BAR_2, EPS_AT_FRACTURE_TENSION_BAR_3, EPS_AT_FRACTURE_TENSION_BAR_4, EPS_AT_FRACTURE_TENSION_BAR_5]
     TRIAXIALITY_TENSION = [TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_1, TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_2, TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_3, TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_4, TRIAXIALITY_AVG_BEFORE_FRACTURE_TENSION_BAR_5]
@@ -197,18 +197,22 @@ def plot_eps_tri_time_5_with_johnson():
              EPS_TENSION,
                 'x', label='Tension Testing')
 
-    johnson_triax_axis = np.linspace(-1, 1, 100)
+    johnson_triax_axis = np.linspace(-1, 1.5, 100)
     D1, D2, D3 = 77.46e-3, 34.48e-3, 4.164
     johnson_eps_axis = D1 + D2 * np.exp(-D3 * johnson_triax_axis)
 
     plt.plot(johnson_triax_axis, johnson_eps_axis, linestyle=':', label='Johnson-Cooke Fracture Model')
+
+    plt.axvline(x=0, color='k', linestyle='--', alpha=0.4)
+    plt.axvline(x=-1/3, color='k', linestyle='--', alpha=0.4)
+    plt.axvline(x=0.4, color='k', linestyle='--', alpha=0.4)
 
     plt.grid()
     plt.ylim(bottom=0)
     plt.legend()
     plt.tight_layout()
     plt.savefig('meta_plots/locus5_with_johnson.png')
-    plt.xlim(-1.1, 1)
+    plt.xlim(-1.1, 1.1)
     plt.ylim(top=0.5)
     # plt.tight_layout()
     plt.savefig('meta_plots/locus5_limited_with_johnson.png')

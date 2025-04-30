@@ -20,10 +20,10 @@ def main():
     # plot_run('0015_SNS5_run4')
     # plot_run('0025_SNM5_run4')
     # plot_run('0035_SNL5_run5')
-    make_plot('0016_SNS6_run2')
-    make_plot('0026_SNM6_run2')
-    make_plot('0036_SNL6_run2')
-    # combo_plot_SNL()
+    # make_plot('0016_SNS6_run2')
+    # make_plot('0026_SNM6_run2')
+    # make_plot('0036_SNL6_run2')
+    combo_plot_SNL()
 
 
 def combo_plot_SNS():
@@ -72,22 +72,39 @@ def combo_plot_SNM():
 def combo_plot_SNL():
     plt.figure()
     plot_experiment('experimental_data/9031_SNL_test1/SNLDisplacement1.csv', 'experimental_data/9031_SNL_test1/SNLForce1.csv', color='C0', label='Test 1')
-    plot_experiment('experimental_data/9031_SNL_test1/SNLDisplacement1.csv', 'experimental_data/9031_SNL_test1/SNLForce1.csv', smoothed=True, color='C0', alpha=0.5)
+    disp_snl_exp_1, force_snl_exp_1 = plot_experiment('experimental_data/9031_SNL_test1/SNLDisplacement1.csv', 'experimental_data/9031_SNL_test1/SNLForce1.csv', smoothed=True, color='C0', alpha=0.5)
      
     plot_experiment('experimental_data/9032_SNL_test2/SNLDisplacement2.csv', 'experimental_data/9032_SNL_test2/SNLForce2.csv', color='C1', label='Test 2')
-    plot_experiment('experimental_data/9032_SNL_test2/SNLDisplacement2.csv', 'experimental_data/9032_SNL_test2/SNLForce2.csv', smoothed=True, color='C1', alpha=0.5)
+    disp_snl_exp_2, force_snl_exp_2 = plot_experiment('experimental_data/9032_SNL_test2/SNLDisplacement2.csv', 'experimental_data/9032_SNL_test2/SNLForce2.csv', smoothed=True, color='C1', alpha=0.5)
      
     plot_experiment('experimental_data/9033_SNL_test3/SNLDisplacement3.csv', 'experimental_data/9033_SNL_test3/SNLForce3.csv', color='C2', label='Test 3')
-    plot_experiment('experimental_data/9033_SNL_test3/SNLDisplacement3.csv', 'experimental_data/9033_SNL_test3/SNLForce3.csv', smoothed=True, color='C2', alpha=0.5)
+    disp_snl_exp_3, force_snl_exp_3 = plot_experiment('experimental_data/9033_SNL_test3/SNLDisplacement3.csv', 'experimental_data/9033_SNL_test3/SNLForce3.csv', smoothed=True, color='C2', alpha=0.5)
     
-    plot_run('0035_SNL5_run5', smoothed=False, color='C4', label='Simulation', alpha=0.5)
-    plot_run('0035_SNL5_run5', smoothed=True, color='C4')
+    disp_snl_sim, force_snl_sim = plot_run('0036_SNL6_run2', smoothed=False, color='C4', label='Simulation', alpha=0.5)
+    plot_run('0036_SNL6_run2', smoothed=True, color='C4')
+
+    # print(disp_snl_sim.shape, disp_snl_exp_1.shape)
+
+    # import pandas as pd
+    # df = pd.DataFrame()
+    # LENGTH = 100
+    # empty_column = np.full((LENGTH,), np.nan)
+    # df['displacement_snl_sim'] = np.concatenate((disp_snl_sim, empty_column))[:LENGTH]
+    # df['force_snl_sim'] = np.concatenate((force_snl_sim, empty_column))[:LENGTH]
+    # df['displacement_snl_exp_1'] = np.concatenate((disp_snl_exp_1, empty_column))[:LENGTH]
+    # df['force_snl_exp_1'] = np.concatenate((force_snl_exp_1, empty_column))[:LENGTH]
+    # df['displacement_snl_exp_2'] = np.concatenate((disp_snl_exp_2, empty_column))[:LENGTH]
+    # df['force_snl_exp_2'] = np.concatenate((force_snl_exp_2, empty_column))[:LENGTH]
+    # df['displacement_snl_exp_3'] = np.concatenate((disp_snl_exp_3, empty_column))[:LENGTH]
+    # df['force_snl_exp_3'] = np.concatenate((force_snl_exp_3, empty_column))[:LENGTH]
+
+    # df.to_csv('meta_plots/SNL_force_vs_displacement.csv')
 
     plt.xlabel('Displacement (inch)')
     plt.ylabel('Force (lbf)')
     plt.legend()
     plt.grid()
-    plt.savefig(f'meta_plots/SNL_force_vs_displacement-3.png')
+    plt.savefig(f'meta_plots/SNL_force_vs_displacement-4.png')
     plt.show()
 
 def plot_experiment(filepath_disp, filepath_force, smoothed=False, **kwargs):
@@ -134,8 +151,10 @@ def plot_experiment(filepath_disp, filepath_force, smoothed=False, **kwargs):
     plt.figure(1)
     if smoothed:
         plt.plot(plot_displacement, plot_force, **kwargs)
+        return plot_displacement_smoothed, plot_force_smoothed
     else:
         plt.plot(plot_displacement_smoothed, plot_force_smoothed, **kwargs)
+        return plot_displacement_smoothed, plot_force_smoothed
     # plt.xlabel('Displacement (inches)')
     # plt.ylabel('Force (lbf)')
     # plt.title('Force vs Displacement')
@@ -309,8 +328,10 @@ def plot_run(RUN_ID, smoothed=False, **kwargs):
     # plt.figure()
     if smoothed is True:
         plt.plot(plot_displacement_smoothed, plot_force_smoothed, **kwargs)
+        return plot_displacement_smoothed, plot_force_smoothed
     else:
         plt.plot(specimen_displacement, specimen_load, **kwargs)
+        return plot_displacement_smoothed, plot_force_smoothed  
 
 
 
